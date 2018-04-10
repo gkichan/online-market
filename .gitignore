@@ -1,4 +1,8 @@
-node_modules
-.idea
+#Папки
+.vscode/
+.idea/
+node_modules/
+
+#Файлы
+app/css/style.css
 package-lock.json
-.vs
