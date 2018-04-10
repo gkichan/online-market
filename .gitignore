@@ -1,4 +1,6 @@
 node_modules
 .idea
+.vscode
+
 package-lock.json
-.vs
+app/css/style.css
