@@ -1,5 +1,8 @@
+#Folders
 .vscode/
 .idea/
 node_modules/
+
+#Files
 app/css/style.css
 package-lock.json
