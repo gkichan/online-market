@@ -1,7 +1,13 @@
-.form-control {
+/* Макеты 16, 21 */
+/* ===== FORM START ===== */
+.form-group {
 	font-size: 15px;
 	line-height: 4;
-	border: 1px solid #e5e5e5;
+}
+.form-group.form-control {
+	/* border: 1px solid #e5e5e5; */
+	background-color: #f9f9f9;
+	border: 0.2px solid #d7d7d7;	
 	border-radius: 2px;
 	height: 38px;
 	padding-left: 17px;
@@ -9,8 +15,8 @@
 .form-control label {
 	padding-left: 36px;
 }
-.form-control:focus {
-    border-color: #111;
+.form-group .form-control:focus {
+	border-color: #111;
 }
 textarea.form-control {
         min-height: 148px;
@@ -19,6 +25,5 @@ textarea.form-control {
 form .form-control + .form-control {
 	margin: 23px;
 }
-.text-green {
-    color: #8bc34a;
-}
+
+/* ===== FORM END ===== */
