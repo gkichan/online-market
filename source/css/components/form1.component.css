@@ -1,0 +1,33 @@
+.form-control {
+    font-size: 14px;
+}
+.search-form.input-group .form-control {
+    max-width: 670px;
+    font-family: 'Roboto Medium';
+    line-height: 2.1;
+    letter-spacing: 0.05em;
+    padding: 12px 25px;
+}
+.search-form-button.input-group-append .btn.btn-success {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-left: 0;
+}
+.footer-form .form-control {
+    max-width: 258px;
+    font-family: 'Roboto Regular';
+    line-height: 2.57;
+    color: #fff;
+    background-color: #767676;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.footer-form .form-control::placeholder {
+    color: #fff;
+}
+.footer-form-button.input-group-append .btn.btn-success {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+

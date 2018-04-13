@@ -1,27 +1,21 @@
 /*
 .default-text - используется в img: 03 (header, choose, footer), 10, 25, 28
 Цвет текста используется в img: 10, 25, 28
-
-.card-product-text - - используется в img: 05, 09 // но возможно это лишнее :)
 */
 /* ===== TEXT START ===== */
+
 .default-text {
-    font-family: 'Roboto Regular';
-    font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.6;
     color: #707070;
 }
 .copyright-text {
-    font-family: 'Roboto Regular';
     font-size: 15px;
-    line-height: 2;
+    line-height: 2ю4;
     color: #919699;
 }
-.card-product-text {
-    font-family: 'Roboto Regular';
-    font-size: 14px;
-    line-height: 1.28;
-    color: #707070
+.text-green {
+    color: #8bc34a;
 }
+
 /* ===== TEXT END ===== */
 

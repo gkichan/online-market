@@ -6,40 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700" rel="stylesheet">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- т.к. не нашла файла css/font-awesome.min.css  -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <!-- Custom style -->
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/components/text.component.css">
-        <style>
-        /* Разделила блоки для наглядности */
-        section {
-            padding: 20px;
-        }
-        </style>
-        <title>Text</title>
+        <link rel="stylesheet" href="css/components/form1.component.css">
+        <title>Form</title>
     </head>
     <body>
-         <section>
-             <div class="container">
-                 <h5>Default text</h5>
-                 <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae vel in id nulla fugiat nemo perferendis nisi exercitationem inventore, accusantium enim ullam sequi, eveniet mollitia aperiam quos aut voluptatibus.</p>
-             </div>
-         </section>
-         <section>
-            <div class="container">
-                <h5>Text copyright</h5>
-                <p class="copyright-text"><i class="fa fa-copyright"></i> Nobis molestiae vel in id nulla fugiat nemo perferendis nisi exercitationem inventore.</p>
-            </div>
-        </section>
         <section>
             <div class="container">
-                <h5>Green text</h5>
-                <p class="default-text text-green">Lorem ipsum</p>
+                <div class="title-default">
+                    <h5>Top Form</h5>
+                </div>
+                <div class="search-form input-group">
+                    <input type="text" class="form-control" placeholder="Search Your Keywords ...">
+                    <div class="search-form-button input-group-append">
+                      <button class="btn btn-success" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                 </div>
             </div>
         </section>
+        <!-- / section search-->
+        <section>
+                <div class="container">
+                    <div class="title-default">
+                        <h5>Footer Form</h5>
+                    </div>
+                    <div class="footer-form input-group">
+                        <input type="text" class="form-control" placeholder="E-mail Address">
+                        <div class="footer-form-button input-group-append">
+                          <button class="btn btn-success" type="button"><i class="fa fa-paper-plane"></i></button>
+                        </div>
+                     </div>
+                </div>
+            </section>
+            <!-- / section footer-->
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
