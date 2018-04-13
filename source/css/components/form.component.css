@@ -15,8 +15,9 @@
 .form-control label {
 	padding-left: 36px;
 }
-.form-group .form-control:focus {
+.form-control:focus {
 	border-color: #111;
+	box-shadow: none;
 }
 textarea.form-control {
         min-height: 148px;
