@@ -4,7 +4,7 @@
 	font-size: 15px;
 	line-height: 4;
 }
-.form-group.form-control {
+form .form-control {
 	/* border: 1px solid #e5e5e5; */
 	background-color: #f9f9f9;
 	border: 0.2px solid #d7d7d7;	
@@ -25,6 +25,10 @@ textarea.form-control {
 }
 form .form-control + .form-control {
 	margin: 23px;
+}
+.content-wrapper-body{
+background-color: #fff;
+border: 1px solid #dedede;
 }
 
 /* ===== FORM END ===== */
