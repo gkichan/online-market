@@ -1,5 +1,54 @@
 /* ===== FORM START ===== */
-.form-control {
+/* reset style bootstrap start */
+/* *:active,
+*:hover,
+*:focus,
+button:focus,
+button:active,
+.btn:focus,
+.btn:active,
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+ {
+	outline: none;
+	border: none;
+	box-shadow: none;
+	outline-offset: 0;
+} */
+.input-group {
+	border: 0;
+}
+button:focus,
+button:active {
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+.button {
+	background: none;
+}
+/* reset style bootstrap end */
+.footer {
+	width: 259px;
+	height: 39px;
+}
+.footer .form-control {
 	border-top: 1px solid #000101;
+	background-color: #2f3c43;
+	color: #697378;
+	line-height: 2.57;
+	padding: 13px 0 13px 14px;
+}
+.footer .btn {
+	width: 42px;
+}
+.footer .btn .arrow {
+	display: flex;
+	transform: rotate(-45deg);
+	font-size: 18px;
 }
 /* ===== FORM END ===== */
