@@ -29,14 +29,21 @@
 .footer-form .form-control::placeholder {
     color: #fff;
 }
-.footer-form-button.input-group-append .btn.btn-success {
+.footer-form-button.input-group-append .btn {
     padding-left: 15px;
     padding-right: 15px;
+    transition: none;
 }
 .form-control:focus {
-    box-shadow:  none;
-    border: 1px solid #ced4da;
+    box-shadow: none;
+    border-color: #333;
     border-right: 0;
+}
+.btn:focus {
+    box-shadow: none;
+}
+.form-control:focus .input-group-append.btn.btn-success {
+    border-color: #333;
 }
 
 /* ===== FORM END ===== */
