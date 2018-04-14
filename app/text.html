@@ -18,6 +18,12 @@
         section {
             padding: 20px;
         }
+        div { 
+            padding: 20px;
+        }
+        div + div {
+            margin-top: 20px;
+        }
         </style>
         <title>Text</title>
     </head>
@@ -38,6 +44,39 @@
             <div class="container">
                 <h5>Green text</h5>
                 <p class="default-text text-green">Lorem ipsum</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="text-white bg-red">
+                    <p>text-white bg-red</p>
+                </div>
+                <div class="text-darkgray  bg-lightgray">
+                    <p>text-darkgray  bg-lightgray</p>
+                </div>
+                <div class="container">
+                <div class="text-white bg-orange">
+                    <p>text-white bg-orange</p>
+                </div>
+                <div class="text-green  bg-yellow">
+                    <p>text-green  bg-yellow</p>
+                </div>
+                <div class="container">
+                <div class="text-dark bg-gray">
+                    <p>text-dark bg-gray</p>
+                </div>
+                <div class="text-white  bg-orange-star">
+                    <p>text-white  bg-orange-star</p>
+                </div>
+                <div class="text-white  bg-dark">
+                    <p>text-white  bg-dark</p>
+                </div>
+                <div class="text-white  bg-green">
+                    <p>text-white  bg-green</p>
+                </div>
+                <div class="text-white  bg-blue">
+                    <p>text-white  bg-blue</p>
+                </div>
             </div>
         </section>
         <!-- Optional JavaScript -->
