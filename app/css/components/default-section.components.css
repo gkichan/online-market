@@ -1,0 +1,29 @@
+/* Defaul section start */
+
+.default-section {
+    padding: 120px 0 126px 0;
+}
+
+.default-section.bg-grey {
+    padding: 130px 0 140px 0;
+}
+.default-section.bg-white {
+    padding: 120px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+.bg-black {
+    background-color: #263238;
+}
+.bg-grey {
+    background-color: #f4f6f5;
+}
+.bg-white {
+    background-color: #fff;
+}
+
+/* Defaul section end*/
