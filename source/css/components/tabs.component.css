@@ -1,18 +1,19 @@
 /* ===== TAGS START ===== */
-.tabs-nav a {
+.tags-nav {
+    background-color: #f4f6f5;
+}
+.tags-nav a {
     font-weight: 500;
     background-color: #fff;
     color: #263238;
     line-height: 4.28;
     padding: 10px 20px;
-    margin: 0 3px;
 }
-.tabs-nav .tab-active {
+.tags-nav a + a {
+    margin-left: 5px;
+}
+.tags-nav a:hover {
     background-color: #e74c3c;
     color: #fff;
-    box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
-}
-.tabs-nav a:hover {
-    background-color: #d4d4d4;
 }
 /* ===== TAGS END ===== */
