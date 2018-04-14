@@ -1,7 +1,7 @@
 {
   "name": "www",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. components/\r 2. pages/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +14,13 @@
   },
   "devDependencies": {
     "gulp-concat": "^2.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkichan/online-market.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gkichan/online-market/issues"
+  },
+  "homepage": "https://github.com/gkichan/online-market#readme"
 }
