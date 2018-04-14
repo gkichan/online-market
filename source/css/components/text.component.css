@@ -8,7 +8,6 @@
 .bg-lightgray - карточки товаров img
 .bg-red - 03 (slick, btn), 08 (btn, price), 09 (btn, price)
 .bg-yellow, .bg-orange - header
-.bg-orange-star -  карточки товаров звёздочки
 .bg-blue - 08(btn), 09(btn)
 если есть лишнее убрерите, а то заставь дурака Богу молиться и лоб разобьет :)
 */
@@ -49,9 +48,6 @@
 }
 .bg-yellow {
     background-color: #fcf322;
-}
-.bg-orange-star {
-    background-color: #ffa726;
 }
 .bg-gray {
     background-color: #b5b5b5;

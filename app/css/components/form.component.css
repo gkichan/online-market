@@ -1,35 +1,5 @@
-/* Макеты 16, 21 */
 /* ===== FORM START ===== */
-.form-group {
-	font-size: 15px;
-	line-height: 4;
+.form-control {
+	border-top: 1px solid #000101;
 }
-form .form-control {
-	/* border: 1px solid #e5e5e5; */
-	background-color: #f9f9f9;
-	border: 0.2px solid #d7d7d7;	
-	border-radius: 2px;
-	height: 38px;
-	padding-left: 17px;
-}
-.form-control label {
-	padding-left: 36px;
-}
-.form-control:focus {
-	border-color: #333;
-	-webkit-box-shadow: none;
-	        box-shadow: none;
-}
-textarea.form-control {
-        min-height: 148px;
-        padding-top: 10px;
-}
-form .form-control + .form-control {
-	margin: 23px;
-}
-.content-wrapper-body{
-background-color: #fff;
-border: 1px solid #dedede;
-}
-
 /* ===== FORM END ===== */
