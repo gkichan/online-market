@@ -22,6 +22,7 @@ a {
     text-decoration: none;
 }
 a:hover, a:active {
+    color: inherit;
     text-decoration: none;
 }
 ul, ol {
@@ -35,7 +36,10 @@ img {
 }
 input,
 textarea,
-button {
+button,
+input:focus,
+textarea:focus,
+button:focus {
     outline: none;
     border: none;
 }
@@ -50,3 +54,15 @@ button {
     background-color: transparent;
 }
 /* ===== RESET END ===== */
+/* ===== RESET BOOTSTRAP START ===== */
+.card-title {
+    margin-bottom: 0;
+}
+.form-control:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.breadcrumb {
+    background: none;
+}
+/* ===== RESET BOOTSTRAP END ===== */
