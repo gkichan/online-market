@@ -1,0 +1,16 @@
+/* ===== BREADCRUMB START ===== */
+
+.breadcrumb .breadcrumb-item {
+    font-family: 'Roboto Regular';
+    font-size: 15px;
+    line-height: 2.6;
+    color: #b0bec5;
+}
+.breadcrumb .breadcrumb-item.active {
+    color: #263238;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: " - "; 
+}
+
+/* ===== BREADCRUMB END ===== */

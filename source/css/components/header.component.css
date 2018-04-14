@@ -1,0 +1,29 @@
+/* ===== HEADER START ===== */
+header .top-header {
+    padding: 28px 0 26px 0;
+    background-color: #fff;
+}
+.top-header .header-help-text {
+    font-size: 15px;
+}
+.top-header p.header-red-text {
+    color: #e74c3c;
+}
+.top-header .header-number {
+    color: #546e7a;
+}
+header .bottom-header {
+    padding: 25px 0px;
+    background-color: #263238;
+}
+.bottom-header a {
+    font-weight: 500;
+    color: #fff;
+}
+.bottom-header a:hover {
+    color: #e74c3c;
+}
+.bottom-header a + a {
+    margin-left: 33px;
+}
+/* ===== HEADER END ===== */

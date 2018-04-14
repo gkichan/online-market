@@ -1,0 +1,21 @@
+/*
+.default-text - используется в img: 03 (header, choose, footer), 10, 25, 28
+Цвет текста используется в img: 10, 25, 28
+*/
+/* ===== TEXT START ===== */
+
+.default-text {
+    line-height: 1.6;
+    color: #707070;
+}
+.copyright-text {
+    font-size: 15px;
+    line-height: 2.4;
+    color: #919699;
+}
+.text-green {
+    color: #8bc34a;
+}
+
+/* ===== TEXT END ===== */
+

@@ -1,0 +1,20 @@
+/* ===== TABS START ===== */
+.tabs-nav span {
+    font-weight: 500;
+    background-color: #fff;
+    color: #263238;
+    line-height: 4.28;
+    padding: 10px 20px;
+    margin: 0 3px;
+}
+.tabs-nav .tab-active {
+    background-color: #e74c3c;
+    color: #fff;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
+            box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
+}
+.tabs-nav span:hover {
+    cursor: pointer;
+    background-color: #d4d4d4;
+}
+/* ===== TABS END ===== */
