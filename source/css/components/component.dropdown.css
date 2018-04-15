@@ -62,7 +62,7 @@ a:hover{
     font-size: 16px;
     margin: 0 13px;
 }
-.dropdown-profile-wrapper .profile-info .fa:hover{
+.dropdown-profile-wrapper:hover .profile-info .fa{
     color: #263238;
 }
 
