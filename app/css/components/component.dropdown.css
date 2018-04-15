@@ -13,16 +13,17 @@ a:hover{
 .dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-nav .btn{
     outline: 0;
     outline-offset: 0;
-    background-image: inherit;
-    box-shadow: inherit;
-    border: inherit;
+    background-image: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
     border-radius: 0;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, 
 .btn-secondary:not(:disabled):not(.disabled):active{
-    color: inherit;
-    background-color: inherit;
-    border-color: inherit;
+    color: unset;
+    background-color: unset;
+    border-color: unset;
 }
 .dropdown-menu .dropdown-item.items-checkout .checkout-nav .btn:hover{
     background-color: inherit;
