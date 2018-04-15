@@ -41,7 +41,7 @@ input:focus,
 	background-color: #2f3c43;
 	color: #697378;
 	line-height: 2.57;
-	padding: 13px 0 13px 14px;
+	padding: 13px 10px 13px 14px;
 }
 .input-group {
 	padding: 1px 1px;
@@ -49,9 +49,9 @@ input:focus,
 	background-image: linear-gradient(to bottom, #000 0%, #263238 100%), linear-gradient(to bottom, #000 0%, #263238 100%);
 }
 .footer .btn {
-	width: 42px;
+	width: 45px;
 }
-.btn.fa {
+.input-group-append .btn .fa {
 	font-size: 18px;
 }
 /* ===== FORM END ===== */
