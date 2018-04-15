@@ -34,6 +34,18 @@
 .text-dark {
     color: #263238;
 }
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-justify {
+	text-align: justify;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
 .bg-green{
     background-color: #8bc34a;
 }

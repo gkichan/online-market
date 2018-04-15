@@ -49,4 +49,31 @@ input:focus,
 .input-group-append .btn .fa {
 	font-size: 18px;
 }
+/* SEARCH */
+.search-item { 
+	max-width: 670px;
+}
+.search-section .search-control {
+	font-size: 14px;
+	font-weight: 500;
+    line-height: 2.14;
+	letter-spacing: 0.05em;
+	border-radius: 2px;
+	padding: 23px 50px 23px 25px;
+	width: 100%;
+}
+.search-section .search-control::placeholder {
+    color: #90a4ae;
+}
+.search-item {
+	position: relative;
+}
+.search-item .svg-inline--fa {
+	position: absolute;
+	top: 30%;
+    transform: translateY(50%);
+	right: 20px;
+	font-size: 18px;
+	color: #78909c;
+}
 /* ===== FORM END ===== */

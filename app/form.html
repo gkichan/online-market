@@ -11,9 +11,13 @@
         <!-- Custom style  -->
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/components/form.component.css" rel="stylesheet">
+        <link href="css/components/login-modal.component.css" rel="stylesheet">
         <style>
             .bg-green {
                 background-color: #8bc34a;
+            }
+            .bg-gray {
+                background-color: #b5b5b5;
             }
             .text-white {
                 color: #fff;
@@ -21,8 +25,18 @@
             .text-center {
                 text-align: center;
             }
+            .text-uppercase {
+	            text-transform: uppercase;
+            }
+            .search-section,
             .exsample {
                 padding: 20px;
+            } 
+            section + section {
+                margin-top: 20px;
+            }
+            h5 {
+                margin-bottom: 20px;
             }
         </style>
         <title>Form</title>
@@ -31,7 +45,7 @@
          <section>
             <div class="container">
                 <div class="exsample bg-dark">
-                    <h5 class="text-white">Form</h5>
+                    <h5 class="text-white">Form footer</h5>
                     <form>
                         <div class="footer input-group">
                             <input type="text" class="form-control" placeholder="E-mail Address">
@@ -45,6 +59,51 @@
             <!-- / container -->
         </section>
         <!-- / section -->
+        <section>
+            <div class="container">
+                <div class="search-section bg-gray">
+                    <h5>Form</h5>
+                    <div class="search-item">
+                        <form>
+                        <input class="search-control" type="text" placeholder="Search Your Keywords ...">
+                        <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                    <!-- / search-item -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#LoginModal">Login</button>
+            </div>
+        </section>
+        <!-- Modal window start -->
+        <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog" role="document"> 
+                <div class="modal-content bg-green"> 
+                    <div class="modal-body">
+                        <h4 class="login-title text-center text-uppercase text-white">Login</h4> 
+                        <form name="login-form" class="m-auto">
+                            <div class="login-form-group text-white">
+                                <i class="fa fa-user"></i>
+                                <input type="text" name="nickName" class="login-form-control" placeholder="Name">
+                            </div>
+                            <div class="login-form-group text-white">
+                                <i class="fa fa-lock"></i>
+                                <input type="text" name="password" class="login-form-control" placeholder="Password">
+                            </div>
+                        </form>
+                        <!-- / form -->
+                    </div> 
+                    <!-- / modal-body -->
+                </div>  
+                <!-- / modal-content -->
+            </div> 
+            <!-- / modal-dialog -->
+        </div>
+        <!-- / modal fade -->
+        <!-- Modal window end -->
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
