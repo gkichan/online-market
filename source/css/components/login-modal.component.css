@@ -7,7 +7,7 @@
 #LoginModal .modal-content {
     border: none;
     border-radius: 0;
-    padding: 90 30px 110px;
+    padding: 90px 30px 110px;
 }
 #LoginModal .login-title {
    font-size: 40px;
