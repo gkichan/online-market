@@ -13,10 +13,17 @@ a:hover{
 .dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-nav .btn{
     outline: 0;
     outline-offset: 0;
+<<<<<<< HEAD
     background-image: none;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
+=======
+    background-image: inherit;
+    -webkit-box-shadow: inherit;
+            box-shadow: inherit;
+    border: inherit;
+>>>>>>> 9932c809304fc2dd02d3bc0c6093a7e66cc6a405
     border-radius: 0;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, 
@@ -32,7 +39,7 @@ a:hover{
     padding: 0px;
     border: 0px;
 }
-.dropdown .btn.dropdown-toggle::after{
+.dropdown-toggle::after{
     display: none;
 }
 /* DROPDOWN RESET END */
@@ -40,6 +47,9 @@ a:hover{
 .dropdown .btn.dropdown-toggle{
     position: relative;
     background-color: #f5f5f5;    
+}
+.dropdown .btn.dropdown-toggle:hover{
+    color: #263238;
 }
 .dropdown-notification .btn.dropdown-toggle,
 .dropdown-cart .btn.dropdown-toggle{
@@ -52,10 +62,18 @@ a:hover{
 .dropdown-cart .btn.dropdown-toggle:active{
     background-color: #f5f5f5;
 }
-.dropdown-profile .btn.dropdown-toggle{
+.dropdown-profile-wrapper{
+    cursor: pointer;
+}
+.dropdown-profile-wrapper .profile-info .fa{
     color: #707070;
     font-size: 16px;
+    margin: 0 13px;
 }
+.dropdown-profile-wrapper:hover .profile-info .fa{
+    color: #263238;
+}
+
 .dropdown-profile .profile-info .photo + .cart-info{
     margin-left: 15px;
 }
@@ -70,16 +88,14 @@ a:hover{
     font-weight: 800;
     margin-top: 5px;
 }
-.dropdown-profile .profile-info + .dropdown-toggle{
-    margin: 0 13px;
-}
-.dropdown.show .btn.dropdown-toggle .fa{
+.dropdown.show .btn.dropdown-toggle .fa,
+.dropdown.show .dropdown-profile-wrapper .profile-info .fa{
     color: #263238;
 }
 .dropdown .badge-value{
     position: absolute;
-    top: -13px;
-    right: -3px;
+    top: -8px;
+    right: -5px;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -115,7 +131,7 @@ a:hover{
     -webkit-box-shadow: 0 16px 20px rgba(216,216,216,.75);
             box-shadow: 0 16px 20px rgba(216,216,216,.75);
     padding: 2px;
-    top: 100% !important;
+    top: calc(100% - 2px) !important;
     left: 100% !important;
     -webkit-transform: translateX(-100%) !important;
             transform: translateX(-100%) !important;
@@ -258,9 +274,8 @@ a:hover{
     color: #b0bec5;
     font-size: 16px;
 }
-.dropdown-notification .dropdown-menu .dropdown-item .item-after.unread .fa{
+.dropdown-notification .dropdown-menu .dropdown-item:hover .item-after .fa{
     color: #ef6c00;
 }
-
 /* DROPDOWN MENU */
 /* ===== DROPDOWN END ===== */
