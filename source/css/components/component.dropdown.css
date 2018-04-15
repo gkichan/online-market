@@ -1,5 +1,8 @@
 /* ===== DROPDOWN START ===== */
-/* ----- DROPDOWN RESET START ----- */
+/* DROPDOWN RESET START */
+a:hover{
+    color: inherit;
+}
 .dropdown .dropdown-toggle.btn,
 .dropdown .dropdown-toggle.btn.active.focus,
 .dropdown .dropdown-toggle.btn.active:focus,
@@ -7,40 +10,72 @@
 .dropdown .dropdown-toggle.btn.focus:active,
 .dropdown .dropdown-toggle.btn:active:focus,
 .dropdown .dropdown-toggle.btn:focus,
-.dropdown-menu .dropdown-item.items-checkout .checkout-nav .btn{
+.dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-nav .btn{
     outline: 0;
     outline-offset: 0;
     background-image: none;
     box-shadow: none;
-    background-color: inital;
     border: none;
     border-radius: 0;
 }
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn-secondary:not(:disabled):not(.disabled):active{
+    color: unset;
+    background-color: unset;
+    border-color: unset;
+}
 .dropdown-menu .dropdown-item.items-checkout .checkout-nav .btn:hover{
-    background-color: initial;
+    background-color: inherit;
 }
 .dropdown .btn.dropdown-toggle{
-    padding: 2px;
+    padding: 0px;
     border: 0px;
 }
 .dropdown .btn.dropdown-toggle::after{
     display: none;
 }
-/* ----- DROPDOWN RESET END ----- */
-.dropdown.dropdown-notification .btn.dropdown-toggle{
+/* DROPDOWN RESET END */
+/* DROPDOWN TOGGLE */
+.dropdown .btn.dropdown-toggle{
+    position: relative;
+    background-color: #f5f5f5;    
+}
+.dropdown-notification .btn.dropdown-toggle,
+.dropdown-cart .btn.dropdown-toggle{
+    padding: 2px;
     width: 34px;
     height: 34px;
-    position: relative;
-    background-color: #f5f5f5;
     color: #a0a0a0;
 }
-.dropdown.dropdown-notification .btn.dropdown-toggle .fa{
-    line-height: 30px;
+.dropdown-notification .btn.dropdown-toggle:active,
+.dropdown-cart .btn.dropdown-toggle:active{
+    background-color: #f5f5f5;
 }
-.dropdown.dropdown-notification.show .btn.dropdown-toggle .fa{
+.dropdown-profile .btn.dropdown-toggle{
+    color: #707070;
+    font-size: 16px;
+}
+.dropdown-profile .profile-info .photo + .cart-info{
+    margin-left: 15px;
+}
+.dropdown-profile .cart-info .profile-name{
+    font-size: 14px;
+    color: #222222;
+    font-weight: 500;
+}
+.dropdown-profile .cart-info .item-total-summary{
+    font-size: 14px;
+    color: #8bc34a;
+    font-weight: 800;
+    margin-top: 5px;
+}
+.dropdown-profile .profile-info + .dropdown-toggle{
+    margin: 0 13px;
+}
+.dropdown.show .btn.dropdown-toggle .fa{
     color: #263238;
 }
-.dropdown.dropdown-notification .badge-value{
+.dropdown .badge-value{
     position: absolute;
     top: -13px;
     right: -3px;
@@ -53,82 +88,160 @@
     font-weight: 600;
     color:#fff;
 }
-.dropdown.dropdown-notification .badge-value.bg-yellow{
+.dropdown .badge-value.bg-yellow{
     background-color: #fcb322;
 }
-.dropdown.dropdown-notification .badge-value.bg-green{
+.dropdown .badge-value.bg-green{
     background-color: #95c85a;
 }
-.dropdown.dropdown-notification .badge-value.bg-orange-red{
+.dropdown .badge-value.bg-orange-red{
     background-color: #ef6c00;
 }
-
+.dropdown-profile .profile-info .photo{
+    width: 34px;
+    height: 34px;
+    background-color: #d4d4d4;
+    border: 1px solid #c7e0e0;
+}
+.dropdown-profile .btn.dropdown-toggle{
+    background: unset;
+}
+/* DROPDOWN TOGGLE END */
+/* DROPDOWN MENU */
 .dropdown .dropdown-menu{
     border-radius: 0;
     border: 1px solid #d6d6d6;
     box-shadow: 0 16px 20px rgba(216,216,216,.75);
     padding: 2px;
+    top: 100% !important;
+    left: 100% !important;
+    transform: translateX(-100%) !important;
 }
-.dropdown-menu .dropdown-item .item-before{
-    background-color: #d4d4d4;
-    width: 53px;
+.dropdown-profile .dropdown-menu{
+    padding-top: 13px;
+    padding-bottom: 18px; 
 }
-.dropdown-menu .dropdown-item + .dropdown-item{
-    border-top: 1px solid #d6d6d6;
-}
-.dropdown-item:active, .dropdown-item.active{
-    background-color: #f8f9fa;
-    color: unset;
-}
-.dropdown-item .item-before + .item-content{
-    margin-left: 15px;
-}
-.dropdown-item .item-price{
-    margin-top: 5px;
-}
-.dropdown-item .item-content{
+.dropdown-menu .dropdown-item{    
+    display: flex;
+    justify-content: space-between;
     font-family: 'Roboto';
     font-weight: 500;
 }
-.dropdown-item .item-content h6{
-    font-size: 15px;
+.dropdown-profile .dropdown-item{
+    justify-content: flex-start;
+}
+.dropdown-cart .dropdown-menu .dropdown-item,
+.dropdown-notification .dropdown-menu .dropdown-item{
+    width: 268px;
+    padding: 20px;
+}
+.dropdown-profile .dropdown-menu .dropdown-item{
+    width: 168px;
+    padding: 13px 20px;
+}
+.dropdown-menu .dropdown-item:active, .dropdown-item.active{
+    background-color: #f8f9fa;
+    color: unset;
+}
+.dropdown-cart .dropdown-menu .dropdown-item + .dropdown-item,
+.dropdown-notification .dropdown-menu .dropdown-item + .dropdown-item{
+    border-top: 1px solid #d6d6d6;
+}
+.dropdown-menu .dropdown-item .item-content{
+    display: flex;
+    align-items: flex-start;
+}
+.dropdown-menu .dropdown-item .item-content .item-image{
+    background-color: #d4d4d4;
+    width: 53px;  
+    height: 53px;  
+}
+.dropdown-menu .dropdown-item .item-content .item-image img{
+    width: 100%;
+}
+.dropdown-cart .dropdown-menu .dropdown-item .item-content .item-image{
+    width: 73px;
+    height: 57px;
+}
+.dropdown-menu .dropdown-item .item-content .item-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100%;
+}
+.dropdown-menu .dropdown-item .item-content .item-image + .item-data{
+    margin-left: 15px;
+}
+.dropdown-item .item-content .item-data .item-title{
     color: #263238;
 }
-.dropdown-item .item-content .item-category{
+.dropdown-cart .dropdown-item .item-content .item-data .item-title{
+    font-size: 15px;
+}
+.dropdown-notification .dropdown-item .item-content .item-data .item-title{
+    font-size: 12px;
+}
+.dropdown-item .item-content .item-data .item-date{
+    color: #707070;
+    font-size: 10px;
+    font-weight: 400;
+}
+.dropdown-item .item-content .item-data .item-category{
     font-size: 12px;
     font-weight: 400;
-    color: #84b743
-}
-.dropdown-item .item-content .item-price{
-    font-size: 16px;
-    color: #000;
-}
-.dropdown-menu.lg-before .dropdown-item{
-    padding: 12px 20px 20px 20px;
-}
-.dropdown-menu .dropdown-item.lg-before .item-before{
-    width: 73px;
+    color: #84b743;
 }
 
-.dropdown-menu .dropdown-item.items-checkout .checkout-info{
+.dropdown-item .item-content .item-data .item-price{
+    font-size: 16px;
+    color: #000;
+    padding-top: 5px;
+}
+
+.dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-info{
     font-weight: bold;
     font-size: 16px;
 }
-.dropdown-menu .dropdown-item.items-checkout .checkout-info + .checkout-nav{
+.dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-nav .btn,
+.dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-nav .btn:hover{
     font-weight: bold;
     color: #f4f6f5;
     font-size: 14px;
 }
-.dropdown-menu .dropdown-item.items-checkout .checkout-info + .checkout-nav{
+.dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-info + .checkout-nav{
     margin-top: 20px;
 }
-.dropdown-menu .dropdown-item.items-checkout .checkout-nav .btn:hover{
+.dropdown-profile .dropdown-item.profile-link{
+    color: #546e7a;
+    font-size: 12px;
+}
+.dropdown-profile .dropdown-item.profile-link .fa{
+    color: #8bc34a;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+/* !!!!!!!!!!!!!!!! ПОСЛЕ КНОПОК - ПЕРЕДЕЛАТЬ */
+.dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-nav .btn:hover{
     background-color: initial;
 }
-.dropdown-menu .dropdown-item.items-checkout .checkout-nav .btn.btn-success{
+.dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-nav .btn.btn-cart{
     background-color: #95c85a;
 }
-.dropdown-menu .dropdown-item.items-checkout .checkout-nav .btn.btn-danger{
+.dropdown-cart .dropdown-menu .dropdown-item .item-checkout .checkout-nav .btn.btn-checkout{
     background-color: #e85647;
 }
+/* ///////!!!!!!!!!!!!!! */
+.dropdown-notification .dropdown-menu .dropdown-item .item-image{
+    border-radius: 50%;
+}
+.dropdown-notification .dropdown-menu .dropdown-item .item-after .fa{
+    color: #b0bec5;
+    font-size: 16px;
+}
+.dropdown-notification .dropdown-menu .dropdown-item .item-after.unread .fa{
+    color: #ef6c00;
+}
+
+/* DROPDOWN MENU */
 /* ===== DROPDOWN END ===== */
