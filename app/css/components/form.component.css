@@ -30,7 +30,9 @@ input:focus,
 .button {
 	background: none;
 }
-
+input {
+    width: 100%;
+}
 input:focus::-webkit-input-placeholder {color: transparent}
 input:focus::-moz-placeholder          {color: transparent}
 input:focus:-moz-placeholder           {color: transparent}
@@ -47,13 +49,11 @@ input:focus:-ms-input-placeholder      {color: transparent}
 	height: 39px; 
 	padding: 0 10 0 14;
 }
-::-webkit-input-placeholder {color:#697378;}
-::-moz-placeholder          {color:#697378;}/* Firefox 19+ */
-:-moz-placeholder           {color:#697378;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#697378;}
-/* .footer .form-control::placeholder {
-    color: #697378;
-} */
+.footer .form-control::-webkit-input-placeholder {color:#697378;}
+.footer .form-control.footer .form-control::-moz-placeholder          {color:#697378;}/* Firefox 19+ */
+.footer .form-control:-moz-placeholder           {color:#697378;}/* Firefox 18- */
+.footer .form-control:-ms-input-placeholder      {color:#697378;}
+
 .input-group {
 	padding: 1px 1px;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238)), -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238));
