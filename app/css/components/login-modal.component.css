@@ -1,0 +1,58 @@
+ /* MODAL START */
+ #LoginModal .moodal-dialog {
+    max-width: 730px;
+   
+}
+
+#LoginModal .modal-content {
+    border: none;
+    border-radius: 0;
+    padding: 90px 30px 110px;
+}
+#LoginModal .login-title {
+   font-size: 40px;
+   font-weight: 700;
+}
+
+#LoginModal form[name="login-form"] {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.login-form-control::-webkit-input-placeholder {color:#fff;}
+.login-form-control::-moz-placeholder          {color:#fff;}
+.login-form-control:-moz-placeholder           {color:#fff;}
+.login-form-control:-ms-input-placeholder      {color:#fff;}
+
+#LoginModal .login-form-control {
+    left: 0;
+    top: 0;
+    background-color: #76ae36;
+    height: 43px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 40px;
+    width: 100%; 
+}
+#LoginModal .login-form-group + .login-form-group {
+    margin-top: 8px;
+}
+#LoginModal .login-form-group {
+    position: relative;
+}
+/* пришлось поставить .svg-inline--fa  вместо i 
+   иначе иконка не позиционировалась в input
+   короче Акела снова где-то промахнулся
+   любите ребусы поищите баг
+*/
+.login-form-group .svg-inline--fa {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 18px;
+}  
+/* MODAL END */
+

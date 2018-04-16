@@ -18,6 +18,12 @@
         section {
             padding: 20px;
         }
+        div { 
+            padding: 20px;
+        }
+        div + div {
+            margin-top: 20px;
+        }
         </style>
         <title>Text</title>
     </head>
@@ -39,6 +45,36 @@
                 <h5>Green text</h5>
                 <p class="default-text text-green">Lorem ipsum</p>
             </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="text-white bg-red text-center">
+                    <p>text-white bg-red text-center</p>
+                </div>
+                <div class="text-darkgray  bg-lightgray text-right">
+                    <p>text-darkgray  bg-lightgray text-right</p>
+                </div>
+                <div class="text-white bg-orange">
+                    <p>text-white bg-orange</p>
+                </div>
+                <div class="text-green  bg-yellow">
+                    <p>text-green  bg-yellow</p>
+                </div>
+                <div class="text-dark bg-gray text-justify">
+                    <p>text-dark bg-gray text-justify</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quos dolores fuga iste molestiae cum eum deleniti accusantium aspernatur alias necessitatibus velit consequatur culpa, esse sequi porro, quo facilis officiis.</p>
+                </div>
+                <div class="text-white  bg-dark text-uppercase">
+                    <p>text-white  bg-dark text-uppercase</p>
+                </div>
+                <div class="text-white  bg-green">
+                    <p>text-white  bg-green</p>
+                </div>
+                <div class="text-white  bg-blue">
+                    <p>text-white  bg-blue</p>
+                </div>
+            </div>
+            <!-- / conteiner -->
         </section>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

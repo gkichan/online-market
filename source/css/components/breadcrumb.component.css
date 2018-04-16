@@ -1,5 +1,9 @@
 /* ===== BREADCRUMB START ===== */
-
+/* reset style bootstrap start */
+.breadcrumb {
+    background: none;
+}
+/* reset style bootstrap end */
 .breadcrumb .breadcrumb-item {
     font-family: 'Roboto Regular';
     font-size: 15px;
@@ -11,6 +15,7 @@
 }
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
     content: " - "; 
+    color: #8bc34a;
 }
 
 /* ===== BREADCRUMB END ===== */

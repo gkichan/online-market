@@ -1,6 +1,15 @@
 /*
 .default-text - используется в img: 03 (header, choose, footer), 10, 25, 28
 Цвет текста используется в img: 10, 25, 28
+.text-darkgray - 03 (header(рядом с красным), карточки товаров(нижний текст), 04, 05
+.text-dark - 03 (заголовки, карточки товаров), 04, 05... заголовки на страницах 
+.bg-dark - 03 (header, choose, footer), 04, 05,  08 - 10 (btn)
+.bg-gray - карточки товаров круг и выбранный товар
+.bg-lightgray - карточки товаров img
+.bg-red - 03 (slick, btn), 08 (btn, price), 09 (btn, price)
+.bg-yellow, .bg-orange - header
+.bg-blue - 08(btn), 09(btn)
+если есть лишнее убрерите, а то заставь дурака Богу молиться и лоб разобьет :)
 */
 /* ===== TEXT START ===== */
 
@@ -16,6 +25,50 @@
 .text-green {
     color: #8bc34a;
 }
-
+.text-white {
+    color: #fff;
+}
+.text-darkgray {
+    color: #546e7a;
+}
+.text-dark {
+    color: #263238;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-justify {
+	text-align: justify;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.bg-green{
+    background-color: #8bc34a;
+}
+.bg-dark {
+    background-color: #263238;
+}
+.bg-red {
+    background-color: #e74c3c;
+}
+.bg-orange {
+    background-color: #ef6c00;
+}
+.bg-yellow {
+    background-color: #fcf322;
+}
+.bg-gray {
+    background-color: #b5b5b5;
+}
+.bg-lightgray {
+    background-color: #d4d4d4;
+}
+.bg-blue {
+    background-color: #42a5f5;
+}
 /* ===== TEXT END ===== */
 
