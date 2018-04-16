@@ -59,11 +59,40 @@ button {
 .card-title {
     margin-bottom: 0;
 }
+.breadcrumb {
+    background: none;
+}
+/* -- FORM ELEMENTS START -- */
 .form-control:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
 }
-.breadcrumb {
-    background: none;
+.form-control,
+.btn {
+    border: none;
+    border-radius: 0;
+    line-height: 1;
 }
+.btn.focus, 
+.btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+/* -- FORM ELEMENTS END -- */
+/* -- PAGINATION START -- */
+.pagination .page-link {
+    border:none;
+}
+.pagination .active .page-link {
+    border: none;
+}
+.page-item:first-child .page-link {
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+}
+.page-item:last-child .page-link {
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+/* -- PAGINATION END -- */
 /* ===== RESET BOOTSTRAP END ===== */
