@@ -3,27 +3,56 @@ header .top-header {
     padding: 28px 0 26px 0;
     background-color: #fff;
 }
-.top-header .header-help-text {
+header .top-header .header-help-text {
     font-size: 15px;
 }
-.top-header p.header-red-text {
+header .top-header span.header-red-text {
     color: #e74c3c;
 }
-.top-header .header-number {
+header .top-header .header-number {
     color: #546e7a;
+    margin-right: 25px;
+}
+header .buttons-in-drop {
+    margin-left: -10px;
+}
+header .buttons-in-drop .btn-custom {
+    border-radius: 0;
+    margin-top: 20px;
+    width: 50%;
+    font-weight: 500;
+    font-size: 14px;
+    color: #f4f6f5;
+}
+header .btn-green {
+    margin-right: 7px;
 }
 header .bottom-header {
     padding: 25px 0px;
     background-color: #263238;
 }
-.bottom-header a {
+header .bottom-header a {
     font-weight: 500;
     color: #fff;
 }
-.bottom-header a:hover {
+header .bottom-header a:hover {
     color: #e74c3c;
 }
-.bottom-header a + a {
+header .bottom-header a + a {
     margin-left: 33px;
+}
+/* header before login .header-out*/
+header .header-out .dropdown .badge-value.bg-green {
+    background-color: #e74c3c;
+}
+header .header-out .dropdown {
+    margin-right: 25px;
+}
+header .header-in .dropdown {
+    margin-right: 10px;
+}
+/* header after login .header-in */
+header .header-in .dropdown.dropdown-profile {
+    margin: 0 30px 0 5px;
 }
 /* ===== HEADER END ===== */
