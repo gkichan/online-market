@@ -1,9 +1,8 @@
- /* MODAL START */
+/* ===== LOGIN MODAL START ===== */
  #LoginModal .moodal-dialog {
     max-width: 730px;
    
 }
-
 #LoginModal .modal-content {
     border: none;
     border-radius: 0;
@@ -13,19 +12,16 @@
    font-size: 40px;
    font-weight: 700;
 }
-
 #LoginModal form[name="login-form"] {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
 }
-
 .login-form-control::-webkit-input-placeholder {color:#fff;}
 .login-form-control::-moz-placeholder          {color:#fff;}
 .login-form-control:-moz-placeholder           {color:#fff;}
 .login-form-control:-ms-input-placeholder      {color:#fff;}
-
 #LoginModal .login-form-control {
     left: 0;
     top: 0;
@@ -53,5 +49,5 @@
     transform: translateY(-50%);
     left: 18px;
 }  
-/* MODAL END */
+/* ===== LOGIN MODAL END ===== */
 

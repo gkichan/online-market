@@ -1,13 +1,13 @@
 /* ===== FORM START ===== */
-/* reset style bootstrap start */
+/* -- reset style bootstrap start -- */
 .btn.focus,
 .btn:focus {  
 	 box-shadow: none;
 	}
 .form-control,
 .btn {  
-border: none;  
-border-radius: 0;
+    border: none;  
+    border-radius: 0;
 }
 button:focus,
 button:active {
@@ -34,7 +34,7 @@ input:focus::-webkit-input-placeholder {color: transparent}
 input:focus::-moz-placeholder          {color: transparent}
 input:focus:-moz-placeholder           {color: transparent}
 input:focus:-ms-input-placeholder      {color: transparent}
-/* reset style bootstrap end */
+/* -- reset style bootstrap end -- */
 .footer {
 	width: 259px;
 	height: 39px;
@@ -61,7 +61,7 @@ input:focus:-ms-input-placeholder      {color: transparent}
 .input-group-append .btn .fa {
 	font-size: 18px;
 }
-/* SEARCH */
+/* -- SEARCH -- */
 .search-item { 
 	max-width: 670px;
 }
@@ -94,13 +94,13 @@ input:focus:-ms-input-placeholder      {color: transparent}
 	font-size: 18px;
 	color: #78909c;
 }
-/* FORM DATA USER */
-/* guide */
+/* -- FORM DATA USER -- */
+/* -- guide -- */
 .form-datauser {
     padding: 80px 0;
     background-color: #f4f6f5;
 }
-/* wrapper.component.css */
+/* -- wrapper.component.css -- */
 .content-wrapper-bordered {
     background-color: #fff;
     border: 1px solid #dedede;
@@ -116,7 +116,7 @@ input:focus:-ms-input-placeholder      {color: transparent}
 .content-wrapper-bordered .content-wrapper-body {
     padding: 30px 34px 80px;
 }
-/* select */
+/* -- select -- */
 .jq-selectbox {
     width: 100%;
 }
@@ -145,5 +145,4 @@ input:focus:-ms-input-placeholder      {color: transparent}
     background-color: #000;
     border-top-color: #000;
 }
-
 /* ===== FORM END ===== */
