@@ -22,6 +22,7 @@
 .login-form-control::-moz-placeholder          {color:#fff;}
 .login-form-control:-moz-placeholder           {color:#fff;}
 .login-form-control:-ms-input-placeholder      {color:#fff;}
+
 #LoginModal .login-form-control {
     left: 0;
     top: 0;
@@ -50,5 +51,18 @@
             transform: translateY(-50%);
     left: 18px;
 }  
+#LoginModal .login-btn-group {
+    padding: 20px 0 28px 0;
+    width: 100%;
+}
+#LoginModal  form[name="login-form"] a {
+    font-size: 18px;
+    line-height: 1.6666;
+}
+#LoginModal .login-close {
+    position: fixed;
+    top: 22px;
+    right: 27px;      
+}
 /* ===== LOGIN MODAL END ===== */
 

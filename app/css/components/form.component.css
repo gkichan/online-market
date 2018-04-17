@@ -106,21 +106,11 @@ input:focus:-ms-input-placeholder      {color: transparent}
     padding: 80px 0;
     background-color: #f4f6f5;
 }
-/* -- wrapper.component.css -- */
-.content-wrapper-bordered {
-    background-color: #fff;
-    border: 1px solid #dedede;
-}
-.content-wrapper-bordered .content-wrapper-title {
-    padding: 20px 34px;
-    color: #263238;
-    border-bottom: 1px solid #dedede;
-}
-.content-wrapper-bordered .content-wrapper-title h6 {
-    font-size: 24px;
-}
-.content-wrapper-bordered .content-wrapper-body {
-    padding: 30px 34px 80px;
+.form-datauser .form-control {
+	width: 100%;
+	background: #f9f9f9;
+    border-color: #dedede;
+    border-radius: 0;
 }
 /* -- select -- */
 .jq-selectbox {
@@ -145,12 +135,11 @@ input:focus:-ms-input-placeholder      {color: transparent}
     border-left: 0;
     width: 40px;
 }
-.jq-selectbox__trigger { 
+.jq-selectbox__trigger-arrow{ 
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background-color: #000;
     border-top-color: #000;
 }
 /* ===== FORM END ===== */
