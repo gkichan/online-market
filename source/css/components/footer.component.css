@@ -1,8 +1,16 @@
+/* ===== FOOTER START ===== */
 footer {
     background-color: #263238;
 }
 footer .row {
     padding-bottom: 100px;
+}
+footer .footer-title {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 115px;
+    margin-bottom: 25px;
 }
 footer .green-line {
     width: 50px;
@@ -52,3 +60,4 @@ footer .subscribe-text {
     margin-top: 40px;
     margin-bottom: 20px;
 }
+/* ===== FOOTER END ===== */

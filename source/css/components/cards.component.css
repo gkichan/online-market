@@ -1,0 +1,84 @@
+/* ===== CARDS START ===== */
+.card {
+    font-weight: 500;
+    color: #263238;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    transition: box-shadow .3s ease-out;
+}
+.card:hover {
+    box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+}
+.card .card-top-info {
+    border-bottom: 1px solid #e7ecf2;
+}
+.card.large-card .card-top-info {
+    padding: 30px 30px 17px;
+}
+.card.large-card .card-bottom-info {
+    padding: 17px 30px 20px;
+}
+.card.large-card .card-title {
+    font-size: 18px;
+}
+.card.medium-card .card-top-info {
+    padding: 25px 20px;
+}
+.card.medium-card .card-bottom-info {
+    padding: 15px 20px 20px;
+}
+.card.medium-card .card-title {
+    font-size: 16px;
+}
+.card .card-img img {
+    width: 100%;
+}
+.card .card-title {
+    margin-bottom: 12px;
+}
+.card .card-category {
+    color: #8bc34a;
+    font-size: 14px;
+}
+.card .card-price {
+    font-size: 20px;
+    font-weight: 700;
+}
+.card .card-author-img {
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.card .card-rating {
+    color: #b5b5b5;
+    font-size: 12px;
+}
+.card.large-card .card-rating {
+    margin-right: 12px;
+}
+.card.medium-card .card-rating {
+    margin-right: 8px;
+}
+.card .card-rating li + li {
+    margin-left: 2px;
+}
+.card .card-rating i.active {
+    color: #ffa726;
+}
+.card .card-rating-count {
+    font-weight: 400;
+}
+.card .card-rating-count::before {
+    content: '(';
+    color: #b0bec5;
+}
+.card .card-rating-count::after {
+    content: ')';
+    color: #b0bec5;
+}
+/* 
+.card.large-card
+.card.medium-card
+.card.medium-card.row-card
+*/
+/* ===== CARDS END ===== */

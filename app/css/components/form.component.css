@@ -1,5 +1,5 @@
 /* ===== FORM START ===== */
-/* reset style bootstrap start */
+/* -- reset style bootstrap start -- */
 .btn.focus,
 .btn:focus {  
 	 -webkit-box-shadow: none;  
@@ -7,8 +7,8 @@
 	}
 .form-control,
 .btn {  
-border: none;  
-border-radius: 0;
+    border: none;  
+    border-radius: 0;
 }
 button:focus,
 button:active {
@@ -30,18 +30,30 @@ input:focus,
 .button {
 	background: none;
 }
-/* reset style bootstrap end */
+input {
+    width: 100%;
+}
+input:focus::-webkit-input-placeholder {color: transparent}
+input:focus::-moz-placeholder          {color: transparent}
+input:focus:-moz-placeholder           {color: transparent}
+input:focus:-ms-input-placeholder      {color: transparent}
+/* -- reset style bootstrap end -- */
 .footer {
 	width: 259px;
 	height: 39px;
 }
 .footer .form-control {
-	/* border-top: 1px solid #000101; */
 	background-color: #2f3c43;
-	color: #697378;
-	line-height: 2.57;
-	padding: 13px 10px 13px 14px;
+	color: #fff;
+	line-height: 1;
+	height: 39px; 
+	padding: 0 10 0 14;
 }
+.footer .form-control::-webkit-input-placeholder {color:#697378;}
+.footer .form-control.footer .form-control::-moz-placeholder          {color:#697378;}/* Firefox 19+ */
+.footer .form-control:-moz-placeholder           {color:#697378;}/* Firefox 18- */
+.footer .form-control:-ms-input-placeholder      {color:#697378;}
+
 .input-group {
 	padding: 1px 1px;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238)), -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238));
@@ -53,45 +65,81 @@ input:focus,
 .input-group-append .btn .fa {
 	font-size: 18px;
 }
-/* SEARCH */
+/* -- SEARCH -- */
 .search-item { 
 	max-width: 670px;
 }
 .search-section .search-control {
 	font-size: 14px;
 	font-weight: 500;
-    line-height: 2.14;
+    line-height: 1;
 	letter-spacing: 0.05em;
+	padding: 0 50px 0 25px;
+	height: 55px;
 	border-radius: 3px;
-	padding: 23px 50px 23px 25px;
 	width: 100%;
 }
 .search-section form:hover .search-control{
 	-webkit-box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
 	        box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
 }
-.search-section .search-control::-webkit-input-placeholder {
-    color: #90a4ae;
-}
-.search-section .search-control:-ms-input-placeholder {
-    color: #90a4ae;
-}
-.search-section .search-control::-ms-input-placeholder {
-    color: #90a4ae;
-}
-.search-section .search-control::placeholder {
-    color: #90a4ae;
-}
+.search-section .search-control::-webkit-input-placeholder {color:#90a4ae;}
+.search-section .search-control::-moz-placeholder          {color:#90a4ae;}/* Firefox 19+ */
+.search-section .search-control:-moz-placeholder           {color:#90a4ae;}/* Firefox 18- */
+.search-section .search-control:-ms-input-placeholder      {color:#90a4ae;}
+
 .search-item {
 	position: relative;
 }
 .search-item .svg-inline--fa {
 	position: absolute;
-	top: 30%;
+	top: 20%;
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
 	right: 20px;
 	font-size: 18px;
 	color: #78909c;
+}
+/* -- FORM DATA USER -- */
+/* -- guide -- */
+.form-datauser {
+    padding: 80px 0;
+    background-color: #f4f6f5;
+}
+.form-datauser .form-control {
+	width: 100%;
+	background: #f9f9f9;
+    border-color: #dedede;
+    border-radius: 0;
+}
+/* -- select -- */
+.jq-selectbox {
+    width: 100%;
+}
+.jq-selectbox__select {
+    height: 40px;
+    background: #f9f9f9;
+    border-color: #dedede;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0 40px 0 15px;
+    line-height: 40px;
+
+}
+.jq-selectbox__select:hover {
+    background: #f9f9f9; 
+
+}
+.jq-selectbox__trigger {
+    border-left: 0;
+    width: 40px;
+}
+.jq-selectbox__trigger-arrow{ 
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-top-color: #000;
 }
 /* ===== FORM END ===== */

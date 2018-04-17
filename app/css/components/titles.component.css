@@ -1,0 +1,48 @@
+/* ===== TITLES START ===== */
+.welcome-title{
+    font-size: 48px;
+    font-weight: 500;
+}
+.section-title{
+    font-size: 36px;
+    font-weight: 500;
+}
+.footer-title{
+    font-size: 22px;
+}
+.title-lg{ 
+    font-size: 30px;
+}
+.title-md{
+    font-size: 24px;
+}
+.title-sm{
+    font-size: 20px;
+}
+.font-light {
+    font-weight: 300;
+}
+.font-regular {
+    font-weight: 400;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-semi-bold {
+    font-weight: 600;
+}
+.font-bold {
+    font-weight: 700;
+}
+.title-white{
+    color: #fff;
+}
+.title-black{
+    color: #263238;
+}
+.title-green-hover:hover{
+    color: #8bc34a;
+}
+/* ===== TITLES END ===== */
+
+
