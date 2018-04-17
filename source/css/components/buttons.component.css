@@ -11,29 +11,17 @@
 .btn-radius{
     border-radius: 4px;
 }
-.btn-60{
-    width: 60px;
+.btn-sm{
+    padding: 10px 15px;
 }
-.btn-75{
-    width: 75px;
+.btn-wide{
+    padding: 15px 60px;
 }
-.btn-100{
-    width: 95px
+.btn-md{
+    padding: 20px 30px;
 }
-.btn-110{
-    width: 110px
-}
-.btn-140{
-    width: 140px
-}
-.btn-205{
-    width: 205px;
-}
-.btn-210{
-    width: 210px;
-}
-.btn-250{
-    width: 250px
+.btn-lg{
+    padding: 25px 40px;
 }
 .btn-green{
     background-color: #8bc34a;
@@ -62,10 +50,10 @@
     border: 3px solid #fff;
     color: #fff;
 }
-.btn-large-padding{
-    padding: 20px 30px;
+.btn-shadow-submit{
+    box-shadow: 0px 3px 3px 0px rgba(118, 174, 54, .75);
 }
-.btn-huge-padding{
-    padding: 30px;
+.btn-shadow{
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, .75);
 }
 /* ===== BUTTONS END ===== */
