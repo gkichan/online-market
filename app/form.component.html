@@ -8,10 +8,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-         <!-- Form styler -->
-        <link href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css" rel="stylesheet"> 
-        <link href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css" rel="stylesheet"> 
+        <!-- Form styler -->
+        <link href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <!-- Custom style  -->
+        <link rel="stylesheet" href="css/style.css">
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/components/form.component.css" rel="stylesheet">
         <link href="css/components/login-modal.component.css" rel="stylesheet">
@@ -128,11 +131,12 @@
             <!-- / container -->
         </section>
         <!-- Modal window start -->
-        <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true"> 
-            <div class="modal-dialog" role="document"> 
-                <div class="modal-content bg-green"> 
+        <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-green">
                     <div class="modal-body">
-                        <h4 class="login-title text-center text-uppercase text-white">Login</h4> 
+                        <i class="fa fa-times"></i>
+                        <h4 class="login-title text-center text-uppercase text-white">Login</h4>
                         <form name="login-form" class="m-auto">
                             <div class="login-form-group text-white">
                                 <i class="fa fa-user"></i>
@@ -142,13 +146,19 @@
                                 <i class="fa fa-lock"></i>
                                 <input type="text" name="password" class="login-form-control" placeholder="Password">
                             </div>
+                            <div class="login-modal-buttons d-flex justify-content-between">
+                                <button class="btn-custom btn-140 btn-white btn-large-padding">Submit</button>
+                                <button class="btn-custom btn-250 btn-darkgreen btn-large-padding"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Create An Acount?</button>
+                            </div>
+                            <!-- /.login-modal-buttons -->
+                            <a class="lost-pass-text">Lost Password?</a>
                         </form>
                         <!-- / form -->
-                    </div> 
+                    </div>
                     <!-- / modal-body -->
-                </div>  
+                </div>
                 <!-- / modal-content -->
-            </div> 
+            </div>
             <!-- / modal-dialog -->
         </div>
         <!-- / modal fade -->
