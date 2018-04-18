@@ -37,6 +37,11 @@ input:focus::-webkit-input-placeholder {color: transparent}
 input:focus::-moz-placeholder          {color: transparent}
 input:focus:-moz-placeholder           {color: transparent}
 input:focus:-ms-input-placeholder      {color: transparent}
+
+textarea:focus::-webkit-input-placeholder {color: transparent}
+textarea:focus::-moz-placeholder          {color: transparent}
+textarea:focus:-moz-placeholder           {color: transparent}
+textarea:focus:-ms-input-placeholder      {color: transparent}
 /* -- reset style bootstrap end -- */
 .footer {
 	width: 259px;
@@ -65,7 +70,8 @@ input:focus:-ms-input-placeholder      {color: transparent}
 .input-group-append .btn .fa {
 	font-size: 18px;
 }
-/* -- SEARCH -- */
+/* -- SEARCH START -- */
+
 .search-item { 
 	max-width: 670px;
 }
@@ -100,19 +106,80 @@ input:focus:-ms-input-placeholder      {color: transparent}
 	font-size: 18px;
 	color: #78909c;
 }
-/* -- FORM DATA USER -- */
-/* -- guide -- */
-.form-datauser {
-    padding: 80px 0;
-    background-color: #f4f6f5;
-}
-.form-datauser .form-control {
+/* -- SEARCH END -- */
+
+/* -- FORM DATA USER START -- */
+
+/* .form-datauser.form-group */
+ .form-control {
 	width: 100%;
 	background: #f9f9f9;
-    border-color: #dedede;
-    border-radius: 0;
+    border: 1px solid #dedede; 
+	border-radius: 0;
+	height: 40px;
+	line-height: 1;
 }
-/* -- select -- */
+.form-group label {
+	font-size: 15px;
+	margin-top: 0;
+}
+.form-group sup {
+	font-size: 10px;
+}
+textarea {
+    min-height: 148px;
+}
+textarea .form-control {
+	padding: 13px 5px 5px 17px;
+	color: #707070;
+}  
+.form-control,
+textarea .form-control:focus {
+	border: 1px solid #dedede;
+}
+.form-control:hover,
+textarea .form-control:hover {
+	background: #f9f9f9;
+    border: 1px solid #dedede;
+} 
+/* .form-control-file {
+	font-size: 12px;
+} */
+
+element.style {
+}
+.form-control:hover, textarea .form-control:hover {
+    background: #f9f9f9;
+    border: 1px solid #dedede;
+}
+.form-control:hover, textarea .form-control:hover {
+	width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #dedede;
+}
+ .jq-file{
+	font-size: 12px;
+	height: 40px;
+	width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #dedede;
+}  
+.jq-file__browse{
+	width: 92px;
+	height: 24px;
+	top:8px;
+	left: 8px; 
+	vertical-align: middle;
+	background-color: #000;
+}
+/* .jq-file__browse: -webkit-baseline-middle; */
+.jq-file__name {
+	padding-left: 105px;
+}
+
+/* -- FORM DATA USER END -- */
+
+/* -- SELECT START -- */
 .jq-selectbox {
     width: 100%;
 }
@@ -142,4 +209,5 @@ input:focus:-ms-input-placeholder      {color: transparent}
             transform: translate(-50%, -50%);
     border-top-color: #000;
 }
+/* -- SELECT END -- */
 /* ===== FORM END ===== */
