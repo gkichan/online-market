@@ -1,22 +1,8 @@
-<<<<<<< HEAD
-/* ===== RESET START ===== */
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 730px;
-    }
-}
-.modal-body {
-    padding: 0;
-}
-/* ===== RESET END ===== */
-/* ===== MODAL START ===== */
-=======
 /* ===== LOGIN MODAL START ===== */
  #LoginModal .modal-dialog {
     max-width: 730px;
    
 }
->>>>>>> 25f67ce42fecf5f8cd1853cadc016b9cfaad8486
 #LoginModal .modal-content {
     border: none;
     border-radius: 0;
@@ -34,35 +20,6 @@
 #LoginModal form[name="login-form"] {
     max-width: 400px;
 }
-<<<<<<< HEAD
-
-#LoginModal .login-modal-buttons {
-     margin-top: 20px;
-    font-family: 'Roboto';
-    margin-bottom: 20px;
-}
-#LoginModal .login-modal-buttons .btn-white {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    color: #000000;
-    -webkit-box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
-            box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
-}
-#LoginModal .login-modal-buttons .btn-white:active {
- -webkit-box-shadow: none;
-         box-shadow: none;
-}
-#LoginModal .login-modal-buttons .btn-darkgreen {
-    font-weight: 400;
-    font-size: 18px;
-}
-#LoginModal form .lost-pass-text {
-    font-size: 18px;
-    color: #fff;
-}
-=======
->>>>>>> 25f67ce42fecf5f8cd1853cadc016b9cfaad8486
 .login-form-control::-webkit-input-placeholder {color:#fff;}
 .login-form-control::-moz-placeholder          {color:#fff;}
 .login-form-control:-moz-placeholder           {color:#fff;}
@@ -95,11 +52,7 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     left: 18px;
-<<<<<<< HEAD
 }
-/* ===== MODAL END ===== */
-=======
-}  
 #LoginModal .login-btn-group {
     margin-top: 20px;
     /* margin-bottom: 28px; */
@@ -126,5 +79,3 @@
     float: right;
 }
 /* ===== LOGIN MODAL END ===== */
-
->>>>>>> 25f67ce42fecf5f8cd1853cadc016b9cfaad8486
