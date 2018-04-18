@@ -83,13 +83,17 @@
     border-color: #d6d6d6;
     color: #707070;
 }
-.btn-shadow-submit {
+.btn-shadow-green {
     -webkit-box-shadow: 0px 3px 3px 0px rgba(118, 174, 54, .75);
             box-shadow: 0px 3px 3px 0px rgba(118, 174, 54, .75);
 }
-.btn-shadow {
+.btn-shadow-dark {
     -webkit-box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, .75);
             box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, .75);
+}
+.btn-shadow-light {
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+            box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
 }
 .btn-radius {
     border-radius: 4px;
