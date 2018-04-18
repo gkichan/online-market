@@ -210,7 +210,7 @@
 }
 .dropdown-profile .dropdown-item.profile-link .fa{
     color: #8bc34a;
-    font-size: 14px;
+    font-size: 9px;
     font-weight: 400;
     margin-right: 10px;
 }
@@ -222,12 +222,16 @@
 .dropdown-filter .dropdown-toggle{
     padding: 0 35px;
 }
+.dropdown-filter .dropdown-toggle:hover {
+    background-color: #f8f9fa;
+}
 .dropdown-filter .dropdown-toggle .toggle-icon.fa{
     margin-left: 23px;
     margin-right: 0px;
 }
 .dropdown-filter .dropdown-menu{
-    padding: 11px 30px 15px 30px;
+    min-width: 290px;
+    padding: 15px 0;
 }
 .dropdown-filter .dropdown-item{
     padding: 0;
@@ -237,11 +241,11 @@
     font-size: 15px;
     font-weight: 400;
     min-width: 285px;
-    padding: 13px 13px 13px 5px;
+    padding: 15px 35px;
 }
 .dropdown-filter  .item-content .fa{
     color: #8bc34a;
-    font-size: 14px;
+    font-size: 9px;
     margin-right: 11px;
 }
 .dropdown-filter .filter-result{
