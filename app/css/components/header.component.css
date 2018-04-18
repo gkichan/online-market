@@ -41,7 +41,7 @@ header .bottom-header a:hover {
 header .bottom-header a + a {
     margin-left: 33px;
 }
-/* header before login .header-out*/
+/* -- header before login .header-out -- */
 header .header-out .dropdown .badge-value.bg-green {
     background-color: #e74c3c;
 }
@@ -51,7 +51,7 @@ header .header-out .dropdown {
 header .header-in .dropdown {
     margin-right: 10px;
 }
-/* header after login .header-in */
+/* -- header after login .header-in -- */
 header .header-in .dropdown.dropdown-profile {
     margin: 0 30px 0 5px;
 }

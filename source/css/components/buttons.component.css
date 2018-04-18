@@ -1,69 +1,95 @@
-.btn-custom{
+/* ===== BUTTONS START ===== */
+.btn-custom {
     display: inline-block;
-    padding: 10px;
     font-weight: 400;
-    font-size: 12px;
+    line-height: 1;
     border-radius: 0;
     color: #fff;
     border: 2px solid transparent;
 }
-.btn-radius{
-    border-radius: 4px;
+.btn-custom .fa {
+    margin-right: 8px;
 }
-.btn-60{
-    width: 60px;
+.btn-custom.btn-sm {
+    font-size: 12px;
+    padding: 8px 12px;
 }
-.btn-75{
-    width: 75px;
+.btn-custom.btn-md {
+    font-size: 16px;
+    padding: 13px 33px;
 }
-.btn-100{
-    width: 95px
+.btn-custom.btn-lg {
+    font-size: 18px;
+    padding: 22px 40px;
 }
-.btn-110{
-    width: 110px
+.btn-custom.btn-wide {
+    display: block;
+    width: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
 }
-.btn-140{
-    width: 140px
-}
-.btn-205{
-    width: 205px;
-}
-.btn-210{
-    width: 210px;
-}
-.btn-250{
-    width: 250px
-}
-.btn-green{
+.btn-green {
     background-color: #8bc34a;
 }
-.btn-red{
+.btn-green:hover {
+    color: #559e00;
+    border-color: #8bc34a;
+    background-color: #fff;
+}
+.btn-red {
     background-color: #e74c3c;
 }
-.btn-white{
+.btn-red:hover {
+    color: #d81400;
+    border-color: #e74c3c;
+    background-color: #fff;
+}
+.btn-white {
     color: #263238;
     background-color: #fff;
 }
-.btn-blue{
+.btn-white:hover {
+    color: #559e00;
+    border-color: #8bc34a;
+}
+.btn-blue {
     background-color: #42a5f5;
 }
-.btn-darkblue{
+.btn-blue:hover {
+    color: #0082d8;
+    border-color: #42a5f5;
+    background-color: #fff;
+}
+.btn-darkblue {
     background-color: #546e7a;
 }
-.btn-border-grey{
-    border: 2px solid #d6d6d6;
-    color: #707070;
+.btn-darkblue:hover {
+    color: #455a64;
+    border-color: #546e7a;
+    background-color: #fff;
 }
-.btn-darkgreen{
+.btn-darkgreen {
     background-color: #76ae36;
+}
+.btn-darkgreen:hover {
+    color: #559e00;
+    border-color: #76ae36;
+    background-color: #fff;
 }
 .btn-border-white {
     border: 3px solid #fff;
-    color: #fff;
 }
-.btn-large-padding{
-    padding: 20px 30px;
+.btn-border-grey {
+    border-color: #d6d6d6;
+    color: #707070;
 }
-.btn-huge-padding{
-    padding: 30px;
+.btn-shadow-submit {
+    box-shadow: 0px 3px 3px 0px rgba(118, 174, 54, .75);
 }
+.btn-shadow {
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, .75);
+}
+.btn-radius {
+    border-radius: 4px;
+}
+/* ===== BUTTONS END ===== */

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===== RESET START ===== */
 @media (min-width: 576px) {
     .modal-dialog {
@@ -9,6 +10,13 @@
 }
 /* ===== RESET END ===== */
 /* ===== MODAL START ===== */
+=======
+/* ===== LOGIN MODAL START ===== */
+ #LoginModal .modal-dialog {
+    max-width: 730px;
+   
+}
+>>>>>>> 25f67ce42fecf5f8cd1853cadc016b9cfaad8486
 #LoginModal .modal-content {
     border: none;
     border-radius: 0;
@@ -23,10 +31,10 @@
     font-weight: 700;
     margin-bottom: 40px;
 }
-
 #LoginModal form[name="login-form"] {
     max-width: 400px;
 }
+<<<<<<< HEAD
 
 #LoginModal .login-modal-buttons {
      margin-top: 20px;
@@ -53,6 +61,8 @@
     font-size: 18px;
     color: #fff;
 }
+=======
+>>>>>>> 25f67ce42fecf5f8cd1853cadc016b9cfaad8486
 .login-form-control::-webkit-input-placeholder {color:#fff;}
 .login-form-control::-moz-placeholder          {color:#fff;}
 .login-form-control:-moz-placeholder           {color:#fff;}
@@ -85,5 +95,36 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     left: 18px;
+<<<<<<< HEAD
 }
 /* ===== MODAL END ===== */
+=======
+}  
+#LoginModal .login-btn-group {
+    margin-top: 20px;
+    /* margin-bottom: 28px; */
+    width: 100%;
+}
+#LoginModal  form[name="login-form"] a {
+    font-size: 18px;
+    line-height: 1.6666;
+}
+#LoginModal .lost-password {
+    margin-top: 28px;
+}
+#LoginModal .login-close {
+    position: fixed;
+    top: 22px;
+    right: 27px;      
+}
+#LoginModal .submit { 
+    float: left;
+    font-weight: 700;
+    line-height: 2.14;
+}
+#LoginModal .create-acount { 
+    float: right;
+}
+/* ===== LOGIN MODAL END ===== */
+
+>>>>>>> 25f67ce42fecf5f8cd1853cadc016b9cfaad8486
