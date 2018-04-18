@@ -22,28 +22,77 @@
     <link rel="stylesheet" href="css/components/buttons.component.css">
     <style>
         body {
-            background-color: lightblue;
+            background-color: #c9c9c9;
+        }
+        .btn-wide + .btn-wide {
+            margin-top: 20px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .title-md {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .col-9 .btn-custom {
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <button class="btn-custom btn-sm btn-green btn-radius">Login</button>
-    <button class="btn-custom btn-sm btn-red btn-radius">Register</button>
-    <button class="btn-custom btn-md btn-white">All new items</button>
-    <button class="btn-custom btn-lg btn-white">Become A Author</button>
-    <button class="btn-custom btn-wide btn-green ">View all</button>
-    <button class="btn-custom btn-wide btn-green "><i class="fa fa-search btn-fa-icon"></i>Search</button>
-    <button class="btn-custom btn-sm btn-green">Go to Card</button>
-    <button class="btn-custom btn-sm btn-red">Go to Checkout</button>
-    <button class="btn-custom btn-lg btn-blue btn-huge-padding btn-shadow"><i class="fa fa-heart-o btn-fa-icon"></i> Add To Favourites </button>
-    <button class="btn-custom btn-lg btn-green btn-huge-padding btn-shadow"><i class="fa fa-shopping-cart btn-fa-icon"></i> Add To Card </button>
-    <button class="btn-custom btn-lg btn-darkblue btn-huge-padding btn-shadow"> Buy Now </button>
-    <button class="btn-custom btn-sm btn-white btn-border-grey">View Profile</button>
-    <button class="btn-custom btn-md btn-green btn-large-padding">Update</button>
-    <button class="btn-custom btn-sm btn-green">Find</button>
-    <button class="btn-custom btn-lg btn-green btn-border-white btn-large-padding">GO TO HOME PAGE</button>
-    <button class="btn-custom btn-md btn-white btn-large-padding btn-shadow-submit">Submit</button>
-    <button class="btn-custom btn-md btn-darkgreen btn-large-padding"><i class="fa fa-pencil-square-o btn-fa-icon"></i> Create An Acount?</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="aside-card">
+                    <div class="aside-card-title title-black title-md font-bold">
+                        <span>Medium wide buttons</span>
+                    </div>
+                    <button class="btn-custom btn-md btn-wide btn-blue btn-shadow"><i class="fa fa-heart-o"></i> Add To Favourites </button>
+                    <button class="btn-custom btn-md btn-wide btn-green btn-shadow"><i class="fa fa-shopping-cart"></i> Add To Card </button>
+                    <button class="btn-custom btn-md btn-wide btn-darkblue btn-shadow">Buy Now</button>
+                </div>
+                <button class="btn-custom btn-md btn-wide btn-green ">View all</button>
+                <button class="btn-custom btn-md btn-wide btn-green "><i class="fa fa-search"></i>Search</button>
+            </div>
+            <div class="col-9">
+                <div class="small-buttons">
+                    <div class="title-md">
+                        <span>Small buttons</span>
+                    </div>
+                    <button class="btn-custom btn-sm btn-green btn-radius">Login</button>
+                    <button class="btn-custom btn-sm btn-red btn-radius">Register</button>
+                    <button class="btn-custom btn-sm btn-green">Go to Card</button>
+                    <button class="btn-custom btn-sm btn-red">Go to Checkout</button>
+                    <button class="btn-custom btn-sm btn-white btn-border-grey">View Profile</button>
+                    <button class="btn-custom btn-sm btn-green">Find</button>
+                </div>
+                <!-- /.small-buttons -->
+                <div class="medium-buttons">
+                    <div class="title-md">
+                        <span>Medium buttons</span>
+                    </div>
+                    <button class="btn-custom btn-md btn-white">All new items</button>
+                    <button class="btn-custom btn-md btn-green">Update</button>
+                    <button class="btn-custom btn-md btn-white btn-shadow-submit">Submit White</button>
+                    <button class="btn-custom btn-md btn-green">Submit green</button>
+                    <button class="btn-custom btn-md btn-darkgreen">
+                        <i class="fa fa-pencil-square-o"></i> Create An Acount?</button>
+                    <button class="btn-custom btn-md btn-green btn-border-white btn-radius">GO TO HOME PAGE</button>
+                </div>
+                <!-- /.medium-buttons -->
+                <div class="large-buttons">
+                    <div class="title-md">
+                        <span>Large buttons</span>
+                    </div>
+                    <button class="btn-custom btn-lg btn-white">Become A Author</button>
+                </div>
+                <!-- /.large-buttons -->
+            </div>
+        </div>
+
+
+        
+    </div>
 
     <!-- Optional JavaScripts -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

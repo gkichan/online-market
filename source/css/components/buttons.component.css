@@ -1,59 +1,62 @@
 /* ===== BUTTONS START ===== */
-.btn-custom{
+.btn-custom {
     display: inline-block;
-    padding: 10px;
     font-weight: 400;
-    font-size: 12px;
+    line-height: 1;
     border-radius: 0;
     color: #fff;
     border: 2px solid transparent;
 }
-.btn-radius{
-    border-radius: 4px;
+.btn-custom.btn-sm {
+    font-size: 12px;
+    padding: 10px 14px;
 }
-.btn-sm{
-    padding: 10px 15px;
+.btn-custom.btn-md {
+    font-size: 16px;
+    padding: 15px 35px;
 }
-.btn-wide{
-    padding: 15px 60px;
+.btn-custom.btn-lg {
+    font-size: 18px;
+    padding: 24px 42px;
 }
-.btn-md{
-    padding: 20px 30px;
+.btn-custom.btn-wide {
+    display: block;
+    width: 100%;
 }
-.btn-lg{
-    padding: 25px 40px;
-}
-.btn-green{
+.btn-green {
     background-color: #8bc34a;
 }
-.btn-red{
+.btn-red {
     background-color: #e74c3c;
 }
-.btn-white{
+.btn-white {
     color: #263238;
     background-color: #fff;
 }
-.btn-blue{
+.btn-blue {
     background-color: #42a5f5;
 }
-.btn-darkblue{
+.btn-darkblue {
     background-color: #546e7a;
 }
-.btn-border-grey{
-    border: 2px solid #d6d6d6;
-    color: #707070;
-}
-.btn-darkgreen{
+.btn-darkgreen {
     background-color: #76ae36;
 }
 .btn-border-white {
     border: 3px solid #fff;
     color: #fff;
 }
-.btn-shadow-submit{
+.btn-border-grey {
+    border: 2px solid #d6d6d6;
+    color: #707070;
+}
+.btn-shadow-submit {
     box-shadow: 0px 3px 3px 0px rgba(118, 174, 54, .75);
 }
-.btn-shadow{
+.btn-shadow {
     box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, .75);
+}
+.btn-radius {
+    border-radius: 4px;
 }
 /* ===== BUTTONS END ===== */

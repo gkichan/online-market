@@ -42,7 +42,6 @@ input:focus,
 textarea:focus,
 button:focus {
     outline: none;
-    border: none;
 }
 input[type="submit"] {
     cursor: pointer;
