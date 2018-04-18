@@ -29,10 +29,7 @@
     font-weight: 600;
     color:#fff;
 }
-.dropdown-notification .btn.dropdown-toggle:active,
-.dropdown-cart .btn.dropdown-toggle:active{
-    background-color: #f5f5f5;
-}
+
 .dropdown .badge-value.bg-yellow{
     background-color: #fcb322;
 }
@@ -42,36 +39,9 @@
 .dropdown .badge-value.bg-orange-red{
     background-color: #ef6c00;
 }
-.dropdown-notification .btn.dropdown-toggle,
-.dropdown-cart .btn.dropdown-toggle{
-    padding: 2px;
-    width: 34px;
-    height: 34px;
-    color: #a0a0a0;
-}
 .dropdown-toggle:hover .toggle-icon.fa,
 .dropdown.show .dropdown-toggle .toggle-icon.fa{
     color: #263238;
-}
-.dropdown-profile .profile-info .photo{
-    width: 34px;
-    height: 34px;
-    background-color: #d4d4d4;
-    border: 1px solid #c7e0e0;
-}
-.dropdown-profile .profile-info .photo + .cart-info{
-    margin-left: 15px;
-}
-.dropdown-profile .cart-info .profile-name{
-    font-size: 14px;
-    color: #222222;
-    font-weight: 500;
-}
-.dropdown-profile .cart-info .item-total-summary{
-    font-size: 14px;
-    color: #8bc34a;
-    font-weight: 800;
-    margin-top: 5px;
 }
 /* -- DROPDOWN TOGGLE DEFAULT END -- */
 /* -- DROPDWON MENU DEFAULT START -- */
@@ -135,6 +105,18 @@
 }
 /* -- DROPDWON MENU DEFAULT END -- */
 /* -- DROPDOWN CUSTOM NOTIFICATION START -- */
+.dropdown-notification .btn.dropdown-toggle{
+    padding: 2px;
+    width: 34px;
+    height: 34px;
+    color: #a0a0a0;
+}
+.dropdown-notification .btn.dropdown-toggle:active{
+    background-color: #f5f5f5;
+}
+.dropdown-notification.show .dropdown-toggle .fa{
+    color: #263238;
+}
 .dropdown-notification  .dropdown-item{
     width: 268px;
     padding: 20px;
@@ -157,6 +139,18 @@
 }
 /* -- DROPDOWN CUSTOM NOTIFICATION END -- */
 /* -- DROPDOWN CUSTOM CART START -- */
+.dropdown-cart .btn.dropdown-toggle{
+    padding: 2px;
+    width: 34px;
+    height: 34px;
+    color: #a0a0a0;
+}
+.dropdown-cart .btn.dropdown-toggle:active{
+    background-color: #f5f5f5;
+}
+.dropdown-cart.show .dropdown-toggle .fa{
+    color: #263238;
+}
 .dropdown-cart .dropdown-item{
     width: 268px;
     padding: 20px;
@@ -185,14 +179,44 @@
 .dropdown-cart .item-checkout .checkout-info + .checkout-nav{
     margin-top: 20px;
 }
-.dropdown-cart .item-checkout .checkout-nav .btn,
-.dropdown-cart .item-checkout .checkout-nav .btn:hover{
+.dropdown-cart .item-checkout .checkout-nav .btn-custom,
+.dropdown-cart .item-checkout .checkout-nav .btn-custom:hover{
     font-weight: bold;
     color: #f4f6f5;
     font-size: 14px;
 }
+.dropdown-cart .btn-green{
+    /* По макету цвет такой, а кнопки с таким цветом нет, 
+    разница не большая, но есть */
+    background-color: #95c85a; 
+}
+.dropdown-cart .btn-red{
+    /* По макету цвет такой, а кнопки с таким цветом нет, 
+    разница не большая, но есть */
+    background-color: #e85647; 
+}
 /* -- DROPDOWN CUSTOM CART END -- */
 /* -- DROPDOWN CUSTOM PROFILE START -- */
+.dropdown-profile .profile-info .photo{
+    width: 34px;
+    height: 34px;
+    background-color: #d4d4d4;
+    border: 1px solid #c7e0e0;
+}
+.dropdown-profile .profile-info .photo + .cart-info{
+    margin-left: 15px;
+}
+.dropdown-profile .cart-info .profile-name{
+    font-size: 14px;
+    color: #222222;
+    font-weight: 500;
+}
+.dropdown-profile .cart-info .item-total-summary{
+    font-size: 14px;
+    color: #8bc34a;
+    font-weight: 800;
+    margin-top: 5px;
+}
 .dropdown-profile .dropdown-menu{
     padding-top: 13px;
     padding-bottom: 18px; 
