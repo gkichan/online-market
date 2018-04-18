@@ -1,38 +1,38 @@
 /* ===== ASIDE START ===== */
 /* -- ASIDE CARD START -- */
-aside .aside-card {
+.aside-card {
     background-color: #fff;
     padding: 28px 30px;
     margin-bottom: 30px;
     border: 1px solid #dedede;
 }
-aside .aside-card .aside-card-title {
+.aside-card .aside-card-title {
     padding-bottom: 22px;
     margin-bottom: 25px;
     border-bottom: 1px solid #dde3e8;
 }
 /* -- ASIDE CARD END -- */
 /* -- ASIDE NAV START -- */
-aside .aside-nav {
+.aside-nav {
     font-size: 14px;
     color: #707070;
     margin-top: 30px;
     background-color: #fff;
     border: 1px solid #dedede;
 }
-aside .aside-nav li {
+.aside-nav li {
     position: relative;
     border-bottom: 1px solid #dedede;
 }
-aside .aside-nav li:last-child {
+.aside-nav li:last-child {
     border-bottom: none;
 }
 /* В финале поменять hover на класс .active */
-aside .aside-nav li:hover {
+.aside-nav li:hover {
     color: #263238;
 }
 /* В финале поменять hover на класс .active */
-aside .aside-nav li:hover::after {
+.aside-nav li:hover::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -42,15 +42,15 @@ aside .aside-nav li:hover::after {
     background-color: #8bc34a;
 }
 /* В финале поменять hover на класс .active */
-aside .aside-nav li:hover i {
+.aside-nav li:hover i {
     color: #8bc34a;
 }
-aside .aside-nav li a {
+.aside-nav li a {
     position: relative;
     display: block;
     padding: 16px 50px;
 }
-aside .aside-nav li i {
+.aside-nav li i {
     position: absolute;
     top: 50%;
     left: 22px;
