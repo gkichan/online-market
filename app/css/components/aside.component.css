@@ -1,5 +1,5 @@
 /* ===== ASIDE START ===== */
-/* -- ASIDE CARD START -- */
+/* -- ASIDE BLOCK START -- */
 aside .aside-block {
     background-color: #fff;
     padding: 28px 30px;
@@ -8,12 +8,12 @@ aside .aside-block {
 }
 aside .aside-block .aside-block-title {
     padding-bottom: 22px;
-    margin-bottom: 25px;
     border-bottom: 1px solid #dde3e8;
 }
-/* -- ASIDE CARD END -- */
+/* -- ASIDE BLOCK END -- */
 /* -- ASIDE INBLOCK NAV START -- */
 aside .aside-nav {
+    margin-top: 15px;
     font-size: 14px;
     background-color: #fff;
 }
@@ -78,8 +78,7 @@ aside .aside-nav.block-nav li .fa {
 /* -- ASIDE BLOCK NAV END -- */
 /* -- ASIDE PRODUCT PRICE START -- */
 aside .aside-product-price {
-    padding: 15px 0;
-    margin-bottom: 15px;
+    margin: 25px 0;
 }
 aside .aside-product-price .product-price-value {
     font-size: 22px;
@@ -90,6 +89,9 @@ aside .aside-product-price-buttons .btn-custom + .btn-custom {
 }
 /* -- ASIDE PRODUCT PRICE END -- */
 /* -- ASIDE PRODUCT AUTHOR START -- */
+aside .aside-product-author {
+    margin-top: 25px;
+}
 aside .product-author-img {
     margin-right: 14px;
 }
@@ -103,6 +105,7 @@ aside .product-author-flags {
 /* -- ASIDE PRODUCT AUTHOR START -- */
 /* -- ASIDE PRODUCT SALES START -- */
 aside .aside-product-sales .fa {
+    font-size: 20px;
     color: #a6b5bb;
     margin-right: 20px;
 }
@@ -117,6 +120,7 @@ aside .aside-product-sales .sales-text {
 /* -- ASIDE PRODUCT SALES END -- */
 /* -- ASIDE PRODUCT INFO START -- */
 aside .aside-product-info {
+    margin-top: 25px;
     line-height: 1.8;
 }
 aside .aside-product-info .product-info-item + .product-info-item {
