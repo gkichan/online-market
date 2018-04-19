@@ -1,17 +1,43 @@
 /* ===== ASIDE START ===== */
 /* -- ASIDE CARD START -- */
-.aside-card {
+.aside-block {
     background-color: #fff;
     padding: 28px 30px;
     margin-bottom: 30px;
     border: 1px solid #dedede;
 }
-.aside-card .aside-card-title {
+.aside-block .aside-block-title {
     padding-bottom: 22px;
     margin-bottom: 25px;
     border-bottom: 1px solid #dde3e8;
 }
 /* -- ASIDE CARD END -- */
+/* -- ASIDE INBLOCK NAV START -- */
+.aside-inblock-nav {
+    font-size: 14px;
+    background-color: #fff;
+}
+.aside-inblock-nav li {
+    position: relative;
+}
+/* В финале поменять hover на класс .active */
+.aside-inblock-nav li:hover {
+    color: #8bc34a;
+}
+.aside-inblock-nav li a {
+    position: relative;
+    display: block;
+    padding: 12px 50px;
+}
+.aside-inblock-nav li i {
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    font-size: 9px;
+    color: #8bc34a;
+    transform: translateY(-51%);
+}
+/* -- ASIDE INBLOCK NAV END -- */
 /* -- ASIDE NAV START -- */
 .aside-nav {
     font-size: 14px;
