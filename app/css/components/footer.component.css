@@ -1,5 +1,6 @@
 /* ===== FOOTER START ===== */
 footer {
+    padding-top: 115px;
     background-color: #263238;
 }
 footer .row {
@@ -9,12 +10,13 @@ footer .footer-title {
     font-weight: 700;
     color: #ffffff;
     font-size: 22px;
-    margin-top: 115px;
-    margin-bottom: 25px;
 }
-footer .green-line {
+footer .footer-title::after {
+    content: '';
+    display: block;
     width: 50px;
-    border-bottom: 5px solid;
+    border-bottom: 3px solid #8bc34a;
+    margin-top: 25px;
     margin-bottom: 30px;
 }
 footer .row p {
