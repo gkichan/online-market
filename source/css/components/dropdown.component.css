@@ -179,22 +179,14 @@
 .dropdown-cart .item-checkout .checkout-info + .checkout-nav{
     margin-top: 20px;
 }
-.dropdown-cart .item-checkout .checkout-nav .btn-custom,
-.dropdown-cart .item-checkout .checkout-nav .btn-custom:hover{
+.dropdown-cart .item-checkout .checkout-nav .btn-custom{
     font-weight: bold;
-    color: #f4f6f5;
-    font-size: 14px;
+    font-size: 14px; 
 }
-.dropdown-cart .btn-green{
-    /* По макету цвет такой, а кнопки с таким цветом нет, 
-    разница не большая, но есть */
-    background-color: #95c85a; 
+.dropdown-cart .item-checkout .checkout-nav .btn-custom + .btn-custom{
+    margin-left: 5px;
 }
-.dropdown-cart .btn-red{
-    /* По макету цвет такой, а кнопки с таким цветом нет, 
-    разница не большая, но есть */
-    background-color: #e85647; 
-}
+
 /* -- DROPDOWN CUSTOM CART END -- */
 /* -- DROPDOWN CUSTOM PROFILE START -- */
 .dropdown-profile .profile-info .photo{
@@ -234,7 +226,7 @@
 }
 .dropdown-profile .dropdown-item.profile-link .fa{
     color: #8bc34a;
-    font-size: 14px;
+    font-size: 9px;
     font-weight: 400;
     margin-right: 10px;
 }
@@ -246,12 +238,16 @@
 .dropdown-filter .dropdown-toggle{
     padding: 0 35px;
 }
+.dropdown-filter .dropdown-toggle:hover {
+    background-color: #f8f9fa;
+}
 .dropdown-filter .dropdown-toggle .toggle-icon.fa{
     margin-left: 23px;
     margin-right: 0px;
 }
 .dropdown-filter .dropdown-menu{
-    padding: 11px 30px 15px 30px;
+    min-width: 290px;
+    padding: 15px 0;
 }
 .dropdown-filter .dropdown-item{
     padding: 0;
@@ -261,11 +257,11 @@
     font-size: 15px;
     font-weight: 400;
     min-width: 285px;
-    padding: 13px 13px 13px 5px;
+    padding: 15px 35px;
 }
 .dropdown-filter  .item-content .fa{
     color: #8bc34a;
-    font-size: 14px;
+    font-size: 9px;
     margin-right: 11px;
 }
 .dropdown-filter .filter-result{

@@ -8,6 +8,8 @@
 body {
     margin: 0;
     font: 400 14px/1 'Roboto', sans-serif;
+    color: #263238;
+    background-color: #f4f6f5;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -34,6 +36,9 @@ ul, ol {
 img {
     max-width: 100%;
 }
+input {
+    width: 100%;
+}
 input,
 textarea,
 button,
@@ -41,6 +46,11 @@ input:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+input,
+textarea,
+input:focus,
+textarea:focus {
     border: none;
 }
 input[type="submit"] {
@@ -63,8 +73,7 @@ button {
 }
 /* -- FORM ELEMENTS START -- */
 .form-control:focus {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 .form-control,
 .btn {
