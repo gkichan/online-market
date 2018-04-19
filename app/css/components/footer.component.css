@@ -24,7 +24,7 @@ footer .row p {
     color: #b7c3c8;
     margin-bottom: 35px;
 }
-footer i.fa {
+footer .footer-contacts i.fa {
     font-size: 18px;
     margin-right: 20px;
     line-height: 1.4;
@@ -61,5 +61,28 @@ footer .subscribe-text {
     margin-top: 40px;
     margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
+=======
+footer .footer-form {
+    padding: 1px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238)), -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238));
+    background-image: linear-gradient(to bottom, #000 0%, #263238 100%), linear-gradient(to bottom, #000 0%, #263238 100%);
+}
+footer .footer-form-control {
+    height: 40px;
+    padding: 0 15px;
+    line-height: 1;
+    color: #fff;
+    background-color: #2f3c43;
+}
+footer .footer-form .btn-custom {
+    height: 40px;
+}
+footer .footer-form .btn-custom .fa {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+>>>>>>> 76f9b154be3a7240130c3c6207c80723de643e8d
 /* ===== FOOTER END ===== */

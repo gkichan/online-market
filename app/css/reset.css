@@ -35,6 +35,9 @@ ul, ol {
 img {
     max-width: 100%;
 }
+input {
+    width: 100%;
+}
 input,
 textarea,
 button,
@@ -42,6 +45,12 @@ input:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+input,
+textarea,
+input:focus,
+textarea:focus {
+    border: none;
 }
 input[type="submit"] {
     cursor: pointer;
