@@ -1,4 +1,7 @@
 /* ===== DROPDOWN START ===== */
+.dropdown-container {
+    background-color: #fff;
+}
 /* -- DROPDOWN DEFAULT TOGGLE START -- */
 .dropdown .btn.dropdown-toggle{
     position: relative;
