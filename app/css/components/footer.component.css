@@ -3,9 +3,6 @@ footer {
     padding-top: 115px;
     background-color: #263238;
 }
-footer .row {
-    padding-bottom: 100px;
-}
 footer .footer-title {
     font-weight: 700;
     color: #ffffff;
@@ -29,6 +26,7 @@ footer .footer-contacts i.fa {
     margin-right: 20px;
     line-height: 1.4;
 }
+/* spans are in contacts (addres and phone) and 'newsletter sign up' is span */
 footer span {
     display: block;
     font-family: 'latosemibold';
@@ -38,7 +36,9 @@ footer span {
 footer .d-flex + .d-flex {
     margin-top: 20px;
 }
-footer .footer-copyright {
+footer .footer-copyright span{
+    font-family: 'Roboto';
+    margin-top: 100px;
     border-top: 1px solid #424d53;
     padding: 25px 0 35px 0;
 }
@@ -61,9 +61,6 @@ footer .subscribe-text {
     margin-top: 40px;
     margin-bottom: 20px;
 }
-<<<<<<< HEAD
-
-=======
 footer .footer-form {
     padding: 1px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238)), -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238));
@@ -84,5 +81,4 @@ footer .footer-form .btn-custom .fa {
     margin-left: 12px;
     margin-right: 12px;
 }
->>>>>>> 76f9b154be3a7240130c3c6207c80723de643e8d
 /* ===== FOOTER END ===== */

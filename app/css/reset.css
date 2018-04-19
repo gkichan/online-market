@@ -9,6 +9,8 @@
 body {
     margin: 0;
     font: 400 14px/1 'Roboto', sans-serif;
+    color: #263238;
+    background-color: #f4f6f5;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -145,3 +147,8 @@ a:hover{
 }
 /* -- DROPDOWN RESET END -- */
 /* ===== RESET BOOTSTRAP END ===== */
+/* ===== Sprite icon reset start ===== */
+.icon {
+    display: inline-block;
+}
+/* ===== Sprite icon reset end ===== */

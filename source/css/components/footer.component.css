@@ -3,9 +3,6 @@ footer {
     padding-top: 115px;
     background-color: #263238;
 }
-footer .row {
-    padding-bottom: 100px;
-}
 footer .footer-title {
     font-weight: 700;
     color: #ffffff;
@@ -29,6 +26,7 @@ footer .footer-contacts i.fa {
     margin-right: 20px;
     line-height: 1.4;
 }
+/* spans are in contacts (addres and phone) and 'newsletter sign up' is span */
 footer span {
     display: block;
     font-family: 'latosemibold';
@@ -38,7 +36,9 @@ footer span {
 footer .d-flex + .d-flex {
     margin-top: 20px;
 }
-footer .footer-copyright {
+footer .footer-copyright span{
+    font-family: 'Roboto';
+    margin-top: 100px;
     border-top: 1px solid #424d53;
     padding: 25px 0 35px 0;
 }
