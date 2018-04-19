@@ -96,6 +96,7 @@ textarea:focus:-ms-input-placeholder      {color: transparent}
 
 .search-item {
 	position: relative;
+	margin: auto;
 }
 /* .search-item .svg-inline--fa { */
 .search-item i {
