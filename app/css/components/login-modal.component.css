@@ -57,8 +57,7 @@
     line-height: 1.6666;
 }
 #LoginModal .lost-password {
-   display: inline-block;
-   margin-top: 25px;
+   margin-top: 28px;
 }
 #LoginModal .login-close {
     position: fixed;
