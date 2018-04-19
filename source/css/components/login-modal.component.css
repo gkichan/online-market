@@ -17,6 +17,7 @@
     margin-bottom: 40px;
 }
 #LoginModal form[name="login-form"] {
+    margin: auto;
     max-width: 400px;
 }
 .login-form-control::-webkit-input-placeholder {color:#fff;}
@@ -40,8 +41,6 @@
 #LoginModal .login-form-group {
     position: relative;
 }
-.login-form-group .i {
-
 .login-form-group .svg-inline--fa {
     position: absolute;
     top: 50%;
