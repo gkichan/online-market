@@ -4,6 +4,10 @@ const gulp = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
 //Init Gulp-Concat
 const concat = require('gulp-concat');
+//Init sprite-smith
+const spritesmith = require('gulp.spritesmith');
+//Init merge-stream
+const merge = require('merge-stream');
 
 //Autoprefixer Settings
 gulp.task('autoprefixer', function() {
@@ -24,6 +28,28 @@ gulp.task('concat-css', function() {
         ])
         .pipe(concat('style.css'))
         .pipe(gulp.dest('app/css/'))
+});
+// Generate sprite Settings
+gulp.task('sprite',function () {
+    // Generate our spritesheet
+    let spriteData = gulp.src('source/sprite/*.png')
+        .pipe(spritesmith({
+            imgName: 'sprite.png',
+            cssName: 'sprite.css',
+            imgPath: '../img/sprite.png'
+    }));
+    // Pipe image stream through image optimizer and onto disk
+    let imgStream = spriteData.img
+        .pipe(gulp.dest('app/img/'));
+    // Pipe CSS stream through CSS optimizer and onto disk
+    let cssStream = spriteData.css
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('source/css/components/'));
+    // Return a merged stream to handle both `end` events
+    return merge(imgStream, cssStream);
 });
 
 //Create watch task

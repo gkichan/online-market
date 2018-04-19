@@ -143,3 +143,8 @@ a:hover{
 }
 /* -- DROPDOWN RESET END -- */
 /* ===== RESET BOOTSTRAP END ===== */
+/* ===== Sprite icon reset start ===== */
+.icon {
+    display: inline-block;
+}
+/* ===== Sprite icon reset end ===== */

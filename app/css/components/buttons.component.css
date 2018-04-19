@@ -6,6 +6,9 @@
     border-radius: 0;
     color: #fff;
     border: 2px solid transparent;
+    text-align: center;
+    /* text-align: left; */
+    padding: 100px;
 }
 .btn-custom .fa {
     margin-right: 8px;
