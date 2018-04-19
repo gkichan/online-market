@@ -41,12 +41,17 @@
 #LoginModal .login-form-group {
     position: relative;
 }
+<<<<<<< HEAD
 /* пришлось поставить .svg-inline--fa  вместо i 
    иначе иконка не позиционировалась в input
    короче Акела снова где-то промахнулся
    любите ребусы поищите баг
 */
+.login-form-group .i {
+=======
+/* */
 .login-form-group .svg-inline--fa {
+>>>>>>> 8199c805035af93973f967c1dd940dbed0df9e94
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -54,7 +59,6 @@
 }
 #LoginModal .login-btn-group {
     margin-top: 20px;
-    /* margin-bottom: 28px; */
     width: 100%;
 }
 #LoginModal  form[name="login-form"] a {
@@ -62,7 +66,7 @@
     line-height: 1.6666;
 }
 #LoginModal .lost-password {
-    margin-top: 28px;
+   margin-top: 28px;
 }
 #LoginModal .login-close {
     position: fixed;
@@ -72,7 +76,6 @@
 #LoginModal .submit { 
     float: left;
     font-weight: 700;
-    line-height: 2.14;
 }
 #LoginModal .create-acount { 
     float: right;

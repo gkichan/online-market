@@ -1,22 +1,5 @@
 /* ===== FORM START ===== */
 /* -- reset style bootstrap start -- */
-.btn.focus,
-.btn:focus {  
-	 -webkit-box-shadow: none;  
-	         box-shadow: none;
-	}
-.form-control,
-.btn {  
-    border: none;  
-    border-radius: 0;
-}
-button:focus,
-button:active {
-	outline: none;
-	border: none;
-	-webkit-box-shadow: none;
-	        box-shadow: none;
-}
 input:focus,
 .form-control:focus {
 	-webkit-box-shadow: none;
@@ -26,9 +9,6 @@ input:focus,
 }
 .input-group .form-control:focus {
 	z-index: 0;
-}
-.button {
-	background: none;
 }
 input {
     width: 100%;
@@ -66,6 +46,7 @@ textarea:focus:-ms-input-placeholder      {color: transparent}
 }
 .footer .btn {
 	width: 45px;
+	height: 39px;
 }
 .input-group-append .btn .fa {
 	font-size: 18px;
@@ -123,9 +104,6 @@ textarea:focus:-ms-input-placeholder      {color: transparent}
 	font-size: 15px;
 	margin-top: 0;
 }
-.form-group sup {
-	font-size: 10px;
-}
 textarea {
     min-height: 148px;
 }
@@ -142,12 +120,6 @@ textarea .form-control:hover {
 	background: #f9f9f9;
     border: 1px solid #dedede;
 } 
-/* .form-control-file {
-	font-size: 12px;
-} */
-
-element.style {
-}
 .form-control:hover, textarea .form-control:hover {
     background: #f9f9f9;
     border: 1px solid #dedede;
