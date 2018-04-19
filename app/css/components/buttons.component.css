@@ -7,8 +7,6 @@
     color: #fff;
     border: 2px solid transparent;
     text-align: center;
-    /* text-align: left; */
-    padding: 100px;
 }
 .btn-custom .fa {
     margin-right: 8px;
@@ -83,6 +81,7 @@
     border: 3px solid #fff;
 }
 .btn-border-grey {
+    border-width: 1px;
     border-color: #d6d6d6;
     color: #707070;
 }

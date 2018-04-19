@@ -1,16 +1,15 @@
 /* ===== LOGIN MODAL START ===== */
- #LoginModal .modal-dialog {
+#LoginModal .modal-dialog {
     max-width: 730px;
-   
 }
 #LoginModal .modal-content {
     border: none;
     border-radius: 0;
     padding: 90px 30px 110px;
-}fa-times
+}
 #LoginModal .modal-content .fa-times{
     color: #fff;
-     font-size: 18px;
+    font-size: 18px;
 }
 #LoginModal .login-title {
     font-size: 40px;
@@ -41,17 +40,9 @@
 #LoginModal .login-form-group {
     position: relative;
 }
-<<<<<<< HEAD
-/* пришлось поставить .svg-inline--fa  вместо i 
-   иначе иконка не позиционировалась в input
-   короче Акела снова где-то промахнулся
-   любите ребусы поищите баг
-*/
 .login-form-group .i {
-=======
-/* */
+}
 .login-form-group .svg-inline--fa {
->>>>>>> 8199c805035af93973f967c1dd940dbed0df9e94
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
