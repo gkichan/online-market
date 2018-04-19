@@ -6,6 +6,7 @@
     border-radius: 0;
     color: #fff;
     border: 2px solid transparent;
+    text-align: center;
 }
 .btn-custom .fa {
     margin-right: 8px;
