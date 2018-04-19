@@ -124,6 +124,7 @@ textarea .form-control:hover {
 	vertical-align: middle;
 	background-color: #000;
 }
+/* .jq-file__browse: -webkit-baseline-middle; */
 .jq-file__name {
 	padding-left: 105px;
 }
