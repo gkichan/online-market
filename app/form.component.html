@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Formstayler style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css">
@@ -56,23 +58,6 @@
     <title>Form</title>
 </head>
 <body>
-        <section>
-        <div class="container">
-            <div class="exsample bg-dark">
-                <h5 class="text-white">Form footer</h5>
-                <form>
-                    <div class="footer input-group">
-                        <input type="text" class="form-control" placeholder="E-mail Address">
-                        <div class="input-group-append">
-                            <button class="btn bg-green text-white text-center" type="button"><svg class="svg-inline--fa fa-location-arrow fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="location-arrow" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M443.683 4.529L27.818 196.418C-18.702 217.889-3.39 288 47.933 288H224v175.993c0 51.727 70.161 66.526 91.582 20.115L507.38 68.225c18.905-40.961-23.752-82.133-63.697-63.696z"></path></svg><!-- <i class="fa fa-location-arrow"></i> --></button>
-                        </div>
-                    </div>
-                </form>
-            </div> 
-        </div>
-        <!-- / container -->
-    </section>
-    <!-- / section -->
     <section>
         <div class="container">
             <div class="search-section bg-gray">
@@ -85,11 +70,6 @@
                 </div>
                 <!-- / search-item -->
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <button class="btn btn-primary" data-toggle="modal" data-target="#LoginModal">Login</button>
         </div>
     </section>
     <section class="form-datauser">
@@ -152,48 +132,12 @@
         </div>
         <!-- / container -->
     </section>
-    <!-- Modal window start -->
-    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true"> 
-        <div class="modal-dialog" role="document"> 
-            <div class="modal-content bg-green"> 
-                <div class="modal-body">
-                    <button type="button" class="login-close btn text-white">
-                            <i class="fas fa-times"></i>
-                    </button>
-                    <h4 class="login-title text-center text-uppercase text-white">Login</h4> 
-                    <form name="login-form">
-                        <div class="login-form-group text-white">
-                            <i class="fa fa-user"></i>
-                            <input type="text" name="nickName" class="login-form-control" placeholder="Name">
-                        </div>
-                        <div class="login-form-group text-white">
-                            <i class="fa fa-lock"></i>
-                            <input type="text" name="password" class="login-form-control" placeholder="Password">
-                        </div>
-                        <div class="login-btn-group">
-                                <button class="submit btn-custom btn-md btn-white btn-shadow-submit text-uppercase">Submit</button>
-                            <button class="create-acount btn-custom btn-md btn-darkgreen">
-                                <i class="fa fa-pencil-square-o"></i> Create An Acount?</button>
-                        </div>
-                        <div style="clear:both;"></div>
-                        <a href="#" class="lost-password text-white">Lost password?</a>
-                    </form>
-                    <!-- / form -->
-                </div> 
-                <!-- / modal-body -->
-            </div>  
-            <!-- / modal-content -->
-        </div> 
-        <!-- / modal-dialog -->
-    </div>
-    <!-- / modal fade -->
-    <!-- Modal window end -->
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
