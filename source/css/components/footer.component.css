@@ -1,21 +1,19 @@
 /* ===== FOOTER START ===== */
 footer {
+    padding-top: 115px;
     background-color: #263238;
-}
-footer .row {
-    padding-bottom: 100px;
 }
 footer .footer-title {
     font-weight: 700;
     color: #ffffff;
     font-size: 22px;
-    margin-top: 115px;
-    margin-bottom: 25px;
 }
-footer .green-line {
+footer .footer-title::after {
+    content: '';
+    display: block;
     width: 50px;
-    border-bottom: 5px solid;
-    margin-bottom: 30px;
+    border-bottom: 3px solid #8bc34a;
+    margin: 30px 0;
 }
 footer .row p {
     font-size: 15px;
@@ -28,6 +26,7 @@ footer .footer-contacts i.fa {
     margin-right: 20px;
     line-height: 1.4;
 }
+/* spans are in contacts (addres and phone) and 'newsletter sign up' is span */
 footer span {
     display: block;
     font-family: 'latosemibold';
@@ -37,7 +36,9 @@ footer span {
 footer .d-flex + .d-flex {
     margin-top: 20px;
 }
-footer .footer-copyright {
+footer .footer-copyright span{
+    font-family: 'Roboto';
+    margin-top: 100px;
     border-top: 1px solid #424d53;
     padding: 25px 0 35px 0;
 }

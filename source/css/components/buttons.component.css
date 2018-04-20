@@ -6,6 +6,7 @@
     border-radius: 0;
     color: #fff;
     border: 2px solid transparent;
+    text-align: center;
 }
 .btn-custom .fa {
     margin-right: 8px;
@@ -49,8 +50,9 @@
     background-color: #fff;
 }
 .btn-white:hover {
-    color: #559e00;
-    border-color: #8bc34a;
+    color: #fff;
+    border-color: #fff;
+    background-color: #76ae36;
 }
 .btn-blue {
     background-color: #42a5f5;
@@ -72,14 +74,13 @@
     background-color: #76ae36;
 }
 .btn-darkgreen:hover {
-    color: #559e00;
-    border-color: #76ae36;
-    background-color: #fff;
+    border-color: #fff;
 }
 .btn-border-white {
     border: 3px solid #fff;
 }
 .btn-border-grey {
+    border-width: 1px;
     border-color: #d6d6d6;
     color: #707070;
 }
