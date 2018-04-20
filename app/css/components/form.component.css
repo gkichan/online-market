@@ -133,13 +133,19 @@ textarea .form-control {
 	color: #707070;
 }  
 .form-control,
-input .form-control:hover,
+input .form-control:focus,
 textarea .form-control:focus {
 	border: 1px solid #dedede;
 }
 .form-control:hover,
 input .form-control:hover,
 textarea .form-control:hover {
+	background: #f9f9f9;
+    border: 1px solid #dedede;
+} 
+.form-control:active,
+input .form-control:active,
+textarea .form-control:active {
 	background: #f9f9f9;
     border: 1px solid #dedede;
 } 
