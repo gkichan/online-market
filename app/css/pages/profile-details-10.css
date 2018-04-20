@@ -2,13 +2,18 @@
 .inner {
     padding: 65px 0;
     background-image: url("../img/inner-bg.png");
+    background-position: bottom;
 }
 .inner .inner-title {
     margin-bottom: 28px;
+    color: #fff;
 }
 /* ===== INNER END ===== */
 /* ===== ASIDE START ===== */
 /* -- ASIDE START -- */
+.aside-block .aside-block-title {
+    margin-bottom: 25px;
+}
 .aside-block .img-wrapper {
     margin-right: 15px;
 }

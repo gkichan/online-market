@@ -28,10 +28,11 @@ header .btn-green {
     margin-right: 7px;
 }
 header .bottom-header {
-    padding: 25px 0px;
     background-color: #263238;
 }
 header .bottom-header a {
+    display: inline-block;
+    padding: 25px 0px;
     font-weight: 500;
     color: #fff;
 }
