@@ -69,11 +69,7 @@ textarea .form-control {
 	padding: 13px 5px 5px 17px;
 	color: #707070;
 }  
-<<<<<<< HEAD
-.form-control,
-=======
 .form-control:focus,
->>>>>>> e72c330a3ac9c8d01fd2498171ae3d6c11afb830
 input .form-control:focus,
 textarea .form-control:focus {
 	background: #f9f9f9;
@@ -86,21 +82,11 @@ textarea .form-control:hover {
 	background: #f9f9f9;
     border: 1px solid #dedede;
 } 
-<<<<<<< HEAD
-.form-control:active,
-input .form-control:active,
-textarea .form-control:active {
-	background: #f9f9f9;
-    border: 1px solid #dedede;
-} 
- .jq-file{
-=======
 .form-control-file {
 	background: #f9f9f9;
     border: 1px solid #dedede;
 }
  .jq-file {
->>>>>>> e72c330a3ac9c8d01fd2498171ae3d6c11afb830
 	font-size: 12px;
 	height: 40px;
 	width: 100%;
