@@ -55,6 +55,9 @@
 	border-radius: 0;
 	height: 40px;
 	line-height: 1;
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 400;
 }
 .form-group label {
 	font-size: 15px;
@@ -95,12 +98,13 @@ textarea .form-control:hover {
 	height: 24px;
 	top:8px;
 	left: 8px; 
-	vertical-align: middle;
-	background-color: #000;
+	/* vertical-align: middle; */
+	background-color: #f9f9f9;
+	line-height: 40px;
 }
 .jq-file.focused {
 	background: #f9f9f9;
-    /* border: 1px solid #dedede; */
+    border: 1px solid #dedede;
 }
 .jq-file__name {
 	padding-left: 105px;
@@ -116,9 +120,34 @@ textarea .form-control:hover {
 	border: 1px solid #dedede;
 }
 .jq-file.focused .jq-file__name {
-	/* */
 	box-shadow: none;
 } 
+ .jq-file__browse,
+ .jq-file__name {
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 34px;
+	color: #707070;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.jq-file__browse {
+	border: #dedede;
+}
+/* .jq-file__name {
+    
+    height: 34px;
+    padding: 0 80px 0 10px;
+    border: 1px solid #CCC;
+    border-bottom-color: #B3B3B3;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: inset 1px 1px #F1F1F1;
+    font: 14px/32px Arial, sans-serif;
+    color: #333;
+} */
 /* -- FORM DATA USER END -- */
 
 /* -- SELECT START -- */
@@ -132,8 +161,10 @@ textarea .form-control:hover {
     border-radius: 0;
     box-shadow: none;
     padding: 0 40px 0 15px;
-    line-height: 40px;
-
+	line-height: 40px;
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 400;
 }
  .jq-selectbox__select:hover {
     background: #f9f9f9; 
@@ -150,12 +181,6 @@ textarea .form-control:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     border-top-color: #000;
-}
-.jq-selectbox .placeholder {
-	font-family: 'Roboto';
-	font-weight: 400;
-	color: #707070;
-	font-size: 15px;
 }
 /* -- SELECT END -- */
 /* ===== FORM END ===== */
