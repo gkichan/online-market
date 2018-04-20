@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Foxtar</title>
+    <title>Aside</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
@@ -20,33 +20,63 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components/aside.component.css">
-    <style>
-        body {
-            background-color: #f4f6f5;
-        }
-        .main-content {
-            background-color: #fff;
-            height: 100vh;
-        }
-    </style>
 </head>
 <body>>
     <section>
         <div class="container d-flex">
             <aside class="col-3">
-                <div class="aside-card">
-                    <div class="aside-card-title title-black title-md font-bold">
-                        <span>Product Price</span>
+                <div class="aside-block">
+                    <div class="aside-block-title title-sm font-bold">
+                        <span>Block title</span>
                     </div>
-                    <!-- /.aside-card-title -->
-                    <span>Random Text</span>
+                    <!-- /.aside-block-title -->
                 </div>
-                <!-- /.aside-card -->
-                <div class="aside-card font-medium">
-                    <span>Random Text</span>
+                <!-- /.aside-block -->
+                <div class="aside-block font-medium">
+                    <span>Empty block</span>
                 </div>
-                <!-- /.aside-card -->
-                <ul class="aside-nav font-medium">
+                <!-- /.aside-block -->
+                <div class="aside-block">
+                    <div class="aside-block-title title-sm font-bold">
+                        <span>Category</span>
+                    </div>
+                    <!-- /.aside-block-title -->
+                    <ul class="aside-nav font-medium">
+                        <li class="active">
+                            <a href="#">
+                                <i class="fa fa-chevron-right"></i>
+                                Lorem (10)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-chevron-right"></i>
+                                Voluptate
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-chevron-right"></i>
+                                Facilis
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-chevron-right"></i>
+                                Officia (20)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-chevron-right"></i>
+                                Praesentium
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.aside-inblock-nav -->
+                </div>
+                <!-- /.aside-block -->
+                <ul class="aside-nav block-nav font-medium">
                     <li class="active">
                         <a href="#">
                             <i class="fa fa-chevron-right"></i>
@@ -80,7 +110,104 @@
                 </ul>
                 <!-- /.aside-nav -->
             </aside>
-            <div class="main-content col-9"></div>
+            <div class="main-content col-6"></div>
+            <!-- /.main-content -->
+            <aside class="col-3">
+                <div class="aside-block">
+                    <div class="aside-block-title title-sm font-bold">
+                        <span>Product Price</span>
+                    </div>
+                    <!-- /.aside-block-title -->
+                    <div class="aside-product-price d-flex align-items-center">
+                        <span class="product-price-value font-medium">$59.00</span>
+                        <div class="product-price-variant ml-auto">Dropdown</div>
+                    </div>
+                    <!-- /.aside-product-price -->
+                    <div class="aside-product-price-buttons">
+                        <button class="btn-custom btn-md btn-wide btn-blue btn-shadow-dark"><i class="fa fa-heart-o"></i> Add To Favourites </button>
+                        <button class="btn-custom btn-md btn-wide btn-green btn-shadow-dark"><i class="fa fa-shopping-cart"></i> Add To Card </button>
+                        <a href="" class="btn-custom btn-md btn-wide btn-darkblue btn-shadow-dark">Buy Now</a>
+                    </div>
+                    <!-- /.aside-product-price-buttons -->
+                </div>
+                <!-- /.aside-block -->
+                <div class="aside-block">
+                    <div class="aside-block-title title-sm font-bold">
+                        <span>Product Author</span>
+                    </div>
+                    <!-- /.aside-block-title -->
+                    <div class="aside-product-author d-flex flex-wrap">
+                        <div class="product-author-img">
+                            <a href="#"><img src="img/product-author.jpg" alt=""></a>
+                        </div>
+                        <!-- /.product-author-img -->
+                        <div class="product-author-info d-flex flex-column justify-content-between">
+                            <span class="product-author-name">PsdBoss</span>
+                            <a href="#" class="btn-custom btn-sm btn-white btn-border-grey">View Profile</a>
+                        </div>
+                        <!-- /.product-author-info -->
+                        <div class="product-author-flags d-flex justify-content-between">
+                            <i class="icon-flag-blue"></i>
+                            <i class="icon-flag-green"></i>
+                            <i class="icon-flag-grey"></i>
+                            <i class="icon-flag-orange"></i>
+                            <i class="icon-flag-red"></i>
+                        </div>
+                        <!-- /.product-author-flags -->
+                    </div>
+                    <!-- /.aside-product-author -->
+                </div>
+                <!-- /.aside-block -->
+                <div class="aside-block">
+                    <div class="aside-product-sales d-flex align-items-center">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="sales-count font-bold">05</span>
+                        <span class="sales-text">Sales</span>
+                    </div>
+                    <!-- /.aside-product-sales -->
+                </div>
+                <!-- /.aside-block -->
+                <div class="aside-block">
+                    <div class="aside-block-title title-sm font-bold">
+                        <span>Product info</span>
+                    </div>
+                    <!-- /.aside-block-title -->
+                    <div class="aside-product-info">
+                        <div class="product-info-item">
+                            <span class="product-info-name">Released On:</span>
+                            <span class="product-info-value">1 January, 2016</span>
+                        </div>
+                        <!-- /.product-info-item -->
+                        <div class="product-info-item">
+                            <span class="product-info-name">Last Update:</span>
+                            <span class="product-info-value">20 April, 2016</span>
+                        </div>
+                        <!-- /.product-info-item -->
+                        <div class="product-info-item">
+                            <span class="product-info-name">Download:</span>
+                            <span class="product-info-value">777</span>
+                        </div>
+                        <!-- /.product-info-item -->
+                        <div class="product-info-item">
+                            <span class="product-info-name">Version:</span>
+                            <span class="product-info-value">1.1</span>
+                        </div>
+                        <!-- /.product-info-item -->
+                        <div class="product-info-item">
+                            <span class="product-info-name">Compatibility:</span>
+                            <span class="product-info-value">Wordpress 4+</span>
+                        </div>
+                        <!-- /.product-info-item -->
+                        <div class="product-info-item">
+                            <span class="product-info-name">Compatible Browsers:</span>
+                            <span class="product-info-value">IE9, IE10, IE11, Firefox, Safari, Opera, Chrome</span>
+                        </div>
+                        <!-- /.product-info-item -->
+                    </div>
+                    <!-- /.aside-product-info -->
+                </div>
+                <!-- /.aside-block -->
+            </aside>
         </div>
         <!-- /.container -->
     </section>

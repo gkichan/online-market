@@ -14,7 +14,8 @@
 .bg-grey {
     background-color: #f4f6f5;
 }
-.text-green {
+.text-green,
+.text-green-hover:hover {
     color: #8bc34a;
 }
 .text-white {

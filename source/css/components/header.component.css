@@ -22,7 +22,7 @@ header .buttons-in-drop .btn-custom {
     width: 50%;
     font-weight: 500;
     font-size: 14px;
-    color: #f4f6f5;
+    padding: 8px;
 }
 header .btn-green {
     margin-right: 7px;

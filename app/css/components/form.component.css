@@ -1,75 +1,11 @@
 /* ===== FORM START ===== */
 /* -- reset style bootstrap start -- */
-/* input[type=text] {
-    border:none;
-    background:none;
-    outline:none;
-	padding:0;
-}
-input[type=text]:focus {
-    border:none;
-    background:none;
-    outline:none;
-	padding:0;
-}
-input[type=text]:hover {
-    border:none;
-    background:none;
-    outline:none;
-	padding:0;
-} */
-/* input:focus,
-.form-control:focus {
-	box-shadow: none;
-	outline-offset: 0;
-}
-.input-group .form-control:focus {
-	z-index: 0;
-}
-input {
-    width: 100%;
-} */
-/* reset style bootstrap start */
-/* .btn.focus,
-.btn:focus {  
-	 box-shadow: none;
-	}
-.form-control,
-.btn {  
-border: none;  
-border-radius: 0;
-}
-button:focus,
-button:active {
-	outline: none;
-	border: none;
-	box-shadow: none;
-}
-input:focus,
-.form-control:focus {
-	box-shadow: none;
-	border: none;
-	outline-offset: 0;
-}
-.input-group .form-control:focus {
-	z-index: 0;
-}
-.button {
-	background: none;
-}
-input {
-    width: 100%;
-} */
 /*  */
-input:focus::-webkit-input-placeholder {color: transparent}
-input:focus::-moz-placeholder          {color: transparent}
-input:focus:-moz-placeholder           {color: transparent}
-input:focus:-ms-input-placeholder      {color: transparent}
-
-textarea:focus::-webkit-input-placeholder {color: transparent}
-textarea:focus::-moz-placeholder          {color: transparent}
-textarea:focus:-moz-placeholder           {color: transparent}
-textarea:focus:-ms-input-placeholder      {color: transparent}
+   
+:focus::-webkit-input-placeholder {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+:focus::-moz-placeholder          {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+:focus:-moz-placeholder           {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 /* -- reset style bootstrap end -- */
 /* -- SEARCH START -- */
 
@@ -97,6 +33,7 @@ textarea:focus:-ms-input-placeholder      {color: transparent}
 
 .search-item {
 	position: relative;
+	margin: auto;
 }
 /* .search-item .svg-inline--fa { */
 .search-item i {
@@ -132,17 +69,24 @@ textarea .form-control {
 	padding: 13px 5px 5px 17px;
 	color: #707070;
 }  
+<<<<<<< HEAD
 .form-control,
+=======
+.form-control:focus,
+>>>>>>> e72c330a3ac9c8d01fd2498171ae3d6c11afb830
 input .form-control:focus,
 textarea .form-control:focus {
+	background: #f9f9f9;
 	border: 1px solid #dedede;
 }
+
 .form-control:hover,
 input .form-control:hover,
 textarea .form-control:hover {
 	background: #f9f9f9;
     border: 1px solid #dedede;
 } 
+<<<<<<< HEAD
 .form-control:active,
 input .form-control:active,
 textarea .form-control:active {
@@ -150,13 +94,19 @@ textarea .form-control:active {
     border: 1px solid #dedede;
 } 
  .jq-file{
+=======
+.form-control-file {
+	background: #f9f9f9;
+    border: 1px solid #dedede;
+}
+ .jq-file {
+>>>>>>> e72c330a3ac9c8d01fd2498171ae3d6c11afb830
 	font-size: 12px;
 	height: 40px;
 	width: 100%;
-    background: #f9f9f9;
-    border: 1px solid #dedede;
+    border: none;
 }  
-.jq-file__browse{
+.jq-file__browse {
 	width: 92px;
 	height: 24px;
 	top:8px;
@@ -164,11 +114,29 @@ textarea .form-control:active {
 	vertical-align: middle;
 	background-color: #000;
 }
-/* .jq-file__browse: -webkit-baseline-middle; */
+.jq-file.focused {
+	background: #f9f9f9;
+    /* border: 1px solid #dedede; */
+}
 .jq-file__name {
 	padding-left: 105px;
 }
-
+ .jq-file:hover .jq-file__browse {
+	background: #f9f9f9;
+}
+.jq-file:active .jq-file__browse {
+	background: #f9f9f9;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+.jq-file.focused .form-control-file  {
+	border: 1px solid #dedede;
+}
+.jq-file.focused .jq-file__name {
+	/* */
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+} 
 /* -- FORM DATA USER END -- */
 
 /* -- SELECT START -- */
@@ -186,9 +154,11 @@ textarea .form-control:active {
     line-height: 40px;
 
 }
-.jq-selectbox__select:hover {
+ .jq-selectbox__select:hover {
     background: #f9f9f9; 
-
+}
+.jq-selectbox.focused .jq-selectbox__select {
+	border: 1px solid #dedede;
 }
 .jq-selectbox__trigger {
     border-left: 0;
@@ -200,6 +170,12 @@ textarea .form-control:active {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     border-top-color: #000;
+}
+.jq-selectbox .placeholder {
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: #707070;
+	font-size: 15px;
 }
 /* -- SELECT END -- */
 /* ===== FORM END ===== */

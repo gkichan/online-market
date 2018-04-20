@@ -1,38 +1,62 @@
 /* ===== ASIDE START ===== */
-/* -- ASIDE CARD START -- */
-.aside-card {
+/* -- ASIDE BLOCK START -- */
+aside .aside-block {
     background-color: #fff;
     padding: 28px 30px;
     margin-bottom: 30px;
     border: 1px solid #dedede;
 }
-.aside-card .aside-card-title {
+aside .aside-block .aside-block-title {
     padding-bottom: 22px;
-    margin-bottom: 25px;
     border-bottom: 1px solid #dde3e8;
 }
-/* -- ASIDE CARD END -- */
-/* -- ASIDE NAV START -- */
-.aside-nav {
+/* -- ASIDE BLOCK END -- */
+/* -- ASIDE INBLOCK NAV START -- */
+aside .aside-nav {
+    margin-top: 15px;
     font-size: 14px;
+    background-color: #fff;
+}
+aside .aside-nav li {
+    position: relative;
+}
+/* В финале поменять hover на класс .active */
+aside .aside-nav li:hover {
+    color: #8bc34a;
+}
+aside .aside-nav li a {
+    position: relative;
+    display: block;
+    padding: 12px 50px;
+}
+aside .aside-nav li .fa {
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    font-size: 9px;
+    color: #8bc34a;
+    -webkit-transform: translateY(-51%);
+            transform: translateY(-51%);
+}
+/* -- ASIDE INBLOCK NAV END -- */
+/* -- ASIDE BLOCK NAV START -- */
+aside .aside-nav.block-nav {
     color: #707070;
     margin-top: 30px;
-    background-color: #fff;
     border: 1px solid #dedede;
 }
-.aside-nav li {
-    position: relative;
+aside .aside-nav.block-nav li {
     border-bottom: 1px solid #dedede;
 }
-.aside-nav li:last-child {
+aside .aside-nav.block-nav li:last-child {
     border-bottom: none;
 }
 /* В финале поменять hover на класс .active */
-.aside-nav li:hover {
+aside .aside-nav.block-nav li:hover {
     color: #263238;
 }
 /* В финале поменять hover на класс .active */
-.aside-nav li:hover::after {
+aside .aside-nav.block-nav li:hover::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -42,21 +66,71 @@
     background-color: #8bc34a;
 }
 /* В финале поменять hover на класс .active */
-.aside-nav li:hover i {
+aside .aside-nav.block-nav li:hover .fa {
     color: #8bc34a;
 }
-.aside-nav li a {
-    position: relative;
-    display: block;
+aside .aside-nav.block-nav li a {
     padding: 16px 50px;
 }
-.aside-nav li i {
-    position: absolute;
-    top: 50%;
-    left: 22px;
-    font-size: 9px;
-    -webkit-transform: translateY(-51%);
-            transform: translateY(-51%);
+aside .aside-nav.block-nav li .fa {
+    color: #d0d0d0;
 }
-/* -- ASIDE NAV END -- */
+/* -- ASIDE BLOCK NAV END -- */
+/* -- ASIDE PRODUCT PRICE START -- */
+aside .aside-product-price {
+    margin: 25px 0;
+}
+aside .aside-product-price .product-price-value {
+    font-size: 22px;
+    color: #e74c3c;
+}
+aside .aside-product-price-buttons .btn-custom + .btn-custom {
+    margin-top: 8px;
+}
+/* -- ASIDE PRODUCT PRICE END -- */
+/* -- ASIDE PRODUCT AUTHOR START -- */
+aside .aside-product-author {
+    margin-top: 25px;
+}
+aside .product-author-img {
+    margin-right: 14px;
+}
+aside .product-author-name {
+    font-size: 18px;
+}
+aside .product-author-flags {
+    width: 100%;
+    margin-top: 24px;
+}
+/* -- ASIDE PRODUCT AUTHOR START -- */
+/* -- ASIDE PRODUCT SALES START -- */
+aside .aside-product-sales .fa {
+    font-size: 20px;
+    color: #a6b5bb;
+    margin-right: 20px;
+}
+aside .aside-product-sales .sales-count {
+    font-size: 20px;
+    margin-right: 14px;
+}
+aside .aside-product-sales .sales-text {
+    font-size: 16px;
+    color: #707070;
+}
+/* -- ASIDE PRODUCT SALES END -- */
+/* -- ASIDE PRODUCT INFO START -- */
+aside .aside-product-info {
+    margin-top: 25px;
+    line-height: 1.8;
+}
+aside .aside-product-info .product-info-item + .product-info-item {
+    margin-top: 10px;
+}
+aside .aside-product-info .product-info-name {
+    font-weight: 500;
+}
+aside .aside-product-info .product-info-value {
+    color: #70838d;
+}
+/* -- ASIDE PRODUCT INFO END -- */
 /* ===== ASIDE END ===== */
