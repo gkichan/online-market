@@ -20,9 +20,16 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components/common.component.css">
+    <link rel="stylesheet" href="css/components/colors.component.css">
     <style>
         .section-title {
             margin-bottom: 20px;
+        }
+        .search-section {
+            border: 1px solid #ccc;
+            background-color: #999;
+            margin: 20px;
+            padding: 20px;
         }
     </style>
 </head>
@@ -45,7 +52,21 @@
             <!-- /.product-rating -->
         </div>
     </section>
-    
+    <section>
+        <div class="container">
+            <div class="search-section">
+                <div class="search-item">
+                    <form>
+                        <input class="search-control" type="text" placeholder="Search Your Keywords ...">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </div>
+                <!-- / search-item -->
+            </div>
+            <!-- / search-section -->
+        </div>
+        <!-- / container -->
+    </section>
     <!-- Optional JavaScripts -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
