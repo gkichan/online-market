@@ -67,37 +67,6 @@
     border-radius: 50%;
     margin-right: 12px;
 }
-<<<<<<< HEAD
-/*.card*/ .card-rating { /* селектор закоментирован намерено! :) */
-    color: #b5b5b5;
-    font-size: 12px;
-}
-.card.large-card .card-rating {
-    margin-right: 12px;
-}
-.card.medium-card .card-rating {
-    margin-right: 8px;
-}
-.card .card-rating li + li {
-    margin-left: 2px;
-}
-/*.card*/ .card-rating i.active { /* селектор закоментирован намерено! :) */
-    color: #ffa726;
-}
-.card .card-rating-count {
-    font-weight: 400;
-}
-.card .card-rating-count::before {
-    content: '(';
-    color: #b0bec5;
-}
-.card .card-rating-count::after {
-    content: ')';
-    color: #b0bec5;
-}
-=======
-
->>>>>>> IgorArg
 /* 
 .card.large-card
 .card.medium-card
