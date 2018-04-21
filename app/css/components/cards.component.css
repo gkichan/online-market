@@ -54,7 +54,7 @@
     border-radius: 50%;
     margin-right: 12px;
 }
-.card .card-rating {
+/*.card*/ .card-rating { /* селектор закоментирован намерено! :) */
     color: #b5b5b5;
     font-size: 12px;
 }
@@ -67,7 +67,7 @@
 .card .card-rating li + li {
     margin-left: 2px;
 }
-.card .card-rating i.active {
+/*.card*/ .card-rating i.active { /* селектор закоментирован намерено! :) */
     color: #ffa726;
 }
 .card .card-rating-count {

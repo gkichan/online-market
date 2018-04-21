@@ -38,6 +38,9 @@
     background-color: #8bbe44;
     margin-right: 8px;
 }
+.aside-block .status.offline::before {
+    background-color: #d4d4d4;
+}
 .aside-block .flag-sprites {
     margin-top: 43px;
 }
@@ -53,5 +56,39 @@ aside button {
 aside button + button {
     margin-top: 15px;
 }
+aside .aside-nav i.fa {
+    font-size: 14px;
+    /* без заданой высоты первая иконка неправильно позиционируеться */
+    height: 14px;
+}
 /* -- ASIDE END -- */
+/* -- CONTENT START -- */
+.content-bg-border {
+    background-color: #fff;
+    border: 1px solid #dedede;
+}
+.content-img-wrapper {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.author-info .author-info-item {
+    padding: 24px 0 20px 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.author-info .author-info-item + .author-info-item {
+    border-left: 1px solid #dedede;
+}
+.author-info .author-info-item span {
+    display: block;
+}
+.author-info .author-info-item-title {
+    font-weight: 400;
+    color: #263238;
+}
+.author-info .author-info-item-value {
+
+}
+/* -- CONTENT END -- */
 /* ===== ASIDE END ===== */
