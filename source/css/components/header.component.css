@@ -32,15 +32,12 @@ header .bottom-header {
 }
 header .bottom-header a {
     display: inline-block;
-    padding: 25px 0px;
+    padding: 25px 16px;
     font-weight: 500;
     color: #fff;
 }
 header .bottom-header a:hover {
     color: #e74c3c;
-}
-header .bottom-header a + a {
-    margin-left: 33px;
 }
 /* -- header before login .header-out -- */
 header .header-out .dropdown .badge-value.bg-green {
