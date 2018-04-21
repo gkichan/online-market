@@ -1,44 +1,11 @@
 /* ===== FORM START ===== */
 /* -- reset style bootstrap start -- */
-/* input[type=text] {
-    border:none;
-    background:none;
-    outline:none;
-	padding:0;
-}
-input[type=text]:focus {
-    border:none;
-    background:none;
-    outline:none;
-	padding:0;
-}
-input[type=text]:hover {
-    border:none;
-    background:none;
-    outline:none;
-	padding:0;
-} */
-input:focus,
-.form-control:focus {
-	-webkit-box-shadow: none;
-	        box-shadow: none;
-	outline-offset: 0;
-}
-.input-group .form-control:focus {
-	z-index: 0;
-}
-input {
-    width: 100%;
-}
-input:focus::-webkit-input-placeholder {color: transparent}
-input:focus::-moz-placeholder          {color: transparent}
-input:focus:-moz-placeholder           {color: transparent}
-input:focus:-ms-input-placeholder      {color: transparent}
-
-textarea:focus::-webkit-input-placeholder {color: transparent}
-textarea:focus::-moz-placeholder          {color: transparent}
-textarea:focus:-moz-placeholder           {color: transparent}
-textarea:focus:-ms-input-placeholder      {color: transparent}
+/*  */
+   
+:focus::-webkit-input-placeholder {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+:focus::-moz-placeholder          {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+:focus:-moz-placeholder           {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 /* -- reset style bootstrap end -- */
 /* -- SEARCH START -- */
 
@@ -90,6 +57,9 @@ textarea:focus:-ms-input-placeholder      {color: transparent}
 	border-radius: 0;
 	height: 40px;
 	line-height: 1;
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 400;
 }
 .form-group label {
 	font-size: 15px;
@@ -102,37 +72,87 @@ textarea .form-control {
 	padding: 13px 5px 5px 17px;
 	color: #707070;
 }  
-.form-control,
-input .form-control:hover,
+.form-control:focus,
+input .form-control:focus,
 textarea .form-control:focus {
+	background: #f9f9f9;
 	border: 1px solid #dedede;
 }
+
 .form-control:hover,
 input .form-control:hover,
 textarea .form-control:hover {
 	background: #f9f9f9;
     border: 1px solid #dedede;
 } 
- .jq-file{
+.form-control-file {
+	background: #f9f9f9;
+    border: 1px solid #dedede;
+}
+ .jq-file {
 	font-size: 12px;
 	height: 40px;
 	width: 100%;
-    background: #f9f9f9;
-    border: 1px solid #dedede;
+    border: none;
 }  
-.jq-file__browse{
+.jq-file__browse {
 	width: 92px;
 	height: 24px;
 	top:8px;
 	left: 8px; 
-	vertical-align: middle;
-	background-color: #000;
+	/* vertical-align: middle; */
+	background-color: #f9f9f9;
+	line-height: 40px;
 }
-/* .jq-file__browse: -webkit-baseline-middle; */
+.jq-file.focused {
+	background: #f9f9f9;
+    border: 1px solid #dedede;
+}
 .jq-file__name {
 	padding-left: 105px;
 }
-
+ .jq-file:hover .jq-file__browse {
+	background: #f9f9f9;
+}
+.jq-file:active .jq-file__browse {
+	background: #f9f9f9;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+.jq-file.focused .form-control-file  {
+	border: 1px solid #dedede;
+}
+.jq-file.focused .jq-file__name {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+} 
+ .jq-file__browse,
+ .jq-file__name {
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 34px;
+	color: #707070;
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+.jq-file__browse {
+	border: #dedede;
+}
+/* .jq-file__name {
+    
+    height: 34px;
+    padding: 0 80px 0 10px;
+    border: 1px solid #CCC;
+    border-bottom-color: #B3B3B3;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: inset 1px 1px #F1F1F1;
+    font: 14px/32px Arial, sans-serif;
+    color: #333;
+} */
 /* -- FORM DATA USER END -- */
 
 /* -- SELECT START -- */
@@ -147,12 +167,16 @@ textarea .form-control:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 0 40px 0 15px;
-    line-height: 40px;
-
+	line-height: 40px;
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 400;
 }
-.jq-selectbox__select:hover {
+ .jq-selectbox__select:hover {
     background: #f9f9f9; 
-
+}
+.jq-selectbox.focused .jq-selectbox__select {
+	border: 1px solid #dedede;
 }
 .jq-selectbox__trigger {
     border-left: 0;

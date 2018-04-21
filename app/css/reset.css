@@ -69,8 +69,13 @@ button {
 .card-title {
     margin-bottom: 0;
 }
+.card-img {
+    width: unset;
+    border-radius: unset;
+}
 .breadcrumb {
     background: none;
+    margin-bottom: 0;
 }
 /* -- FORM ELEMENTS START -- */
 .form-control:focus {
