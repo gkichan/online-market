@@ -1,4 +1,5 @@
-/* ===== INNER START ===== */
+/* ===== PAGE PROFILE DETAILS START ===== */
+/* -- INNER START -- */
 .inner {
     padding: 65px 0;
     background-image: url("../img/inner-bg.png");
@@ -8,8 +9,7 @@
     margin-bottom: 28px;
     color: #fff;
 }
-/* ===== INNER END ===== */
-/* ===== ASIDE START ===== */
+/* -- INNER END -- */
 /* -- ASIDE START -- */
 .aside-block .aside-block-title {
     margin-bottom: 25px;
@@ -124,5 +124,4 @@ aside .aside-nav i.fa {
     width: 70%;
 }
 /* -- CONTENT END -- */
-
-/* ===== ASIDE END ===== */
+/* ===== PAGE PROFILE DETAILS END ===== */
