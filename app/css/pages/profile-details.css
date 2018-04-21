@@ -66,10 +66,10 @@ aside .aside-nav i.fa {
 .content-bg-border {
     background-color: #fff;
     border: 1px solid #dedede;
-}
-.content-img-wrapper {
-    padding: 20px;
     margin-bottom: 30px;
+}
+.author-banner {
+    padding: 20px;
 }
 .author-info .author-info-item {
     padding: 24px 0 20px 0;
@@ -84,11 +84,19 @@ aside .aside-nav i.fa {
     display: block;
 }
 .author-info .author-info-item-title {
-    font-weight: 400;
+    font-weight: 500;
     color: #263238;
+    margin-bottom: 13px;
 }
-.author-info .author-info-item-value {
-
+.author-skills {
+    padding: 40px;
+}
+.author-skills .title-black {
+    margin-bottom: 30px;
+}
+.author-skills .author-about-me {
+    font-size: 15px;
+    margin-bottom: 50px;
 }
 /* -- CONTENT END -- */
 /* ===== ASIDE END ===== */
