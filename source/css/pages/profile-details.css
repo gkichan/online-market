@@ -96,5 +96,33 @@ aside .aside-nav i.fa {
     font-size: 15px;
     margin-bottom: 50px;
 }
+.author-skills .skill-name {
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+.author-skills .skill-progress-wrapper {
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: #f4f4f4;
+    margin-bottom: 24px;
+}
+.author-skills .progress {
+    height: 15px;
+    background:
+            repeating-linear-gradient(45deg,
+            #b5b5b5, #b5b5b5 15px, #cbcbcb 0, #cbcbcb 30px);
+}
+.author-skills .progress.progress-graphic-design {
+    width: 80%;
+}
+.author-skills .progress.progress-wordpress {
+    width: 90%;
+}
+.author-skills .progress.progress-joomla {
+    width: 70%;
+}
 /* -- CONTENT END -- */
+
 /* ===== ASIDE END ===== */
