@@ -22,6 +22,9 @@
 .card.large-card .card-title {
     font-size: 18px;
 }
+.card.large-card .rating-stars {
+    margin-right: 12px;
+}
 .card.medium-card .card-top-info {
     padding: 25px 20px;
 }
@@ -31,7 +34,14 @@
 .card.medium-card .card-title {
     font-size: 16px;
 }
+.card.medium-card.row-card {
+    flex-direction: row;
+}
 .card .card-img img {
+    width: 100%;
+    height: 100%;
+}
+.card .card-descripton {
     width: 100%;
 }
 .card .card-title {
@@ -49,9 +59,7 @@
     border-radius: 50%;
     margin-right: 12px;
 }
-.card.large-card .rating-stars {
-    margin-right: 12px;
-}
+
 /* 
 .card.large-card
 .card.medium-card

@@ -68,6 +68,10 @@ button {
 .card-title {
     margin-bottom: 0;
 }
+.card-img {
+    width: unset;
+    border-radius: unset;
+}
 .breadcrumb {
     background: none;
 }
