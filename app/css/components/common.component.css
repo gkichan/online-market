@@ -1,0 +1,29 @@
+
+/* ===== OTHER COMPONENTS START ===== */
+/* -- PRODUCT RATING START -- */
+.product-rating {
+    font-size: 12px;
+}
+.product-rating .rating-stars {
+    color: #b5b5b5;
+    margin-right: 7px;
+}
+.product-rating .rating-stars li + li {
+    margin-left: 2px;
+}
+.product-rating .rating-stars .fa.active {
+    color: #ffa726;
+}
+.product-rating .rating-count {
+    font-weight: 400;
+}
+.product-rating .rating-count::before {
+    content: '(';
+    color: #b0bec5;
+}
+.product-rating .rating-count::after {
+    content: ')';
+    color: #b0bec5;
+}
+/* -- PRODUCT RATING END -- */
+/* ===== OTHER COMPONENTS END ===== */
