@@ -1,6 +1,8 @@
 /* ===== DROPDOWN START ===== */
-.dropdown-container {
-    background-color: #fff;
+.dropdown-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 /* -- DROPDOWN DEFAULT TOGGLE START -- */
 .dropdown .btn.dropdown-toggle{

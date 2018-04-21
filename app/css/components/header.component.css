@@ -1,7 +1,11 @@
 /* ===== HEADER START ===== */
 header .top-header {
-    padding: 28px 0 26px 0;
+    /* padding: 28px 0 26px 0; Отменил из-за дропдаунов. МК */
     background-color: #fff;
+}
+.top-header .dropdown-container{
+    /* Добавил для дропдаунов. МК */
+    height: 91px;
 }
 header .top-header .header-help-text {
     font-size: 15px;

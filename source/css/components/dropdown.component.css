@@ -1,6 +1,6 @@
 /* ===== DROPDOWN START ===== */
-.dropdown-container {
-    background-color: #fff;
+.dropdown-container{
+    display: flex;
 }
 /* -- DROPDOWN DEFAULT TOGGLE START -- */
 .dropdown .btn.dropdown-toggle{
