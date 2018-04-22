@@ -1,0 +1,126 @@
+/* ===== PAGE PROFILE DETAILS START ===== */
+/* -- INNER START -- */
+.inner {
+    padding: 65px 0;
+    background-image: url("../img/inner-bg.png");
+    background-position: bottom;
+}
+.inner .inner-title {
+    margin-bottom: 28px;
+    color: #fff;
+}
+/* -- INNER END -- */
+/* -- ASIDE START -- */
+.aside-block .aside-block-title {
+    margin-bottom: 25px;
+}
+.aside-block .img-wrapper {
+    margin-right: 15px;
+}
+.aside-block .nickname {
+    font-size: 18px;
+    color: #263238;
+    margin-bottom: 20px;
+}
+.aside-block .status {
+    border: 1px solid #d5d5d5;
+    padding: 8px 14px 8px 9px;
+    font-size: 13px;
+    color: #70838d;
+    line-height: 9px;
+}
+.aside-block .status::before {
+    display: block;
+    content:'';
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #8bbe44;
+    margin-right: 8px;
+}
+.aside-block .status.offline::before {
+    background-color: #d4d4d4;
+}
+.aside-block .flag-sprites {
+    margin-top: 43px;
+}
+.social-nav a + a {
+    margin-left: 7px;
+}
+.social-nav {
+    margin-bottom: 27px;
+}
+aside button + button {
+    margin-top: 15px;
+}
+.profile-wrapper aside .aside-nav i.fa {
+    font-size: 14px;
+    /* без заданой высоты первая иконка неправильно позиционируеться */
+    height: 14px;
+}
+/* -- ASIDE END -- */
+/* -- CONTENT START -- */
+.content-bg-border {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    margin-bottom: 30px;
+}
+.author-banner {
+    padding: 20px;
+}
+.author-info .author-info-item {
+    padding: 24px 0 20px 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.author-info .author-info-item + .author-info-item {
+    border-left: 1px solid #dedede;
+}
+.author-info .author-info-item span {
+    display: block;
+}
+.author-info .author-info-item-title {
+    font-weight: 500;
+    color: #263238;
+    margin-bottom: 8px;
+}
+.author-skills {
+    padding: 40px;
+}
+.author-skills .title-black {
+    margin-bottom: 30px;
+}
+.author-skills .author-about-me {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.author-skills .skill-name {
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+.author-skills .skill-progress-wrapper {
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: #f4f4f4;
+    margin-bottom: 24px;
+}
+.author-skills .progress {
+    height: 15px;
+    background:
+            repeating-linear-gradient(45deg,
+            #b5b5b5, #b5b5b5 15px, #cbcbcb 0, #cbcbcb 30px);
+}
+.author-skills .progress.progress-graphic-design {
+    width: 80%;
+}
+.author-skills .progress.progress-wordpress {
+    width: 90%;
+}
+.author-skills .progress.progress-joomla {
+    width: 70%;
+}
+/* -- CONTENT END -- */
+/* ===== PAGE PROFILE DETAILS END ===== */

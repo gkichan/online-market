@@ -74,6 +74,7 @@ button {
 }
 .breadcrumb {
     background: none;
+    margin-bottom: 0;
 }
 /* -- FORM ELEMENTS START -- */
 .form-control:focus {
