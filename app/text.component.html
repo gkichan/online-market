@@ -22,37 +22,37 @@
     <link rel="stylesheet" href="css/components/text.component.css">
     <style>
         /* Разделила блоки для наглядности */
-        section {
+        section.text-guide {
             padding: 20px;
         }
-        div { 
+        section.text-guide div {
             padding: 20px;
         }
-        div + div {
+        section.text-guide div + div {
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
-        <section>
-            <div class="container">
-                <h5>Default text</h5>
-                <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae vel in id nulla fugiat nemo perferendis nisi exercitationem inventore, accusantium enim ullam sequi, eveniet mollitia aperiam quos aut voluptatibus.</p>
-            </div>
-        </section>
-        <section>
+    <section class="text-guide">
+        <div class="container">
+            <h5>Default text</h5>
+            <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae vel in id nulla fugiat nemo perferendis nisi exercitationem inventore, accusantium enim ullam sequi, eveniet mollitia aperiam quos aut voluptatibus.</p>
+        </div>
+    </section>
+    <section class="text-guide">
         <div class="container">
             <h5>Text copyright</h5>
             <p class="copyright-text"><i class="fa fa-copyright"></i> Nobis molestiae vel in id nulla fugiat nemo perferendis nisi exercitationem inventore.</p>
         </div>
     </section>
-    <section>
+    <section class="text-guide">
         <div class="container">
             <h5>Green text</h5>
             <p class="default-text text-green">Lorem ipsum</p>
         </div>
     </section>
-    <section>
+    <section class="text-guide">
         <div class="container">
             <div class="text-white bg-red text-center">
                 <p>text-white bg-red text-center</p>
@@ -82,6 +82,7 @@
         </div>
         <!-- / conteiner -->
     </section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

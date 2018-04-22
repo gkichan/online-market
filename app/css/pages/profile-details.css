@@ -53,7 +53,7 @@
 aside button + button {
     margin-top: 15px;
 }
-aside .aside-nav i.fa {
+.profile-wrapper aside .aside-nav i.fa {
     font-size: 14px;
     /* без заданой высоты первая иконка неправильно позиционируеться */
     height: 14px;
