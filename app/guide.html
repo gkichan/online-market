@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Formstayler style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css">
     <!-- Reset -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- Custom fonts -->
@@ -71,6 +74,15 @@
         .title-guide span {
             display: block;
             margin-top: 20px;
+        }
+        .section-title {
+            margin-bottom: 20px;
+        }
+        .search-section {
+            border: 1px solid #ccc;
+            background-color: #999;
+            margin: 20px;
+            padding: 20px;
         }
     </style>
 </head>
@@ -1115,9 +1127,115 @@
     <!-- / DROPDOWN LIST -->
 </div>
 <!-- DROPDOWN END -->
-<!-- card -->
-<!-- form -->
-<!-- login modal -->
+<!-- card --><!-- card --><!-- card --><!-- card --><!-- card --><!-- card --><!-- card -->
+<!-- FORMS START -->
+<div class="title-lg text-center bg-green">Forms</div>
+<section class="form-datauser">
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-9">
+                <div class="content-wrapper-bordered">
+                    <div class="content-wrapper-title">
+                        <h6>Personal info</h6>
+                    </div>
+                    <!-- / content-wrapper-title -->
+                    <div class="content-wrapper-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-4 col-form-label">Email</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="staticEmail" placeholder="email@example.com">
+                                </div>
+                            </div>
+                            <!-- / form-group -->
+                            <div class="form-group row">
+                                <label for="selectCountry" class="col-sm-4 col-form-label">Country</label>
+                                <div class="col-sm-8">
+                                    <select id="selectCountry" name="selectCountry" data-placeholder="Select country">
+                                        <option></option>
+                                        <option value="1">USA</option>
+                                        <option value="2">Canada</option>
+                                        <option value="3">Germany</option>
+                                    </select>
+                                </div>
+                                <!-- / form-group  -->
+                            </div>
+                            <!-- / form-group row-->
+                            <div class="form-group row">
+                                <label for="message" class="col-sm-4">Product Description <sup class="text-green">*</sup></label>
+                                <div class="col-sm-8">
+                                    <textarea name="message" id="message" class="form-control"  placeholder="<h1> Type your text  here </h1>"></textarea>
+                                </div>
+                            </div>
+                            <!-- / form-group row-->
+                            <div class="form-group row">
+                                <label for="upload-file-styler" class="col-sm-4">Upload Main File <sup class="text-green">*</sup></label>
+                                <div class="col-sm-8">
+                                    <input type="file" class="form-control-file" id="upload-file" data-placeholder="No File Choosen" data-browse="Choose File">
+                                </div>
+                            </div>
+                            <!-- / form-group row-->
+                            <div class="row">
+                                <div class="col-sm-8 offset-sm-4">
+                                    <button class="btn-custom btn-md btn-green">Update</button>
+                                </div>
+                            </div>
+                            <!-- / row -->
+                        </form>
+                    </div>
+                </div>
+                <!-- / content-wrapper-bordered -->
+            </div>
+            <!-- / col-9 -->
+        </div>
+        <!-- / row -->
+    </div>
+    <!-- / container -->
+</section>
+<!-- FORMS END -->
+<!-- LOGIN MODAL START -->
+<div class="title-lg text-center bg-green">Login modal</div>
+<div class="container">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#LoginModal">Login</button>
+</div>
+</section>
+<!-- Modal window start -->
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-green">
+            <div class="modal-body">
+                <button type="button" class="login-close close btn text-white" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <h4 class="login-title text-center text-uppercase text-white">Login</h4>
+                <form name="login-form">
+                    <div class="login-form-group text-white">
+                        <i class="fa fa-user"></i>
+                        <input type="text" name="nickName" class="login-form-control text-white" placeholder="Name">
+                    </div>
+                    <div class="login-form-group text-white">
+                        <i class="fa fa-lock"></i>
+                        <input type="text" name="password" class="login-form-control text-white" placeholder="Password">
+                    </div>
+                    <div class="login-btn-group">
+                        <button class="submit btn-custom btn-md btn-white btn-shadow-submit text-uppercase">Submit</button>
+                        <button class="create-acount btn-custom btn-md btn-darkgreen">
+                            <i class="fa fa-pencil-square-o"></i> Create An Acount?</button>
+                    </div>
+                    <a href="#" class="lost-password text-white">Lost password?</a>
+                </form>
+                <!-- / form -->
+            </div>
+            <!-- / modal-body -->
+        </div>
+        <!-- / modal-content -->
+    </div>
+    <!-- / modal-dialog -->
+</div>
+<!-- / modal fade -->
+<!-- Modal window end -->
+<!-- LOGIN MODAL END -->
 <!-- PAGINATION START -->
 <div class="title-lg text-center bg-green">Pagination</div>
 <ul class="pagination d-flex justify-content-center"> <!-- d-flex jcc - для гайда ессесино-->
@@ -1216,6 +1334,42 @@
     </section>
 </div>
 <!-- TEXT END -->
+<!-- COMMON COMPONENTS START -->
+<div class="title-lg text-center bg-green">Common components</div>
+<section>
+    <div class="container">
+        <div class="section-title">
+            <span>Product Rating</span>
+        </div>
+        <div class="product-rating d-flex ml-auto">
+            <ul class="rating-stars d-flex">
+                <li><i class="fa fa-star active"></i></li>
+                <li><i class="fa fa-star active"></i></li>
+                <li><i class="fa fa-star active"></i></li>
+                <li><i class="fa fa-star active"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+            <span class="rating-count">07</span>
+        </div>
+        <!-- /.product-rating -->
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="search-section">
+            <div class="search-item">
+                <form>
+                    <input class="search-control" type="text" placeholder="Search Your Keywords ...">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+            <!-- / search-item -->
+        </div>
+        <!-- / search-section -->
+    </div>
+    <!-- / container -->
+</section>
+<!-- COMMON COMPONENTS END -->
 <!-- FOOTER START -->
 <div class="title-lg text-center bg-green">Footer</div>
 <footer id="footer">
@@ -1326,5 +1480,8 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+<!-- Init plugins -->
+<script src="js/init.js"></script>
 </body>
 </html>
