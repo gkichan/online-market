@@ -23,7 +23,40 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
     <style>
-        
+        /* пришлось добавить, иначе перебивались стили на иконки см. строку 1550 style.css */
+        #personal-info-menu li i.fa {
+            position: absolute;
+            top: 50%;
+            left: 22px;
+            font-size: 9px;
+            color: #8bc34a;
+            -webkit-transform: translateY(-51%);
+            transform: translateY(-51%);
+        }
+        #personal-info-menu li {
+            border: 1px solid #dedede;
+        }
+        aside #personal-info-menu {
+            margin: 0;
+        } 
+        #personal-info-menu li.active {
+            border-bottom: 2px solid #8bc34a;
+            background-color: #f4f6f5;
+        }   
+        #personal-info-menu li + li {
+            border-top: 0;
+        }  
+         #personal-info-menu a {
+            padding: 0 50px;
+            line-height: 3.57;
+            
+        }  
+        .content-wrapper-body .form-group + .form-group {
+            margin-top: 22px;
+        }
+        .personal-info-btn {
+            margin-top: 27px;
+        }
     </style>
 </head>
 <body>
@@ -324,71 +357,43 @@
                 </nav>
                 <div class="row">
                     <div class="col-3">
-                        <div class="personal-info-menu">
-                        <ul class="dropdown-container d-flex h-100 justify-content-between">
-                            <!-- CATEGORY EXAMPLE -->
-                            <li class="dropdown d-flex flex-column justify-content-center dropdown-personal">
-                                <div class="dropdown-wrapper d-flex h-100" role="button" id="personal-category" data-toggle="dropdown" aria-haspopup="true" >
-                                    <div class="dropdown-toggle d-flex align-items-center h-100">
+                        <!-- PERSONAL INFORMATION NAV -->
+                        <aside>
+                            <ul class="aside-nav" id="personal-info-menu">
+                                <li class="active">
+                                    <a href="#">
                                         <i class="fa fa-chevron-right"></i>
-                                        <span class="selected-personal">Personal Information</span>
-                                    </div>
-                                    <!-- / dropdown-toggle -->
-                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="personal-category">
-                                        <li class="dropdown-item">
-                                            <a class="item-content d-flex justify-content-between w-100" href="#">
-                                                <span class="personal-type">
-                                                    <i class="fa fa-chevron-right"></i> 
-                                                    <span class="personal-name">Profile</span>
-                                                </span>
-                                                <!-- / personal-type -->
-                                            </a>
-                                            <!-- / item-content -->
-                                        </li>
-                                        <!-- / dropdown-item -->      
-                                        <li class="dropdown-item">
-                                            <a class="item-content d-flex justify-content-between w-100" href="#">
-                                                <span class="personal-type">
-                                                    <i class="fa fa-chevron-right"></i> 
-                                                    <span class="personal-name">Badges</span>
-                                                </span>
-                                                <!-- / personal-type -->
-                                            </a>
-                                            <!-- / item-content -->
-                                        </li>
-                                        <!-- / dropdown-item --> 
-                                        <li class="dropdown-item">
-                                            <a class="item-content d-flex justify-content-between w-100" href="#">
-                                                <span class="personal-type">
-                                                    <i class="fa fa-chevron-right"></i> 
-                                                    <span class="personal-name">E-mail Settings</span>
-                                                </span>
-                                                <!-- / personal-type -->
-                                
-                                            </a>
-                                            <!-- / item-content -->
-                                        </li>
-                                        <!-- / dropdown-item --> 
-                                        <li class="dropdown-item">
-                                            <a class="item-content d-flex justify-content-between w-100" href="#">
-                                                <span class="personal-type">
-                                                    <i class="fa fa-chevron-right"></i> 
-                                                    <span class="personal-name">Social Network</span>
-                                                </span>
-                                                <!-- / filter-type -->
-                                                
-                                            </a>
-                                            <!-- / item-content -->
-                                        </li>
-                                        <!-- / dropdown-item -->          
-                                    </ul>
-                                    <!-- / dropdown-menu-->
-                                </div>
-                                <!-- / dropdown-wrapper -->
-                            </li>
-                            <!-- / CATEGORY EXAMPLE -->              
-                        </ul>
-                    </div>
+                                        Personal Information
+                                    </a>
+                                    </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                        Badges
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                        E-mail Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                        Social Network
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- / personal-info-nav -->
+                        </aside>
+                        <!-- / PERSONAL INFORMATION NAV -->
                     </div>
                     <!-- / col-3 -->
                     <div class="col-9">
@@ -468,7 +473,7 @@
                                     </div>
                                     <!-- / form-group -->    
                                     <div class="row">
-                                        <div class="col-sm-8 offset-sm-4">
+                                        <div class="personal-info-btn col-sm-8 offset-sm-4">
                                             <button class="btn-custom btn-md btn-green">Update</button>
                                         </div>
                                     </div>
