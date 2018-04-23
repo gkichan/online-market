@@ -26,23 +26,30 @@
         .withdraw-form label {
             font-weight: 500;
             font-size: 16px;
+            line-height: 40px;
         }
         .content-wrapper-body .form-group + .form-group {
             margin-top: 22px;
         }
-        .personal-info-btn {
-            margin-top: 27px;
-        }
-        
+        /* потом убрать, чтоб код не дублировался с css форм */
+        .form-group .sup {
+                font-size: 24px; 
+            }
+        /* ********** */
         .withdraw-form input {
-            font-size: 15px;
             color: #707070;
         }
-        table {
-            border: none;
+        .table {
+            
             font-size: 13px; 
             color: #444;
-            background-color: #f9f9f9
+        }
+        .table td, .table th { 
+            border: none;
+            height: 40px;
+        }
+        .withdraw-btn {
+            margin-top: 35px;
         }
     </style>
 </head>
@@ -352,12 +359,12 @@
                                     <div class="content-wrapper-body">
                                         <form class="withdraw-form">
                                             <div class="form-group row">
-                                                <label for="amount-withdraw" >Amount to Withdraw ($2000.00 Maximum) <sup class="text-green">*</sup></label>
+                                                <label for="amount-withdraw" >Amount to Withdraw ($2000.00 Maximum) <span class="sup text-green">*</span></label>
                                                 <input type="text" class="form-control" id="amount-withdraw" placeholder="Enter the amount you want to withdraw...">
                                             </div>
                                             <!-- / form-group -->
                                             <div class="form-group row">
-                                                <label for="choose-withdraw" >Choose your Withdraw Method <sup class="text-green">*</sup></label>
+                                                <label for="choose-withdraw" >Choose your Withdraw Method <span class="sup text-green">*</span></label>
                                                <select id="choose-withdraw" name="choose-withdraw" data-placeholder="Select Your Card">
                                                     <option></option>
                                                     <option value="1">Card 1</option>
@@ -367,7 +374,7 @@
                                                 </div>
                                                 <!-- / form-group -->
                                                 <div class="form-group row">
-                                                    <label for="account-name" >Your Account Name <sup class="text-green">*</sup></label>
+                                                    <label for="account-name" >Your Account Name <span class="sup text-green">*</span></label>
                                                     <select id="account-name" name="account-name" data-placeholder="Select Your Account Name">
                                                         <option></option>
                                                         <option value="1">Nick Name 1</option>
@@ -377,13 +384,13 @@
                                                 </div>
                                                 <!-- / form-group -->
                                                 <div class="form-group row">
-                                                    <label for="choose" >Confirm Your Password <sup class="text-green">*</sup></label>
+                                                    <label for="choose" >Confirm Your Password <span class="sup text-green">*</span></label>
                                                     <input type="text" class="form-control" id="choose" placeholder="Enter Your Password">
                                                 </div>
                                                 <!-- / form-group -->
                                             <div class="row">
-                                                <div >
-                                                    <button class="btn-custom btn-md btn-green">Update</button>
+                                                <div class="withdraw-btn">
+                                                    <button class="btn-custom btn-md btn-green">Request Withdrawal</button>
                                                 </div>
                                             </div>
                                             <!-- / row -->
@@ -400,21 +407,13 @@
                             </div>
                             <!-- / content-wrapper-title -->
                             <div class="content-wrapper-body">
-                                <table class="table table-borderless">
-                                    <thead>
-                                        <tr>
-                                            <th>Date</th>
-                                            <th>Email</th>
-                                            <th>Count</th>
-                                            <th>Pending</th>
-                                        </tr>
-                                    </thead>
+                                <table class="table table-striped">
                                     <tbody>
                                         <tr>
                                             <th>Dec 26th, 2016 </th>
                                             <th>Psdboss@paypal.com</th>
                                             <th>$100</th>
-                                            <th class="text-green text-right">Paid</th>
+                                            <th class="text-right">Pending</th>
                                         </tr>
                                         <tr>
                                             <th>Dec 26th, 2016 </th>
