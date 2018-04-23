@@ -92,13 +92,13 @@ aside .aside-product-price-buttons .btn-custom + .btn-custom {
 aside .aside-product-author {
     margin-top: 25px;
 }
-aside .product-author-img {
+aside .aside-product-author .product-author-img {
     margin-right: 14px;
 }
-aside .product-author-name {
+aside .aside-product-author .product-author-name {
     font-size: 18px;
 }
-aside .product-author-flags {
+aside .aside-product-author .product-author-flags {
     width: 100%;
     margin-top: 24px;
 }

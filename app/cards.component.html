@@ -28,12 +28,16 @@
             font-size: 20px;
             margin-bottom: 50px;
         }
+        .col-12 + .col-12 {
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
     <!-- MAIN START -->
     <main id="main">
-        <section class="default-section large-cards-example">
+        <!-- LARGE-CARDS-EXAMPLE -->
+        <section class="default-section">
             <div class="title section-title d-flex justify-content-center">
                 <span>Large Cards Exmple</span>
             </div>
@@ -41,25 +45,33 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-3">
-                        <div class="card large-card">
-                            <div class="card-img">
+                        <div class="card hot large-card">
+                            <div class="product-hot-badge">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <!-- /.product-hot-badge -->
+                            <div class="product-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
                             </div>
-                            <!-- /.card-img -->
-                            <div class="card-descripton">
-                                <div class="card-top-info d-flex align-items-center">
-                                    <div class="d-flex flex-column">
-                                        <a href="#" class="card-title">Responsive Mobile APP</a>
-                                        <a href="" class="card-category">Site Template</a>
+                            <!-- /.product-img -->
+                            <div class="product-info-wrapper">
+                                <div class="product-top-info d-flex align-items-center">
+                                    <div class="product-description-wrapper d-flex flex-column">
+                                        <a href="#" class="product-title">Responsive Mobile APP</a>
+                                        <a href="" class="product-category">Site Template</a>
                                     </div>
-                                    <span class="card-price ml-auto">$19</span>
+                                    <!-- /.product-description-wrapper -->
+                                    <span class="product-price ml-auto">$19</span>
                                 </div>
-                                <!-- /.card-info -->
-                                <div class="card-bottom-info d-flex align-items-center">
-                                    <a href="#" class="card-author">
-                                        <img src="img/card-author-avatar-1.jpg" alt="" class="card-author-img">
-                                        <span class="card-author-name">SupeRprOgeR</span>
+                                <!-- /.product-top-info -->
+                                <div class="product-bottom-info d-flex align-items-center">
+                                    <a href="#" class="product-author">
+                                        <div class="product-author-img">
+                                            <img src="img/card-author-avatar-1.jpg" alt="">
+                                        </div>
+                                        <span class="product-author-name">SupeRprOgeR</span>
                                     </a>
+                                    <!-- /.product-author -->
                                     <div class="product-rating d-flex ml-auto">
                                         <ul class="rating-stars d-flex">
                                             <li><i class="fa fa-star active"></i></li>
@@ -72,126 +84,150 @@
                                     </div>
                                     <!-- /.product-rating -->
                                 </div>
-                                <!-- /.card-author -->
+                                <!-- /.product-bottom-info -->
                             </div>
-                            <!-- /.card-descripton -->
+                            <!-- /.product-info-wrapper -->
                         </div>
                         <!-- /.card -->
                     </div>
                     <!-- /.col -->
                     <div class="col-3">
                         <div class="card large-card">
-                            <div class="card-img">
+                            <div class="product-hot-badge">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <!-- /.product-hot-badge -->
+                            <div class="product-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
                             </div>
-                            <!-- /.card-img -->
-                            <div class="card-descripton">
-                                <div class="card-top-info d-flex align-items-center">
-                                    <div class="d-flex flex-column">
-                                        <a href="#" class="card-title">The Post Grid Pro</a>
-                                        <a href="" class="card-category">WordPress Plugin</a>
+                            <!-- /.product-img -->
+                            <div class="product-info-wrapper">
+                                <div class="product-top-info d-flex align-items-center">
+                                    <div class="product-description-wrapper d-flex flex-column">
+                                        <a href="#" class="product-title">The Post Grid Pro</a>
+                                        <a href="" class="product-category">WordPress Plugin</a>
                                     </div>
-                                    <span class="card-price ml-auto">$15</span>
+                                    <!-- /.product-description-wrapper -->
+                                    <span class="product-price ml-auto">$15</span>
                                 </div>
-                                <!-- /.card-info -->
-                                <div class="card-bottom-info d-flex align-items-center">
-                                    <a href="#" class="card-author">
-                                        <img src="img/card-author-default-avatar.jpg" alt="" class="card-author-img">
-                                        <span class="card-author-name">PsdBosS</span>
+                                <!-- /.product-top-info -->
+                                <div class="product-bottom-info d-flex align-items-center">
+                                    <a href="#" class="product-author">
+                                        <div class="product-author-img">
+                                            <img src="img/card-author-default-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="product-author-name">PsdBosS</span>
                                     </a>
+                                    <!-- /.product-author -->
+                                    <div class="product-rating d-flex ml-auto">
+                                        <ul class="rating-stars d-flex">
+                                            <li><i class="fa fa-star active"></i></li>
+                                            <li><i class="fa fa-star active"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.product-rating -->
+                                </div>
+                                <!-- /.product-bottom-info -->
+                            </div>
+                            <!-- /.product-info-wrapper -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-3">
+                        <div class="card hot large-card">
+                            <div class="product-hot-badge">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <!-- /.product-hot-badge -->
+                            <div class="product-img">
+                                <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
+                            </div>
+                            <!-- /.product-img -->
+                            <div class="product-info-wrapper">
+                                <div class="product-top-info d-flex align-items-center">
+                                    <div class="product-description-wrapper d-flex flex-column">
+                                        <a href="#" class="product-title">Food Menu</a>
+                                        <a href="" class="product-category">WordPress Plugin</a>
+                                    </div>
+                                    <!-- /.product-description-wrapper -->
+                                    <span class="product-price ml-auto">$22</span>
+                                </div>
+                                <!-- /.product-top-info -->
+                                <div class="product-bottom-info d-flex align-items-center">
+                                    <a href="#" class="product-author">
+                                        <div class="product-author-img">
+                                            <img src="img/card-author-avatar-2.jpg" alt="">
+                                        </div>
+                                        <span class="product-author-name">Lolypop</span>
+                                    </a>
+                                    <!-- /.product-author -->
                                     <div class="product-rating d-flex ml-auto">
                                         <ul class="rating-stars d-flex">
                                             <li><i class="fa fa-star active"></i></li>
                                             <li><i class="fa fa-star active"></i></li>
                                             <li><i class="fa fa-star active"></i></li>
                                             <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star active"></i></li>
                                         </ul>
                                         <span class="rating-count">07</span>
                                     </div>
                                     <!-- /.product-rating -->
                                 </div>
-                                <!-- /.card-author -->
+                                <!-- /.product-bottom-info -->
                             </div>
-                            <!-- /.card-descripton -->
+                            <!-- /.product-info-wrapper -->
                         </div>
                         <!-- /.card -->
                     </div>
                     <!-- /.col -->
                     <div class="col-3">
                         <div class="card large-card">
-                            <div class="card-img">
+                            <div class="product-hot-badge">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <!-- /.product-hot-badge -->
+                            <div class="product-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
                             </div>
-                            <!-- /.card-img -->
-                            <div class="card-descripton">
-                                <div class="card-top-info d-flex align-items-center">
-                                    <div class="d-flex flex-column">
-                                        <a href="#" class="card-title">Food Menu</a>
-                                        <a href="" class="card-category">WordPress Plugin</a>
+                            <!-- /.product-img -->
+                            <div class="product-info-wrapper">
+                                <div class="product-top-info d-flex align-items-center">
+                                    <div class="product-description-wrapper d-flex flex-column">
+                                        <a href="#" class="product-title">Imac Mockup</a>
+                                        <a href="" class="product-category">Psd Template</a>
                                     </div>
-                                    <span class="card-price ml-auto">$20</span>
+                                    <!-- /.product-description-wrapper -->
+                                    <span class="product-price ml-auto">$11</span>
                                 </div>
-                                <!-- /.card-info -->
-                                <div class="card-bottom-info d-flex align-items-center">
-                                    <a href="#" class="card-author">
-                                        <img src="img/card-author-avatar-2.jpg" alt="" class="card-author-img">
-                                        <span class="card-author-name">Lolypop</span>
+                                <!-- /.product-top-info -->
+                                <div class="product-bottom-info d-flex align-items-center">
+                                    <a href="#" class="product-author">
+                                        <div class="product-author-img">
+                                            <img src="img/card-author-default-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="product-author-name">Manilip</span>
                                     </a>
+                                    <!-- /.product-author -->
                                     <div class="product-rating d-flex ml-auto">
                                         <ul class="rating-stars d-flex">
                                             <li><i class="fa fa-star active"></i></li>
                                             <li><i class="fa fa-star active"></i></li>
                                             <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star active"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
                                         </ul>
-                                        <span class="rating-count">07</span>
+                                        <span class="rating-count">15</span>
                                     </div>
                                     <!-- /.product-rating -->
                                 </div>
-                                <!-- /.card-author -->
+                                <!-- /.product-bottom-info -->
                             </div>
-                            <!-- /.card-descripton -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-3">
-                        <div class="card large-card">
-                            <div class="card-img">
-                                <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
-                            </div>
-                            <!-- /.card-img -->
-                            <div class="card-descripton">
-                                <div class="card-top-info d-flex align-items-center">
-                                    <div class="d-flex flex-column">
-                                        <a href="#" class="card-title">Imac Mockup</a>
-                                        <a href="" class="card-category">Psd Template</a>
-                                    </div>
-                                    <span class="card-price ml-auto">$12</span>
-                                </div>
-                                <!-- /.card-info -->
-                                <div class="card-bottom-info d-flex align-items-center">
-                                    <a href="#" class="card-author">
-                                        <img src="img/card-author-default-avatar.jpg" alt="" class="card-author-img">
-                                        <span class="card-author-name">Manilip</span>
-                                    </a>
-                                    <div class="product-rating d-flex ml-auto">
-                                        <ul class="rating-stars d-flex">
-                                            <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
-                                        <span class="rating-count">07</span>
-                                    </div>
-                                    <!-- /.product-rating -->
-                                </div>
-                                <!-- /.card-author -->
-                            </div>
-                            <!-- /.card-descripton -->
+                            <!-- /.product-info-wrapper -->
                         </div>
                         <!-- /.card -->
                     </div>
@@ -201,8 +237,8 @@
             </div>
             <!-- /.container-fluid -->
         </section>
-        <!-- /.large-cards-example -->
-        <section class="default-section medium-cards-example">
+        <!-- MEDIUM-CARDS-EXAMPLE -->
+        <section class="default-section">
             <div class="title section-title d-flex justify-content-center">
                 <span>Medium Cards Exmple</span>
             </div>
@@ -210,31 +246,55 @@
             <div class="container">
                 <div class="row">
                     <div class="col-3">
-                        <!-- Заглушка aside -->
+                        <aside>
+                            <div class="aside-block">
+                                <div class="aside-block-title title-sm font-bold">
+                                    <span>Top Sellers</span>
+                                </div>
+                                <!-- /.aside-block-title -->
+                            </div>
+                        </aside>
                     </div>
                     <!-- /.col -->
                     <div class="col-9">
                         <div class="row">
                             <div class="col-4">
-                                <div class="card medium-card">
-                                    <div class="card-img">
+                                <div class="card hot medium-card">
+                                    <div class="product-hot-badge">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    <!-- /.product-hot-badge -->
+                                    <div class="product-img">
                                         <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
                                     </div>
-                                    <!-- /.card-img -->
-                                    <div class="card-descripton">
-                                        <div class="card-top-info d-flex align-items-center">
-                                            <div class="d-flex flex-column">
-                                                <a href="#" class="card-title">The Post Grid Pro</a>
-                                                <a href="" class="card-category">WordPress Plugin</a>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">Responsive Mobile APP</a>
+                                                <a href="" class="product-category">Site Template</a>
+                                                <span class="product-description d-none">Pimply dummy text of the printing and typesetting industry.</span>
                                             </div>
-                                            <span class="card-price ml-auto">$15</span>
+                                            <!-- /.product-description-wrapper -->
+                                            <div class="product-price-wrapper d-flex flex-column ml-auto">
+                                                <span class="product-price">$19</span>
+                                                <div class="product-sales d-none">
+                                                    <span>Sales</span>
+                                                    <span class="product-sales-count">14</span>
+                                                </div>
+                                                <!-- /.product-sales -->
+                                            </div>
+                                            <!-- /.product-price-wrapper -->
                                         </div>
-                                        <!-- /.card-info -->
-                                        <div class="card-bottom-info d-flex align-items-center">
-                                            <a href="#" class="card-author">
-                                                <img src="img/card-author-default-avatar.jpg" alt="" class="card-author-img">
-                                                <span class="card-author-name">PsdBosS</span>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-avatar-1.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">SupeRprOgeR</span>
                                             </a>
+                                            <!-- /.product-author -->
                                             <div class="product-rating d-flex ml-auto">
                                                 <ul class="rating-stars d-flex">
                                                     <li><i class="fa fa-star active"></i></li>
@@ -246,88 +306,161 @@
                                                 <span class="rating-count">07</span>
                                             </div>
                                             <!-- /.product-rating -->
+                                            <div class="product-social-data d-none">
+                                                <div class="product-comments">
+                                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                                    <span class="product-comments-count">10</span>
+                                                </div>
+                                                <!-- /.product-comments -->
+                                                <div class="product-likes">
+                                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                                    <span class="product-likes-count">30</span>
+                                                </div>
+                                                <!-- /.product-likes -->
+                                            </div>
+                                            <!-- /.product-social-data -->
                                         </div>
-                                        <!-- /.card-author -->
+                                        <!-- /.product-bottom-info -->
                                     </div>
-                                    <!-- /.card-descripton -->
+                                    <!-- /.product-info-wrapper -->
                                 </div>
                                 <!-- /.card -->
                             </div>
                             <!-- /.col -->
                             <div class="col-4">
                                 <div class="card medium-card">
-                                    <div class="card-img">
+                                    <div class="product-hot-badge">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    <!-- /.product-hot-badge -->
+                                    <div class="product-img">
                                         <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
                                     </div>
-                                    <!-- /.card-img -->
-                                    <div class="card-descripton">
-                                        <div class="card-top-info d-flex align-items-center">
-                                            <div class="d-flex flex-column">
-                                                <a href="#" class="card-title">Food Menu</a>
-                                                <a href="" class="card-category">WordPress Plugin</a>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">The Post Grid Pro</a>
+                                                <a href="" class="product-category">WordPress Plugin</a>
+                                                <span class="product-description d-none">Pimply dummy text of the printing and typesetting industry.</span>
                                             </div>
-                                            <span class="card-price ml-auto">$20</span>
+                                            <!-- /.product-description-wrapper -->
+                                            <div class="product-price-wrapper d-flex flex-column ml-auto">
+                                                <span class="product-price">$15</span>
+                                                <div class="product-sales d-none">
+                                                    <span>Sales</span>
+                                                    <span class="product-sales-count">14</span>
+                                                </div>
+                                                <!-- /.product-sales -->
+                                            </div>
+                                            <!-- /.product-price-wrapper -->
                                         </div>
-                                        <!-- /.card-info -->
-                                        <div class="card-bottom-info d-flex align-items-center">
-                                            <a href="#" class="card-author">
-                                                <img src="img/card-author-avatar-2.jpg" alt="" class="card-author-img">
-                                                <span class="card-author-name">Lolypop</span>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-default-avatar.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">PsdBosS</span>
                                             </a>
+                                            <!-- /.product-author -->
                                             <div class="product-rating d-flex ml-auto">
                                                 <ul class="rating-stars d-flex">
                                                     <li><i class="fa fa-star active"></i></li>
                                                     <li><i class="fa fa-star active"></i></li>
-                                                    <li><i class="fa fa-star active"></i></li>
-                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
                                                     <li><i class="fa fa-star"></i></li>
                                                 </ul>
-                                                <span class="rating-count">07</span>
+                                                <span class="rating-count">05</span>
                                             </div>
                                             <!-- /.product-rating -->
+                                            <div class="product-social-data d-none">
+                                                <div class="product-comments">
+                                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                                    <span class="product-comments-count">10</span>
+                                                </div>
+                                                <!-- /.product-comments -->
+                                                <div class="product-likes">
+                                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                                    <span class="product-likes-count">30</span>
+                                                </div>
+                                                <!-- /.product-likes -->
+                                            </div>
+                                            <!-- /.product-social-data -->
                                         </div>
-                                        <!-- /.card-author -->
+                                        <!-- /.product-bottom-info -->
                                     </div>
-                                    <!-- /.card-descripton -->
+                                    <!-- /.product-info-wrapper -->
                                 </div>
                                 <!-- /.card -->
                             </div>
                             <!-- /.col -->
                             <div class="col-4">
-                                <div class="card medium-card">
-                                    <div class="card-img">
+                                <div class="card hot medium-card">
+                                    <div class="product-hot-badge">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    <!-- /.product-hot-badge -->
+                                    <div class="product-img">
                                         <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
                                     </div>
-                                    <!-- /.card-img -->
-                                    <div class="card-descripton">
-                                        <div class="card-top-info d-flex align-items-center">
-                                            <div class="d-flex flex-column">
-                                                <a href="#" class="card-title">Imac Mockup</a>
-                                                <a href="" class="card-category">Psd Template</a>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">Food Menu</a>
+                                                <a href="" class="product-category">WordPress Plugin</a>
+                                                <span class="product-description d-none">Pimply dummy text of the printing and typesetting industry.</span>
                                             </div>
-                                            <span class="card-price ml-auto">$12</span>
+                                            <!-- /.product-description-wrapper -->
+                                            <div class="product-price-wrapper d-flex flex-column ml-auto">
+                                                <span class="product-price">$22</span>
+                                                <div class="product-sales d-none">
+                                                    <span>Sales</span>
+                                                    <span class="product-sales-count">14</span>
+                                                </div>
+                                                <!-- /.product-sales -->
+                                            </div>
+                                            <!-- /.product-price-wrapper -->
                                         </div>
-                                        <!-- /.card-info -->
-                                        <div class="card-bottom-info d-flex align-items-center">
-                                            <a href="#" class="card-author">
-                                                <img src="img/card-author-default-avatar.jpg" alt="" class="card-author-img">
-                                                <span class="card-author-name">Manilip</span>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-avatar-2.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">Lolypop</span>
                                             </a>
+                                            <!-- /.product-author -->
                                             <div class="product-rating d-flex ml-auto">
                                                 <ul class="rating-stars d-flex">
                                                     <li><i class="fa fa-star active"></i></li>
                                                     <li><i class="fa fa-star active"></i></li>
                                                     <li><i class="fa fa-star active"></i></li>
                                                     <li><i class="fa fa-star active"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
                                                 </ul>
                                                 <span class="rating-count">07</span>
                                             </div>
                                             <!-- /.product-rating -->
+                                            <div class="product-social-data d-none">
+                                                <div class="product-comments">
+                                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                                    <span class="product-comments-count">10</span>
+                                                </div>
+                                                <!-- /.product-comments -->
+                                                <div class="product-likes">
+                                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                                    <span class="product-likes-count">30</span>
+                                                </div>
+                                                <!-- /.product-likes -->
+                                            </div>
+                                            <!-- /.product-social-data -->
                                         </div>
-                                        <!-- /.card-author -->
+                                        <!-- /.product-bottom-info -->
                                     </div>
-                                    <!-- /.card-descripton -->
+                                    <!-- /.product-info-wrapper -->
                                 </div>
                                 <!-- /.card -->
                             </div>
@@ -340,75 +473,44 @@
             </div>
             <!-- /.container -->
         </section>
-        <!-- /.medium-cards-example -->
-        <section class="default-section row-cards-example">
+        <!-- ROW AND MINI-CARDS EXAMPLE -->
+        <section class="default-section">
             <div class="title section-title d-flex justify-content-center">
-                <span>Row Cards Exmple</span>
+                <span>Row and Mini-Cards Exmple</span>
             </div>
             <!-- /.section-title -->
             <div class="container">
                 <div class="row">
-                    <div class="col-9">
-                        <div class="card medium-card row-card">
-                            <div class="card-img">
-                                <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
-                            </div>
-                            <!-- /.card-img -->
-                            <div class="card-descripton">
-                                <div class="card-top-info d-flex align-items-center">
-                                    <div class="d-flex flex-column">
-                                        <a href="#" class="card-title">Imac Mockup</a>
-                                        <a href="" class="card-category">Psd Template</a>
-                                    </div>
-                                    <span class="card-price ml-auto">$12</span>
+                    <div class="col-3">
+                        <aside>
+                            <div class="aside-block">
+                                <div class="aside-block-title title-sm font-bold">
+                                    <span>Top Sellers</span>
                                 </div>
-                                <!-- /.card-info -->
-                                <div class="card-bottom-info d-flex align-items-center">
-                                    <a href="#" class="card-author">
-                                        <img src="img/card-author-default-avatar.jpg" alt="" class="card-author-img">
-                                        <span class="card-author-name">Manilip</span>
-                                    </a>
-                                    <div class="product-rating d-flex ml-auto">
-                                        <ul class="rating-stars d-flex">
-                                            <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star active"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
-                                        <span class="rating-count">07</span>
+                                <!-- /.aside-block-title -->
+                                <div class="mini-card">
+                                    <div class="product-img">
+                                        <a href="#"><img src="img/mini-card-img.jpg" alt=""></a>
                                     </div>
-                                    <!-- /.product-rating -->
-                                </div>
-                                <!-- /.card-author -->
-                            </div>
-                            <!-- /.card-descripton -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- For Test -->
-                    <div class="col-9" style="margin-top: 50px;">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="card medium-card">
-                                    <div class="card-img">
-                                        <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
-                                    </div>
-                                    <!-- /.card-img -->
-                                    <div class="card-descripton">
-                                        <div class="card-top-info d-flex align-items-center">
-                                            <div class="d-flex flex-column">
-                                                <a href="#" class="card-title">Imac Mockup</a>
-                                                <a href="" class="card-category">Psd Template</a>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">The Post Grid Pro</a>
+                                                <a href="" class="product-category">WordPress Plugin</a>
                                             </div>
-                                            <span class="card-price ml-auto">$12</span>
+                                            <!-- /.product-description-wrapper -->
+                                            <span class="product-price ml-auto">$19</span>
                                         </div>
-                                        <!-- /.card-info -->
-                                        <div class="card-bottom-info d-flex align-items-center">
-                                            <a href="#" class="card-author">
-                                                <img src="img/card-author-default-avatar.jpg" alt="" class="card-author-img">
-                                                <span class="card-author-name">Manilip</span>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author d-flex align-items-center">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-avatar-1.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">SupeRprOgeR</span>
                                             </a>
+                                            <!-- /.product-author -->
                                             <div class="product-rating d-flex ml-auto">
                                                 <ul class="rating-stars d-flex">
                                                     <li><i class="fa fa-star active"></i></li>
@@ -417,17 +519,378 @@
                                                     <li><i class="fa fa-star active"></i></li>
                                                     <li><i class="fa fa-star"></i></li>
                                                 </ul>
-                                                <span class="rating-count">07</span>
+                                                <span class="rating-count d-none">15</span>
                                             </div>
                                             <!-- /.product-rating -->
                                         </div>
-                                        <!-- /.card-author -->
+                                        <!-- /.product-bottom-info -->
                                     </div>
-                                    <!-- /.card-descripton -->
+                                    <!-- /.product-info-wrapper -->
+                                </div>
+                                <!-- /.mini-card -->
+                                <div class="mini-card">
+                                    <div class="product-img">
+                                        <a href="#"><img src="img/mini-card-img.jpg" alt=""></a>
+                                    </div>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">Mockup Desing</a>
+                                                <a href="" class="product-category">PSD Template</a>
+                                            </div>
+                                            <!-- /.product-description-wrapper -->
+                                            <span class="product-price ml-auto">$33</span>
+                                        </div>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author d-flex align-items-center">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-avatar-2.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">Lolypop</span>
+                                            </a>
+                                            <!-- /.product-author -->
+                                            <div class="product-rating d-flex ml-auto">
+                                                <ul class="rating-stars d-flex">
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                </ul>
+                                                <span class="rating-count d-none">15</span>
+                                            </div>
+                                            <!-- /.product-rating -->
+                                        </div>
+                                        <!-- /.product-bottom-info -->
+                                    </div>
+                                    <!-- /.product-info-wrapper -->
+                                </div>
+                                <!-- /.mini-card -->
+                                <div class="mini-card">
+                                    <div class="product-img">
+                                        <a href="#"><img src="img/mini-card-img.jpg" alt=""></a>
+                                    </div>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">Resposive APP</a>
+                                                <a href="" class="product-category">WordPress Plugin</a>
+                                            </div>
+                                            <!-- /.product-description-wrapper -->
+                                            <span class="product-price ml-auto">$14</span>
+                                        </div>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author d-flex align-items-center">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-default-avatar.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">PsdBosS</span>
+                                            </a>
+                                            <!-- /.product-author -->
+                                            <div class="product-rating d-flex ml-auto">
+                                                <ul class="rating-stars d-flex">
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                                <span class="rating-count d-none">15</span>
+                                            </div>
+                                            <!-- /.product-rating -->
+                                        </div>
+                                        <!-- /.product-bottom-info -->
+                                    </div>
+                                    <!-- /.product-info-wrapper -->
+                                </div>
+                                <!-- /.mini-card -->
+                            </div>
+                            <!-- /.aside-block -->
+                        </aside>
+                    </div>
+                    <!-- /.col-3 -->
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card hot medium-card row-card">
+                                    <div class="product-hot-badge">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    <!-- /.product-hot-badge -->
+                                    <div class="product-img">
+                                        <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
+                                    </div>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">Responsive Mobile APP</a>
+                                                <a href="" class="product-category">Site Template</a>
+                                                <span class="product-description">Pimply dummy text of the printing and typesetting industry. </span>
+                                            </div>
+                                            <!-- /.product-description-wrapper -->
+                                            <div class="product-price-wrapper d-flex flex-column ml-auto">
+                                                <span class="product-price">$19</span>
+                                                <div class="product-sales">
+                                                    <span>Sales</span>
+                                                    <span class="product-sales-count">14</span>
+                                                </div>
+                                                <!-- /.product-sales -->
+                                            </div>
+                                            <!-- /.product-price-wrapper -->
+                                        </div>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-avatar-1.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">SupeRprOgeR</span>
+                                            </a>
+                                            <!-- /.product-author -->
+                                            <div class="product-rating d-flex ml-auto">
+                                                <ul class="rating-stars d-flex">
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                                <span class="rating-count">05</span>
+                                            </div>
+                                            <!-- /.product-rating -->
+                                            <div class="product-social-data">
+                                                <div class="product-comments">
+                                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                                    <span class="product-comments-count">10</span>
+                                                </div>
+                                                <!-- /.product-comments -->
+                                                <div class="product-likes">
+                                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                                    <span class="product-likes-count">30</span>
+                                                </div>
+                                                <!-- /.product-likes -->
+                                            </div>
+                                            <!-- /.product-social-data -->
+                                        </div>
+                                        <!-- /.product-bottom-info -->
+                                    </div>
+                                    <!-- /.product-info-wrapper -->
                                 </div>
                                 <!-- /.card -->
                             </div>
-                            <!-- /.col -->
+                            <!-- /.col-12 -->
+                            <div class="col-12">
+                                <div class="card medium-card row-card">
+                                    <div class="product-hot-badge">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    <!-- /.product-hot-badge -->
+                                    <div class="product-img">
+                                        <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
+                                    </div>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">The Post Grid Pro</a>
+                                                <a href="" class="product-category">WordPress Plugin</a>
+                                                <span class="product-description">Pimply dummy text of the printing and typesetting industry. </span>
+                                            </div>
+                                            <!-- /.product-description-wrapper -->
+                                            <div class="product-price-wrapper d-flex flex-column ml-auto">
+                                                <span class="product-price">$15</span>
+                                                <div class="product-sales">
+                                                    <span>Sales</span>
+                                                    <span class="product-sales-count">32</span>
+                                                </div>
+                                                <!-- /.product-sales -->
+                                            </div>
+                                            <!-- /.product-price-wrapper -->
+                                        </div>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-default-avatar.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">PsdBosS</span>
+                                            </a>
+                                            <!-- /.product-author -->
+                                            <div class="product-rating d-flex ml-auto">
+                                                <ul class="rating-stars d-flex">
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                                <span class="rating-count">02</span>
+                                            </div>
+                                            <!-- /.product-rating -->
+                                            <div class="product-social-data">
+                                                <div class="product-comments">
+                                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                                    <span class="product-comments-count">12</span>
+                                                </div>
+                                                <!-- /.product-comments -->
+                                                <div class="product-likes">
+                                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                                    <span class="product-likes-count">34</span>
+                                                </div>
+                                                <!-- /.product-likes -->
+                                            </div>
+                                            <!-- /.product-social-data -->
+                                        </div>
+                                        <!-- /.product-bottom-info -->
+                                    </div>
+                                    <!-- /.product-info-wrapper -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-12 -->
+                            <div class="col-12">
+                                <div class="card hot medium-card row-card">
+                                    <div class="product-hot-badge">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    <!-- /.product-hot-badge -->
+                                    <div class="product-img">
+                                        <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
+                                    </div>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">Food Menu</a>
+                                                <a href="" class="product-category">WordPress Plugin</a>
+                                                <span class="product-description">Pimply dummy text of the printing and typesetting industry. </span>
+                                            </div>
+                                            <!-- /.product-description-wrapper -->
+                                            <div class="product-price-wrapper d-flex flex-column ml-auto">
+                                                <span class="product-price">$22</span>
+                                                <div class="product-sales">
+                                                    <span>Sales</span>
+                                                    <span class="product-sales-count">57</span>
+                                                </div>
+                                                <!-- /.product-sales -->
+                                            </div>
+                                            <!-- /.product-price-wrapper -->
+                                        </div>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-avatar-2.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">Lolypop</span>
+                                            </a>
+                                            <!-- /.product-author -->
+                                            <div class="product-rating d-flex ml-auto">
+                                                <ul class="rating-stars d-flex">
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                </ul>
+                                                <span class="rating-count">07</span>
+                                            </div>
+                                            <!-- /.product-rating -->
+                                            <div class="product-social-data">
+                                                <div class="product-comments">
+                                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                                    <span class="product-comments-count">41</span>
+                                                </div>
+                                                <!-- /.product-comments -->
+                                                <div class="product-likes">
+                                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                                    <span class="product-likes-count">75</span>
+                                                </div>
+                                                <!-- /.product-likes -->
+                                            </div>
+                                            <!-- /.product-social-data -->
+                                        </div>
+                                        <!-- /.product-bottom-info -->
+                                    </div>
+                                    <!-- /.product-info-wrapper -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-12 -->
+                            <div class="col-12">
+                                <div class="card medium-card row-card">
+                                    <div class="product-hot-badge">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    <!-- /.product-hot-badge -->
+                                    <div class="product-img">
+                                        <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
+                                    </div>
+                                    <!-- /.product-img -->
+                                    <div class="product-info-wrapper">
+                                        <div class="product-top-info d-flex">
+                                            <div class="product-description-wrapper d-flex flex-column">
+                                                <a href="#" class="product-title">Imac Mockup</a>
+                                                <a href="" class="product-category">Psd Template</a>
+                                                <span class="product-description">Pimply dummy text of the printing and typesetting industry. </span>
+                                            </div>
+                                            <!-- /.product-description-wrapper -->
+                                            <div class="product-price-wrapper d-flex flex-column ml-auto">
+                                                <span class="product-price">$11</span>
+                                                <div class="product-sales">
+                                                    <span>Sales</span>
+                                                    <span class="product-sales-count">26</span>
+                                                </div>
+                                                <!-- /.product-sales -->
+                                            </div>
+                                            <!-- /.product-price-wrapper -->
+                                        </div>
+                                        <!-- /.product-top-info -->
+                                        <div class="product-bottom-info d-flex align-items-center">
+                                            <a href="#" class="product-author">
+                                                <div class="product-author-img">
+                                                    <img src="img/card-author-default-avatar.jpg" alt="">
+                                                </div>
+                                                <span class="product-author-name">Manilip</span>
+                                            </a>
+                                            <!-- /.product-author -->
+                                            <div class="product-rating d-flex ml-auto">
+                                                <ul class="rating-stars d-flex">
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star active"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                                <span class="rating-count">15</span>
+                                            </div>
+                                            <!-- /.product-rating -->
+                                            <div class="product-social-data">
+                                                <div class="product-comments">
+                                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                                    <span class="product-comments-count">29</span>
+                                                </div>
+                                                <!-- /.product-comments -->
+                                                <div class="product-likes">
+                                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                                    <span class="product-likes-count">18</span>
+                                                </div>
+                                                <!-- /.product-likes -->
+                                            </div>
+                                            <!-- /.product-social-data -->
+                                        </div>
+                                        <!-- /.product-bottom-info -->
+                                    </div>
+                                    <!-- /.product-info-wrapper -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-12 -->
                         </div>
                         <!-- /.row -->
                     </div>
@@ -437,7 +900,6 @@
             </div>
             <!-- /.container -->
         </section>
-        <!-- /.medium-cards-example -->
     </main>
     <!-- MAIN END -->
 
