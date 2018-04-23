@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
     <!-- Reset -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- Custom fonts -->
@@ -20,10 +24,11 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components/common.component.css">
-    <link rel="stylesheet" href="css/components/colors.component.css">
     <style>
         .section-title {
             margin-bottom: 20px;
+            font-size: 36px;
+            font-weight: 500;
         }
         .search-section {
             border: 1px solid #ccc;
@@ -32,6 +37,11 @@
             padding: 20px;
         }
     </style>
+    <script>
+        $( function() {
+            $( "#regular-extended" ).selectmenu();
+        } );
+    </script>
 </head>
 <body>
     <section>
@@ -68,18 +78,10 @@
         <!-- / container -->
     </section>
     <section>
-        <div class="container">
-            <form class="select-form">
-                <select class="content-bg-border">
-                    <option value="Regular">Regular</option>
-                    <option value="Extended">Extended</option>
-                </select>
-            </form>
-        </div>
+
     </section>
     <!-- Optional JavaScripts -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

@@ -22,47 +22,10 @@
     <link rel="stylesheet" href="css/fonts.css">
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* пришлось добавить, иначе перебивались стили на иконки см. строку 1550 style.css start */
-        /*#personal-info-menu li i.fa {*/
-            /*position: absolute;*/
-            /*top: 50%;*/
-            /*left: 22px;*/
-            /*font-size: 9px;*/
-            /*color: #8bc34a;*/
-            /*-webkit-transform: translateY(-51%);*/
-            /*transform: translateY(-51%);*/
-        /*}*/
-        /* end */
-        #personal-info-menu li {
-            border: 1px solid #dedede;
-        }
-        aside #personal-info-menu {
-            margin: 0;
-        } 
-        #personal-info-menu li.active {
-            border-bottom: 2px solid #8bc34a;
-            font-weight: 500;
-        }   
-        #personal-info-menu li + li {
-            border-top: 0;
-        }  
-         #personal-info-menu a {
-            padding: 0 50px;
-            line-height: 3.57;
-            
-        }  
-        .content-wrapper-body .form-group + .form-group {
-            margin-top: 22px;
-        }
-        .personal-info-btn {
-            margin-top: 27px;
-        }
-    </style>
 </head>
 <body>
     <!-- HEADER START -->
-    <header>
+    <header id="header">
         <div class="top-header header-in">
             <div class="container d-flex align-items-center">
                 <div class="header-logo mr-auto">
@@ -72,7 +35,7 @@
                 </div>
                 <!-- /.header-logo -->
                 <div class="header-help-text d-flex">
-                    <span class="header-red-text">Need help?&nbsp</span> <!-- &nbsp - это пробел -->
+                    <span class="header-red-text">Need help?&nbsp;</span>
                     <span class="header-number">Talk to an expert: +61 3 8376 6284</span>
                 </div>
                 <!-- /.header-help-text -->
@@ -308,33 +271,31 @@
                     <!-- / PROFILE EXAMPLE -->
                 </div>
                 <!-- / dropdown-container -->
-
                 <button class="btn-custom btn-sm btn-red btn-radius">Logout</button>
                 <!-- /. btn register -->
             </div>
             <!-- /.container -->
         </div>
-    <!-- /.top-header -->
-    <div class="bottom-header">
-        <div class="container d-flex">
-            <nav class="header-nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">WordPress</a>
-                <a href="#">Joomla</a>
-                <a href="#">PSD</a>
-                <a href="#">Plugins</a>
-                <a href="#">Components</a>
-                <a href="#">Pages</a>
-                <a href="#">Contact</a>
-                <a href="#">Help</a>
-            </nav>
+        <div class="bottom-header">
+            <div class="container d-flex">
+                <nav class="header-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">Joomla</a>
+                    <a href="#">PSD</a>
+                    <a href="#">Plugins</a>
+                    <a href="#">Components</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Help</a>
+                </nav>
+            </div>
         </div>
-    </div>
-    <!-- /.bottom-header -->
     </header>
     <!-- HEADER END -->
-    <main>
+    <!-- MAIN START -->
+    <main id="main">
         <div class="inner">
             <div class="inner-title text-center">
                 <span class="title-white title-sm font-medium">Premium WordPress Themes, Web Templates and Many More ...</span>
@@ -352,149 +313,168 @@
             <!-- /.search-section -->
         </div>
         <!-- /.inner -->
-        <div class="personal-info">
+        <section class="products-upload">        
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                        <li class="breadcrumb-item active" aria-current="page">Upload Product</li>
                     </ol>
                 </nav>
-                <div class="row">
-                    <div class="col-3">
-                        <!-- PERSONAL INFORMATION NAV -->
-                        <aside>
-                            <ul class="aside-nav" id="personal-info-menu">
-                                <li class="active">
-                                    <a href="#">
-                                        <i class="fa fa-chevron-right"></i>
-                                        Personal Information
-                                    </a>
-                                    </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-chevron-right"></i>
-                                        Profile
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-chevron-right"></i>
-                                        Badges
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-chevron-right"></i>
-                                        E-mail Settings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-chevron-right"></i>
-                                        Social Network
-                                    </a>
-                                </li>
-                            </ul>
-                            <!-- / personal-info-nav -->
-                        </aside>
-                        <!-- / PERSONAL INFORMATION NAV -->
-                    </div>
-                    <!-- / col-3 -->
-                    <div class="col-9">
-                        <div class="content-wrapper-bordered">
-                            <div class="content-wrapper-title">
-                                <h6>Personal info</h6>
+                <!-- /.breadcrumb -->
+                <div class="row ">
+                    <div class="form-wrapper col-12">
+                        <form action="#" id="form-upload-products">
+                            <div class="content-title-text bg-white">
+                                <h4>Upload Your item</h4>
                             </div>
-                            <!-- / content-wrapper-title -->
-                            <div class="content-wrapper-body">
-                                <form>
-                                    <div class="form-group row">
-                                        <label for="first-name" class="col-sm-4 col-form-label">First Name</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="first-name" placeholder="">
-                                        </div>
+                            <!-- /. content-title -->
+                            <div class="upload-item bg-white">
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="selectCategories">Select Categories<sup class="text-green">*</sup></label>
                                     </div>
-                                    <!-- / form-group -->
-                                    <div class="form-group row">
-                                        <label for="last-name" class="col-sm-4 col-form-label">Last Name</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="last-name" placeholder="">
-                                        </div>
+                                    <!-- /col -->
+                                    <div class="col-10">
+                                        <select id="selectCategories" name="selectCategories" data-placeholder="Select">
+                                            <option></option>
+                                            <option value="1">WordPress</option>
+                                            <option value="2">Joomla</option>
+                                            <option value="3">PSD</option>
+                                        </select>
                                     </div>
-                                    <!-- / form-group -->
-                                    <div class="form-group row">
-                                        <label for="company-name" class="col-sm-4 col-form-label">Company Name</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="company-name" placeholder="">
-                                        </div>
+                                    <!-- /col -->
+                                </div>
+                                <!-- / form-group row-->
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="productName">Product Name<sup class="text-green">*</sup></label>
                                     </div>
-                                    <!-- / form-group -->
-                                    <div class="form-group row">
-                                        <label for="selectCountry" class="col-sm-4 col-form-label">Country</label>
-                                        <div class="col-sm-8">
-                                            <select id="selectCountry" name="selectCountry" data-placeholder="Select Your Country">
-                                                <option></option>
-                                                <option value="1">USA</option>
-                                                <option value="2">Canada</option>
-                                                <option value="3">Germany</option>
-                                            </select>
-                                        </div>    
+                                    <!-- / col -->
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" id="productName" name="productName" placeholder="Enter your product name here ...">
                                     </div>
-                                    <!-- / form-group  -->
-                                    <div class="form-group row">
-                                        <label for="adress-1" class="col-sm-4 col-form-label">Address Line 1</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="adress-1" placeholder="">
-                                        </div>
+                                    <!-- /col -->
+                                </div>
+                                <!-- / form-group row-->
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="productDescription">Product Name<sup class="text-green">*</sup></label>
+                                    </div>   
+                                    <!-- / col -->
+                                    <div class="col-10">
+                                        <textarea class="form-control" name="productDescription" id="productDescription" placeholder="<h1> Type your text  here </h1/>"></textarea>
                                     </div>
-                                    <!-- / form-group -->
-                                    <div class="form-group row">
-                                        <label for="adress-2" class="col-sm-4 col-form-label">Address Line 2</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="adress-2" placeholder="">
-                                        </div>
+                                    <!-- /col -->
+                                </div>
+                                <!-- / form-group row-->
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="uploadMain">Upload Main File<sup class="text-green">*</sup></label>    
                                     </div>
-                                    <!-- / form-group -->
-                                    <div class="form-group row">
-                                        <label for="city" class="col-sm-4 col-form-label">City</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="city" placeholder="">
-                                        </div>
+                                    <!-- / col -->
+                                    <div class="col-10">
+                                        <input type="file" name="uploadMain" class="form-control-file" id="uploadMain" data-placeholder="No File Choosen" data-browse="Choose File">
                                     </div>
-                                    <!-- / form-group -->
-                                    <div class="form-group row">
-                                        <label for="location" class="col-sm-4 col-form-label">State / Province / Region</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="location" placeholder="">
-                                        </div>
+                                    <!-- / col -->
+                                </div>
+                                <!-- / form-group row-->
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="uploadScreenshots">Upload Screenshots<sup class="text-green">*</sup></label>
+                                    </div>             
+                                    <!-- / col -->
+                                    <div class="col-10">
+                                        <input type="file" name="uploadScreenshots" class="form-control-file" id="uploadScreenshots" data-placeholder="No File Choosen" data-browse="Choose File">
                                     </div>
-                                    <!-- / form-group -->
-                                    <div class="form-group row">
-                                        <label for="zip" class="col-sm-4 col-form-label">Zip / Postal Code</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="zip" placeholder="">
-                                        </div>
+                                    <!-- / col -->
+                                </div>
+                                <!-- / form-group row-->  
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="fileType">File Included<sup class="text-green">*</sup></label>
                                     </div>
-                                    <!-- / form-group -->    
-                                    <div class="row">
-                                        <div class="personal-info-btn col-sm-8 offset-sm-4">
-                                            <button class="btn-custom btn-md btn-green">Update</button>
-                                        </div>
+                                    <!-- /col -->
+                                    <div class="col-10">
+                                        <select id="fileType" name="fileType" data-placeholder="Select File Type">
+                                            <option></option>
+                                            <option value="1">Type1</option>
+                                            <option value="2">Type2</option>
+                                            <option value="3">Type3</option>
+                                        </select>
                                     </div>
-                                    <!-- / row -->
-                                </form>
+                                    <!-- /col -->
+                                </div>
+                                <!-- / form-group row--> 
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="fileDimensions">File Dimensions<sup class="text-green">*</sup></label>
+                                    </div>
+                                    <!-- / col -->
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" id="fileDimensions" name="fileDimensions" placeholder="Enter the item  dimentionss here ...">
+                                    </div>
+                                    <!-- /col -->
+                                </div>
+                                <!-- / form-group row-->     
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="itemTags">Item Tags<sup class="text-green">*</sup></label>
+                                    </div>
+                                    <!-- / col -->
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" id="itemTags" name="itemTags" placeholder="Enter Tag Here">
+                                    </div>
+                                    <!-- /col -->
+                                </div>
+                                <!-- / form-group row-->                                                                                                          
                             </div>
-                        </div>
-                        <!-- / content-wrapper-bordered -->
+                            <!-- / .upload-item -->
+                            <div class="col-12 content-title-text bg-white">
+                                <h3>Set Your Price (US$)</h3>
+                            </div>
+                            <!-- / .content-title -->                            
+                            <div class="upload-item upload-item-pricing bg-white">
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="regularLicense">Regular License<sup class="text-green">*</sup></label>
+                                    </div>
+                                    <!-- / col -->
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" id="regularLicense" name="regularLicense" placeholder="$00.00">
+                                    </div>
+                                    <!-- /col -->
+                                </div>
+                                <!-- / form-group row-->
+                                <div class="form-group row">
+                                    <div class="col-2 col-form-label">
+                                        <label for="extendedLicense">Extended License<sup class="text-green">*</sup></label>
+                                    </div>
+                                    <!-- / col -->
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" id="extendedLicense" name="extendedLicense" placeholder="$00.00">
+                                    </div>
+                                    <!-- /col -->
+                                </div>
+                                <!-- / form-group row-->                            
+                            </div>
+                            <!-- / .upload-item -->
+                            <div class="submit-upload-item bg-white">
+                                <button type="submit" class="btn-custom btn-md btn-green">Submit</button>
+                            </div>
+                            <!-- / .upload-item -->
+                        </form>                
+                        <!-- / form -->
                     </div>
-                    <!-- / col-9 -->
+                    <!-- / form-wrapper -->
                 </div>
+                <!-- /.row -->
             </div>
-            <!-- / container -->
-        </div>
-        <!-- / personal-info -->
+            <!-- / .container -->
+        </section>
+        <!-- /.profile-wrapper -->
     </main>
+    <!-- MAIN END -->
     <!-- FOOTER START -->
     <footer id="footer">
         <div class="container">
@@ -597,7 +577,7 @@
         <!-- /.footer-copyright -->
     </footer>
     <!-- FOOTER END -->
-    <!-- Optional JavaScripts -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
