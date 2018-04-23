@@ -65,30 +65,5 @@
 }
 /* -- SEARCH END -- */
 /* -- SELECT START -- */
-form.select-form {
-    position: relative;
-    display: inline-block;
-}
-form.select-form select {
-    font-size: 13px;
-    line-height: 2.3;
-    color: #70838d;
-    padding: 0 28px 0 10px;
-    margin-bottom: 0;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-}
-form.select-form:after {
-    content: "▼";
-    font-size: 11px;
-    position: absolute;
-    right: 12px;
-    color: #8bc34a;
-    top: 11px;
-}
-form.select-form select option {
-    border: 1px solid #d3d3d3;
-}
 /* -- SELECT END -- */
 /* ===== OTHER COMPONENTS END ===== */

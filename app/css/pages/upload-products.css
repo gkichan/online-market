@@ -1,0 +1,43 @@
+/* ===== PAGE UPLOAD PRODUCTS START ===== */
+.products-upload .container{
+    max-width: 1200px;
+}
+.products-upload .form-wrapper form{
+    border: 1px solid #dfdfdf;
+}
+.products-upload .content-title-text{
+    padding: 20px 33px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.products-upload .content-title-text h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: #263238;
+}
+.products-upload .upload-item{
+    padding: 43px 50px 26px 40px; 
+    overflow: hidden;
+}
+.products-upload label{
+    position: relative;
+}
+.products-upload label sup {
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    left: 100%;
+}
+.products-upload .upload-item-pricing{
+    padding-bottom: 21px;
+}
+.products-upload .submit-upload-item {
+    padding-left: calc(16.6666667% + 30px);
+    padding-top: 0;
+}
+.products-upload .btn-custom{
+    width: 124px;
+}
+.products-upload .submit-upload-item {
+    padding-bottom: 67px;
+}
+/* ===== PAGE UPLOAD PRODUCTS END ===== */
