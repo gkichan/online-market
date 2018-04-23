@@ -78,7 +78,41 @@
 .card .product-likes-count {
     font-size: 12px;
 }
-
+.card.hotrr::before {
+    content: '\f0e7';
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 12px;
+    font-family: 'FontAwesome';
+    font-size: 18px;
+    border-top: 64px solid #8bc34a;
+    border-left: 64px solid #8bc34a;
+    border-right: 64px solid transparent;
+    border-bottom: 64px solid transparent;
+    z-index: 99;
+}
+.card .product-hot-badge {
+    display: none;
+}
+.card.hot .product-hot-badge {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    border-top: 64px solid #8bc34a;
+    border-right: 64px solid transparent;
+    z-index: 99;
+}
+.card.hot .product-hot-badge .fa {
+    position: absolute;
+    left: 14px;
+    bottom: 34px;
+    color: #fff;
+}
 /* -- LARGE CARDS START -- */
 .card.large-card .product-img {
     height: 250px;
