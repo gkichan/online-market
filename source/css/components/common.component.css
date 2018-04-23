@@ -6,7 +6,6 @@
 }
 .product-rating .rating-stars {
     color: #b5b5b5;
-    margin-right: 7px;
 }
 .product-rating .rating-stars li + li {
     margin-left: 2px;
@@ -15,6 +14,7 @@
     color: #ffa726;
 }
 .product-rating .rating-count {
+    margin-left: 7px;
     font-weight: 400;
 }
 .product-rating .rating-count::before {

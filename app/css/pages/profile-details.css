@@ -11,25 +11,14 @@
 }
 /* -- INNER END -- */
 /* -- ASIDE START -- */
-.aside-block .aside-block-title {
-    margin-bottom: 25px;
-}
-.aside-block .img-wrapper {
-    margin-right: 15px;
-}
-.aside-block .nickname {
-    font-size: 18px;
-    color: #263238;
-    margin-bottom: 20px;
-}
-.aside-block .status {
+aside .aside-block .status {
     border: 1px solid #d5d5d5;
     padding: 8px 14px 8px 9px;
     font-size: 13px;
     color: #70838d;
     line-height: 9px;
 }
-.aside-block .status::before {
+aside .aside-block .status::before {
     display: block;
     content:'';
     height: 9px;
@@ -38,25 +27,17 @@
     background-color: #8bbe44;
     margin-right: 8px;
 }
-.aside-block .status.offline::before {
+aside .aside-block .status.offline::before {
     background-color: #d4d4d4;
 }
-.aside-block .flag-sprites {
-    margin-top: 43px;
-}
-.social-nav a + a {
+aside .social-nav a + a {
     margin-left: 7px;
 }
-.social-nav {
+aside .social-nav {
     margin-bottom: 27px;
 }
 aside button + button {
     margin-top: 15px;
-}
-.profile-wrapper aside .aside-nav i.fa {
-    font-size: 14px;
-    /* без заданой высоты первая иконка неправильно позиционируеться */
-    height: 14px;
 }
 /* -- ASIDE END -- */
 /* -- CONTENT START -- */
