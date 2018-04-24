@@ -37,11 +37,6 @@
             padding: 20px;
         }
     </style>
-    <script>
-        $( function() {
-            $( "#regular-extended" ).selectmenu();
-        } );
-    </script>
 </head>
 <body>
     <section>
@@ -78,7 +73,18 @@
         <!-- / container -->
     </section>
     <section>
-
+        <div class="container">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="regular-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Regular <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-menu dropdown-regular" aria-labelledby="regular-btn">
+                    <a class="dropdown-item" href="#">Regular</a>
+                    <a class="dropdown-item" href="#">Extended</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
     </section>
     <!-- Optional JavaScripts -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
