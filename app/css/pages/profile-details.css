@@ -103,6 +103,9 @@
 .about-author .author-skills .progress.progress-joomla {
     width: 70%;
 }
+.about-author .mobile-aside-toggle {
+    display: none;
+}
 .about-author .mobile-aside-toggle .fa-bars {
     color: #263238;
     margin-right: 20px;
@@ -114,6 +117,9 @@
     }
 }
 @media(max-width: 991px) {
+    .about-author .mobile-aside-toggle {
+        display: block;
+    }
     .about-author .mobile-aside .social-nav,
     .about-author .mobile-aside .product-author-flags{
         -ms-flex-pack: distribute !important;
