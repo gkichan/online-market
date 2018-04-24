@@ -1,0 +1,136 @@
+/* ===== HOME PAGE START ===== */
+/* -- SEARCH SECTION START -- */
+.search-section {
+    padding: 150px 0;
+    background: url('../img/main-search-bg.jpg') no-repeat center / cover;
+}
+.search-section span {
+    display: block;
+}
+.search-section .welcome-title {
+    margin-bottom: 30px;
+}
+.search-section .title-sm {
+    margin-bottom: 50px;
+}
+/* -- SEARCH SECTION END -- */
+/* -- NEW-PRODUCTS SECTION START -- */
+.new-products .tags-nav {
+    margin-bottom: 60px;
+}
+.new-products .large-cards-wrapper {
+    margin-bottom: 78px;
+}
+.new-products .large-cards-wrapper .row + .row {
+    margin-top: 32px;
+}
+.new-products .buttons-wrapper .btn-custom + .btn-custom {
+    margin-left: 12px;
+}
+/* -- NEW-PRODUCTS SECTION END -- */
+/* -- HOT-PRODUCTS SECTION START -- */
+.hot-product .slick-list {
+    padding-bottom: 85px;
+}
+.hot-product .slick-slide {
+    padding: 0 15px;
+}
+.hot-product .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    line-height: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.hot-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    -webkit-box-shadow: inset 0 1px 1px #acacac;
+            box-shadow: inset 0 1px 1px #acacac;
+    cursor: pointer;
+}
+.hot-product .slick-dots li:hover {
+    background-color: #cecece;
+}
+.hot-product .slick-dots li.slick-active {
+    background-color: #8bc34a;
+}
+.hot-product .slick-dots li + li {
+    margin-left: 7px;
+}
+.hot-product .slick-dots li button {
+    font-size: 0;
+    border: none;
+}
+/* -- HOT-PRODUCTS SECTION END -- */
+/* -- WHY-CHOOSE-US SECTION START -- */
+.why-choose-item {
+    padding: 0 25px;
+}
+.why-choose-item:hover .why-choose-item-img {
+    background-color: #d4d4d4;
+}
+.why-choose-item:hover .title-md {
+    color: #8bc34a;
+}
+.why-schoose-us .content-wrapper {
+    padding-top: 30px;
+}
+.why-schoose-us .why-choose-item-img {
+    height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #b5b5b5;
+    margin-bottom: 30px;
+}
+.why-schoose-us .title-md {
+    margin-bottom: 22px;
+}
+.why-schoose-us .why-choose-item-info {
+    color: #b0bec5;
+    font-size: 15px;
+    line-height: 1.6;
+}
+/* -- WHY-CHOOSE-US SECTION END -- */
+/* -- BECOME-A-AUTHOR SECTION START -- */
+.become-a-author .banner {
+    height: 440px;
+    margin: 0 40px;
+    background-color: #b5b5b5;
+    -webkit-box-shadow: 0 0 70px 0 rgba(0,0,0,.2);
+            box-shadow: 0 0 70px 0 rgba(0,0,0,.2);
+}
+.become-a-author .banner-content {
+    padding: 140px 60px;
+    background-color: #8bc34a;
+}
+.become-a-author .banner-content .banner-title {
+    max-width: 260px;
+    margin-right: 46px;
+    font-size: 30px;
+}
+/* -- BECOME-A-AUTHOR SECTION END -- */
+/* -- TUTORIALS SECTION START -- */
+.tutorials .tutorial-item-img {
+    height: 270px;
+    overflow: hidden;
+    background-color: #d4d4d4;
+}
+.tutorials .tutorial-item-img img {
+    width: 100%;
+}
+.tutorials .tutorial-item-title {
+    display: block;
+    padding: 40px 0;
+    font-size: 24px;
+    background-color: #f8f8f8;
+}
+/* -- TUTORIALS SECTION END -- */
+/* ===== HOME PAGE END ===== */
