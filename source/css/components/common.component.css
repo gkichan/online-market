@@ -84,4 +84,7 @@
     background-color: #f4f6f5;
 }
 /* -- SELECT END -- */
+.animate {
+    transition: all .2s ease-out;
+}
 /* ===== OTHER COMPONENTS END ===== */
