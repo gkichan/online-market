@@ -60,4 +60,23 @@ header .header-in .dropdown {
 header .header-in .dropdown.dropdown-profile {
     margin: 0 30px 0 5px;
 }
+
+@media(max-width: 991px) {
+    header .top-header {
+        padding-top: 15px;
+    }
+    header .bottom-header a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding:10px 0;
+    }
+    header .header-controls {
+        width: 100%;
+    }
+    header .header-in .header-help-text {
+        font-size: 13px;
+    }
+
+}
 /* ===== HEADER END ===== */

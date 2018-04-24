@@ -35,6 +35,9 @@
         .container.filters{            
             height: 60px;
         }
+        .container.sortby{
+            height: 60px;
+        }
         .dropdown-container{
             border: 1px solid #dcdcdc;
         }
@@ -424,10 +427,49 @@
             </ul>
             <!-- / DROPDOWN LIST -->
         </div>
-        <!-- / Container FILTERS EXAMPLE-->        
+        <!-- / Container FILTERS EXAMPLE-->     
+        <h6>Sort by</h6>
+        <div class="container sortby">      
+            <div class="dropdown-container d-flex h-100">
+                <div class="dropdown d-flex flex-column justify-content-center dropdown-sort-by">
+                    <div class="dropdown-wrapper d-flex h-100" role="button" id="filter-price" data-toggle="dropdown" aria-haspopup="true" >
+                        <div class="dropdown-toggle d-flex align-items-center h-100">                            
+                            <span class="selected-sort">New items</span>
+                            <i class="toggle-icon fa fa-sort"></i>
+                        </div>
+                        <!-- / dropdown-toggle -->
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="filter-price">
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">Category title</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">Item title</a>
+                            </li>
+                            <!-- / dropdown-item -->
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">Price</a>
+                            </li>
+                            <!-- / dropdown-item -->
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">Rating</a>
+                            </li>
+                            <!-- / dropdown-item --> 
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">New items</a>
+                            </li>
+                            <!-- / dropdown-item -->                                                                                                                                                                                                                                                                                                                                               
+                        </ul>
+                        <!-- / dropdown-menu-->
+                    </div>
+                    <!-- / dropdown-wrapper -->
+                </div>
+                <!-- / dropdown -->                
+            </div>
+            <!-- / dropdown-container -->
+        </div>
+        <!-- / Container FILTERS EXAMPLE-->
     </div>
     <!-- / Section-->
-
 <!-- Optional JavaScripts -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

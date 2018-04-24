@@ -63,5 +63,25 @@
 }
 /* -- SEARCH END -- */
 /* -- SELECT START -- */
+#regular-btn,
+.dropdown-regular .dropdown-item {
+    border: 1px solid #d3d3d3;
+    font-size: 13px;
+    color: #70838d;
+    line-height: 2.3;
+    padding: 0 10px;
+    background-color: #fff;
+    font-weight: 400;
+}
+#regular-btn .fa-caret-down {
+    color: #8bc34a;
+    margin-left: 9px;
+}
+.dropdown-regular .dropdown-item {
+    border: none;
+}
+.dropdown-regular .dropdown-item:hover {
+    background-color: #f4f6f5;
+}
 /* -- SELECT END -- */
 /* ===== OTHER COMPONENTS END ===== */

@@ -111,6 +111,14 @@ button {
 a:hover{
     color: inherit;
 }
+.dropdown-menu.show.dropdown-regular {
+    transform: translate3d(0px, 16px, 0px) !important;
+    top: 12px !important;
+    left: 0px !important;
+    will-change: transform;
+    min-width: auto;
+    padding: 0;
+}
 .dropdown .dropdown-toggle.btn,
 .dropdown .dropdown-toggle.btn.active.focus,
 .dropdown .dropdown-toggle.btn.active:focus,

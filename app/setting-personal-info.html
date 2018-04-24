@@ -22,316 +22,286 @@
     <link rel="stylesheet" href="css/fonts.css">
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* пришлось добавить, иначе перебивались стили на иконки см. строку 1550 style.css start */
-        /*#personal-info-menu li i.fa {*/
-            /*position: absolute;*/
-            /*top: 50%;*/
-            /*left: 22px;*/
-            /*font-size: 9px;*/
-            /*color: #8bc34a;*/
-            /*-webkit-transform: translateY(-51%);*/
-            /*transform: translateY(-51%);*/
-        /*}*/
-        /* end */
-        #personal-info-menu li {
-            border: 1px solid #dedede;
-        }
-        aside #personal-info-menu {
-            margin: 0;
-        } 
-        #personal-info-menu li.active {
-            border-bottom: 2px solid #8bc34a;
-            font-weight: 500;
-        }   
-        #personal-info-menu li + li {
-            border-top: 0;
-        }  
-         #personal-info-menu a {
-            padding: 0 50px;
-            line-height: 3.57;
-            
-        }  
-        .content-wrapper-body .form-group + .form-group {
-            margin-top: 22px;
-        }
-        .personal-info-btn {
-            margin-top: 27px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/pages/setting-personal-info.css">
 </head>
 <body>
     <!-- HEADER START -->
-    <header>
-        <div class="top-header header-in">
-            <div class="container d-flex align-items-center">
+    <header id="header">
+        <div class="top-header header-in navbar-light">
+            <div class="container d-flex align-items-center flex-wrap">
                 <div class="header-logo mr-auto">
                     <a href="#">
                         <img src="img/header-logo.png" alt="">
                     </a>
                 </div>
                 <!-- /.header-logo -->
-                <div class="header-help-text d-flex">
-                    <span class="header-red-text">Need help?&nbsp</span> <!-- &nbsp - это пробел -->
-                    <span class="header-number">Talk to an expert: +61 3 8376 6284</span>
-                </div>
-                <!-- /.header-help-text -->
-                <div class="dropdown-container">
-                    <div class="dropdown d-flex flex-column justify-content-center dropdown-notification">
-                        <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdownMenuLink-bell" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-bell-o align-self-center"></i>
-                            <span class="badge-value bg-yellow">8</span>
-                        </a>
-                        <!-- / dropdown toggle -->
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                            <div class="dropdown-item">
-                                <div class="item-content">
-                                    <div class="item-image">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="item-data">
-                                        <span class="item-category"><a href="#">Need WP Help!</a></span>
-                                        <span class="item-date">01 Dec, 2016</span>
-                                    </div>
-                                </div>
-                                <!-- / item-content -->
-                                <div class="item-after">
-                                    <i class="fa fa-bell-o"></i>
-                                </div>
-                                <!-- / item-after -->
-                            </div>
-                            <!-- / dropdown-item -->
-                            <div class="dropdown-item">
-                                <div class="item-content">
-                                    <div class="item-image">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="item-data">
-                                        <span class="item-category"><a href="#">Need WP Help!</a></span>
-                                        <span class="item-date">01 Dec, 2016</span>
-                                    </div>
-                                </div>
-                                <!-- / item-content -->
-                                <div class="item-after">
-                                    <i class="fa fa-bell-o"></i>
-                                </div>
-                                <!-- / item-after -->
-                            </div>
-                            <!-- / dropdown-item -->
-                            <div class="dropdown-item">
-                                <div class="item-content">
-                                    <div class="item-image">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="item-data">
-                                        <span class="item-category"><a href="#">Need WP Help!</a></span>
-                                        <span class="item-date">01 Dec, 2016</span>
-                                    </div>
-                                </div>
-                                <!-- / item-content -->
-                                <div class="item-after">
-                                    <i class="fa fa-bell-o"></i>
-                                </div>
-                                <!-- / item-after -->
-                            </div>
-                            <!-- / dropdown-item -->
-                        </div>
-                        <!-- / dropdown-menu-->
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbar-in" aria-controls="navbar-in" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /.navbar-toggler -->
+                <div class="header-controls d-flex align-items-center">
+                    <div class="header-help-text d-flex mr-auto">
+                        <span class="header-red-text">Need help?&nbsp</span> <!-- &nbsp - это пробел -->
+                        <span class="header-number">Talk to an expert: +61 3 8376 6284</span>
                     </div>
-                    <!-- / BELLS EXAMPLE -->
-                    <!-- MESSAGE EXAMPLE -->
-                    <div class="dropdown d-flex flex-column justify-content-center dropdown-notification">
-                        <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-envelope-o align-self-center"></i>
-                            <span class="badge-value bg-orange-red">5</span>
-                        </a>
-                        <!-- / dropdown toggle -->
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                            <div class="dropdown-item">
-                                <div class="item-content">
-                                    <div class="item-image">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="item-data">
-                                        <span class="item-title"><a href="#">Kazi Fahim</a></span>
-                                        <span class="item-category"><a href="#">Need WP Help!</a></span>
-                                        <span class="item-date">01 Dec, 2016</span>
-                                    </div>
-                                </div>
-                                <!-- / item-content -->
-                                <div class="item-after">
-                                    <i class="fa fa-envelope-o"></i>
-                                </div>
-                                <!-- / item-after -->
-                            </div>
-                            <!-- / dropdown-item -->
-                            <div class="dropdown-item">
-                                <div class="item-content">
-                                    <div class="item-image">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="item-data">
-                                        <span class="item-title"><a href="#">Kazi Fahim</a></span>
-                                        <span class="item-category"><a href="#">Need WP Help!</a></span>
-                                        <span class="item-date">01 Dec, 2016</span>
-                                    </div>
-                                </div>
-                                <!-- / item-content -->
-                                <div class="item-after">
-                                    <i class="fa fa-envelope-o"></i>
-                                </div>
-                                <!-- / item-after -->
-                            </div>
-                            <!-- / dropdown-item -->
-                        </div>
-                        <!-- / dropdown-menu-->
-                    </div>
-                    <!-- / MESSAGE EXAMPLE -->
-                    <!-- CART EXAMPLE -->
-                    <div class="dropdown d-flex flex-column justify-content-center dropdown-cart">
-                        <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdown-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-shopping-cart align-self-center"></i>
-                            <span class="badge-value bg-green">8</span>
-                        </a>
-                        <!-- / dropdown toggle -->
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-cart">
-                            <div class="dropdown-item">
-                                <div class="item-content">
-                                    <div class="item-image">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="item-data">
-                                        <span class="item-title"><a href="#">Grand Ballet</a></span>
-                                        <span class="item-category"><a href="#">Word Press</a></span>
-                                        <span class="item-price">$59</span>
-                                    </div>
-                                </div>
-                                <!-- / item-content -->
-                            </div>
-                            <!-- / dropdown-item -->
-                            <div class="dropdown-item">
-                                <div class="item-content">
-                                    <div class="item-image">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="item-data">
-                                        <span class="item-title"><a href="#">Grand Ballet</a></span>
-                                        <span class="item-category"><a href="#">Word Press</a></span>
-                                        <span class="item-price">$59</span>
-                                    </div>
-                                </div>
-                                <!-- / item-content -->
-                            </div>
-                            <!-- / dropdown-item -->
-                            <div class="dropdown-item d-flex flex-column">
-                                <div class="item-checkout">
-                                    <div class="checkout-info d-flex justify-content-between">
-                                        <span>Total</span>
-                                        <span class="item-total-summary">$118</span>
-                                    </div>
-                                    <div class="buttons-in-drop">
-                                        <button class="btn-custom btn-sm btn-green btn-radius">Go to Cart</button>
-                                        <button class="btn-custom btn-sm btn-red btn-radius">Go to Checkout</button>
-                                    </div>
-                                </div>
-                                <!-- / item-checkout -->
-                            </div>
-                            <!-- / dropdown-item -->
-                        </div>
-                        <!-- / dropdown-menu-->
-                    </div>
-                    <!-- / CART EXAMPLE -->
-                    <!-- PROFILE EXAMPLE -->
-                    <div class="dropdown d-flex flex-column justify-content-center dropdown-profile">
-                        <div class="dropdown-toggle dropdown-profile-wrapper d-flex" role="button" id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" >
-                            <div class="profile-info d-flex">
-                                <div class="photo rounded-circle">
-                                    <img src="" alt="">
-                                </div>
-                                <!-- / photo -->
-                                <div class="cart-info d-flex flex-column">
-                                    <span class="profile-name">Mike Hussy</span>
-                                    <span class="item-total-summary">$171.00</span>
-                                </div>
-                                <!-- /cart-info -->
-                                <i class="fa fa-chevron-down"></i>
-                            </div>
+                    <!-- /.header-help-text -->
+                    <div class="dropdown-container">
+                        <div class="dropdown d-flex flex-column justify-content-center dropdown-notification">
+                            <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdownMenuLink-bell" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell-o align-self-center"></i>
+                                <span class="badge-value bg-yellow">8</span>
+                            </a>
                             <!-- / dropdown toggle -->
-                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-profile">
-                                <li class="dropdown-item profile-link">
-                                    <i class="fa fa-chevron-right"></i>
-                                    <a href="#">Profile Page</a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-item">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="item-data">
+                                            <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                            <span class="item-date">01 Dec, 2016</span>
+                                        </div>
+                                    </div>
                                     <!-- / item-content -->
-                                </li>
+                                    <div class="item-after">
+                                        <i class="fa fa-bell-o"></i>
+                                    </div>
+                                    <!-- / item-after -->
+                                </div>
                                 <!-- / dropdown-item -->
-                                <li class="dropdown-item profile-link">
-                                    <i class="fa fa-chevron-right"></i>
-                                    <a href="#">Portfolio</a>
+                                <div class="dropdown-item">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="item-data">
+                                            <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                            <span class="item-date">01 Dec, 2016</span>
+                                        </div>
+                                    </div>
                                     <!-- / item-content -->
-                                </li>
+                                    <div class="item-after">
+                                        <i class="fa fa-bell-o"></i>
+                                    </div>
+                                    <!-- / item-after -->
+                                </div>
                                 <!-- / dropdown-item -->
-                                <li class="dropdown-item profile-link">
-                                    <i class="fa fa-chevron-right"></i>
-                                    <a href="#">Downloads</a>
+                                <div class="dropdown-item">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="item-data">
+                                            <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                            <span class="item-date">01 Dec, 2016</span>
+                                        </div>
+                                    </div>
                                     <!-- / item-content -->
-                                </li>
+                                    <div class="item-after">
+                                        <i class="fa fa-bell-o"></i>
+                                    </div>
+                                    <!-- / item-after -->
+                                </div>
                                 <!-- / dropdown-item -->
-                                <li class="dropdown-item profile-link">
-                                    <i class="fa fa-chevron-right"></i>
-                                    <a href="#">Wishlist</a>
-                                    <!-- / item-content -->
-                                </li>
-                                <!-- / dropdown-item -->
-                                <li class="dropdown-item profile-link">
-                                    <i class="fa fa-chevron-right"></i>
-                                    <a href="#">Upload Item</a>
-                                    <!-- / item-content -->
-                                </li>
-                                <!-- / dropdown-item -->
-                                <li class="dropdown-item profile-link">
-                                    <i class="fa fa-chevron-right"></i>
-                                    <a href="#">Statement</a>
-                                    <!-- / item-content -->
-                                </li>
-                                <!-- / dropdown-item -->
-                                <li class="dropdown-item profile-link">
-                                    <i class="fa fa-chevron-right"></i>
-                                    <a href="#">Withdrawals</a>
-                                    <!-- / item-content -->
-                                </li>
-                                <!-- / dropdown-item -->
-                            </ul>
+                            </div>
                             <!-- / dropdown-menu-->
                         </div>
-                        <!-- / dropdown-profile-wrapper -->
+                        <!-- / BELLS EXAMPLE -->
+                        <!-- MESSAGE EXAMPLE -->
+                        <div class="dropdown d-flex flex-column justify-content-center dropdown-notification">
+                            <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-envelope-o align-self-center"></i>
+                                <span class="badge-value bg-orange-red">5</span>
+                            </a>
+                            <!-- / dropdown toggle -->
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-item">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="item-data">
+                                            <span class="item-title"><a href="#">Kazi Fahim</a></span>
+                                            <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                            <span class="item-date">01 Dec, 2016</span>
+                                        </div>
+                                    </div>
+                                    <!-- / item-content -->
+                                    <div class="item-after">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <!-- / item-after -->
+                                </div>
+                                <!-- / dropdown-item -->
+                                <div class="dropdown-item">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="item-data">
+                                            <span class="item-title"><a href="#">Kazi Fahim</a></span>
+                                            <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                            <span class="item-date">01 Dec, 2016</span>
+                                        </div>
+                                    </div>
+                                    <!-- / item-content -->
+                                    <div class="item-after">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <!-- / item-after -->
+                                </div>
+                                <!-- / dropdown-item -->
+                            </div>
+                            <!-- / dropdown-menu-->
+                        </div>
+                        <!-- / MESSAGE EXAMPLE -->
+                        <!-- CART EXAMPLE -->
+                        <div class="dropdown d-flex flex-column justify-content-center dropdown-cart">
+                            <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdown-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-shopping-cart align-self-center"></i>
+                                <span class="badge-value bg-green">8</span>
+                            </a>
+                            <!-- / dropdown toggle -->
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-cart">
+                                <div class="dropdown-item">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="item-data">
+                                            <span class="item-title"><a href="#">Grand Ballet</a></span>
+                                            <span class="item-category"><a href="#">Word Press</a></span>
+                                            <span class="item-price">$59</span>
+                                        </div>
+                                    </div>
+                                    <!-- / item-content -->
+                                </div>
+                                <!-- / dropdown-item -->
+                                <div class="dropdown-item">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="item-data">
+                                            <span class="item-title"><a href="#">Grand Ballet</a></span>
+                                            <span class="item-category"><a href="#">Word Press</a></span>
+                                            <span class="item-price">$59</span>
+                                        </div>
+                                    </div>
+                                    <!-- / item-content -->
+                                </div>
+                                <!-- / dropdown-item -->
+                                <div class="dropdown-item d-flex flex-column">
+                                    <div class="item-checkout">
+                                        <div class="checkout-info d-flex justify-content-between">
+                                            <span>Total</span>
+                                            <span class="item-total-summary">$118</span>
+                                        </div>
+                                        <div class="buttons-in-drop">
+                                            <button class="btn-custom btn-sm btn-green btn-radius">Go to Cart</button>
+                                            <button class="btn-custom btn-sm btn-red btn-radius">Go to Checkout</button>
+                                        </div>
+                                    </div>
+                                    <!-- / item-checkout -->
+                                </div>
+                                <!-- / dropdown-item -->
+                            </div>
+                            <!-- / dropdown-menu-->
+                        </div>
+                        <!-- / CART EXAMPLE -->
+                        <!-- PROFILE EXAMPLE -->
+                        <div class="dropdown d-flex flex-column justify-content-center dropdown-profile">
+                            <div class="dropdown-toggle dropdown-profile-wrapper d-flex" role="button" id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" >
+                                <div class="profile-info d-flex">
+                                    <div class="photo rounded-circle">
+                                        <img src="" alt="">
+                                    </div>
+                                    <!-- / photo -->
+                                    <div class="cart-info d-flex flex-column">
+                                        <span class="profile-name">Mike Hussy</span>
+                                        <span class="item-total-summary">$171.00</span>
+                                    </div>
+                                    <!-- /cart-info -->
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <!-- / dropdown toggle -->
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-profile">
+                                    <li class="dropdown-item profile-link">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <a href="#">Profile Page</a>
+                                        <!-- / item-content -->
+                                    </li>
+                                    <!-- / dropdown-item -->
+                                    <li class="dropdown-item profile-link">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <a href="#">Portfolio</a>
+                                        <!-- / item-content -->
+                                    </li>
+                                    <!-- / dropdown-item -->
+                                    <li class="dropdown-item profile-link">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <a href="#">Downloads</a>
+                                        <!-- / item-content -->
+                                    </li>
+                                    <!-- / dropdown-item -->
+                                    <li class="dropdown-item profile-link">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <a href="#">Wishlist</a>
+                                        <!-- / item-content -->
+                                    </li>
+                                    <!-- / dropdown-item -->
+                                    <li class="dropdown-item profile-link">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <a href="#">Upload Item</a>
+                                        <!-- / item-content -->
+                                    </li>
+                                    <!-- / dropdown-item -->
+                                    <li class="dropdown-item profile-link">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <a href="#">Statement</a>
+                                        <!-- / item-content -->
+                                    </li>
+                                    <!-- / dropdown-item -->
+                                    <li class="dropdown-item profile-link">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <a href="#">Withdrawals</a>
+                                        <!-- / item-content -->
+                                    </li>
+                                    <!-- / dropdown-item -->
+                                </ul>
+                                <!-- / dropdown-menu-->
+                            </div>
+                            <!-- / dropdown-profile-wrapper -->
+                        </div>
+                        <!-- / PROFILE EXAMPLE -->
                     </div>
-                    <!-- / PROFILE EXAMPLE -->
+                    <!-- / dropdown-container -->
+                    <button class="btn-custom btn-sm btn-red btn-radius">Logout</button>
+                    <!-- /. btn register -->
                 </div>
-                <!-- / dropdown-container -->
-
-                <button class="btn-custom btn-sm btn-red btn-radius">Logout</button>
-                <!-- /. btn register -->
+                <!-- /.header-controls d-flex justify-content-center -->
             </div>
             <!-- /.container -->
         </div>
-    <!-- /.top-header -->
-    <div class="bottom-header">
-        <div class="container d-flex">
-            <nav class="header-nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">WordPress</a>
-                <a href="#">Joomla</a>
-                <a href="#">PSD</a>
-                <a href="#">Plugins</a>
-                <a href="#">Components</a>
-                <a href="#">Pages</a>
-                <a href="#">Contact</a>
-                <a href="#">Help</a>
-            </nav>
+        <!-- /.top-header -->
+        <div class="bottom-header collapse d-lg-block navbar-collapse" id="navbar-in">
+            <div class="container d-flex justify-content-center">
+                <nav class="header-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">Joomla</a>
+                    <a href="#">PSD</a>
+                    <a href="#">Plugins</a>
+                    <a href="#">Components</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Help</a>
+                </nav>
+            </div>
         </div>
-    </div>
-    <!-- /.bottom-header -->
+        <!-- /.bottom-header -->
     </header>
     <!-- HEADER END -->
     <main>
