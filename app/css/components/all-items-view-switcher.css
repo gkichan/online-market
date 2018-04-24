@@ -1,0 +1,32 @@
+/* ===== ALL ITEMS VIEW SWITCHER START ===== */
+.items-view-switcher{
+    background-color: #fff;
+    height: 60px;
+    border: 1px solid #dcdcdc;
+    padding: 0 20px;
+}
+.items-view-switcher .left-part{
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+.items-view-switcher .sort-amount-switcher{
+    padding-right: 5px;
+}
+.items-view-switcher .sort-amount-switcher .fa{
+    font-size: 14px;
+    color: #455a64;
+}
+.items-view-switcher .switch-view .fa{
+    font-size: 16px;
+    color: #90a4ae;
+}
+.items-view-switcher .switch-view.active .fa{
+    color: #8bc34a;
+}
+.items-view-switcher .switch-view:hover .fa{
+    color: #8bc34a;
+}
+.items-view-switcher .switch-view + .switch-view{
+    margin-left: 12px;
+}
+/* ===== ALL ITEMS VIEW SWITCHER END ===== */

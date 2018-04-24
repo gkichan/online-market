@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dropdown</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+   <!-- Custom fonts -->
+   <link rel="stylesheet" href="css/fonts.css">
+   <!-- Custom style -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- component.css -->
+   <link rel="stylesheet" href="css/components/dropdown.component.css">
+    <style>
+        .section{
+            margin-top: 50px;
+        }
+        .container{            
+            display: flex;                      
+        }
+        .container.header{
+            height: 91px;
+            justify-content: flex-end;
+        }
+        .container.filters{            
+            height: 60px;
+        }
+        .container.sortby{
+            height: 60px;
+        }
+        .dropdown-container{
+            border: 1px solid #dcdcdc;
+        }
+        .header .dropdown-container{
+            min-width: 310px;
+        }
+        h6{
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        h4{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>    
+    <div class="section">
+        <h4>Dropdowns</h4>
+        <h6>Header</h6>
+        <div class="container header">      
+            <!-- DROPDOWN LIST -->
+            <ul class="dropdown-container d-flex h-100 justify-content-between">
+                <!-- BELLS EXAMPLE -->
+                <li class="dropdown d-flex flex-column justify-content-center dropdown-notification">
+                    <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdown-notify" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell-o align-self-center"></i>
+                        <span class="badge-value bg-yellow">8</span>
+                    </a>
+                    <!-- / dropdown toggle -->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-notify">
+                        <div class="dropdown-item">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item-data">
+                                    <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                    <span class="item-date">01 Dec, 2016</span>
+                                </div>
+                            </div>
+                            <!-- / item-content -->
+                            <div class="item-after">
+                                <i class="fa fa-bell-o"></i>
+                            </div>
+                            <!-- / item-after -->
+                        </div>
+                        <!-- / dropdown-item -->
+                        <div class="dropdown-item">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item-data">
+                                    <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                    <span class="item-date">01 Dec, 2016</span>
+                                </div>
+                            </div>
+                            <!-- / item-content -->
+                            <div class="item-after">
+                                <i class="fa fa-bell-o"></i>
+                            </div>
+                            <!-- / item-after -->
+                        </div>
+                        <!-- / dropdown-item -->
+                        <div class="dropdown-item">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item-data">
+                                    <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                    <span class="item-date">01 Dec, 2016</span>
+                                </div>
+                            </div>
+                            <!-- / item-content -->
+                            <div class="item-after">
+                                <i class="fa fa-bell-o"></i>
+                            </div>
+                            <!-- / item-after -->
+                        </div>
+                        <!-- / dropdown-item -->                        
+                    </div>
+                    <!-- / dropdown-menu-->
+                </li>
+                <!-- / BELLS EXAMPLE -->                
+                <!-- MESSAGE EXAMPLE -->
+                <li class="dropdown d-flex flex-column justify-content-center dropdown-notification">
+                    <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdown-msg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope-o align-self-center"></i>
+                        <span class="badge-value bg-orange-red">5</span>
+                    </a>
+                    <!-- / dropdown toggle -->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-msg">
+                        <div class="dropdown-item">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item-data">
+                                    <span class="item-title"><a href="#">Kazi Fahim</a></span>
+                                    <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                    <span class="item-date">01 Dec, 2016</span>
+                                </div>
+                            </div>
+                            <!-- / item-content -->
+                            <div class="item-after">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <!-- / item-after -->
+                        </div>
+                        <!-- / dropdown-item -->
+                        <div class="dropdown-item">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item-data">
+                                    <span class="item-title"><a href="#">Kazi Fahim</a></span>
+                                    <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                    <span class="item-date">01 Dec, 2016</span>
+                                </div>
+                            </div>
+                            <!-- / item-content -->
+                            <div class="item-after">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <!-- / item-after -->
+                        </div>
+                        <!-- / dropdown-item -->
+                    </div>
+                    <!-- / dropdown-menu-->
+                </li>
+                <!-- / MESSAGE EXAMPLE -->
+                <!-- CART EXAMPLE -->
+                <li class="dropdown d-flex flex-column justify-content-center dropdown-cart">
+                    <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdown-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-shopping-cart align-self-center"></i>
+                        <span class="badge-value bg-green">8</span>
+                    </a>
+                    <!-- / dropdown toggle -->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-cart">
+                        <div class="dropdown-item">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item-data">
+                                    <span class="item-title"><a href="#">Grand Ballet</a></span>
+                                    <span class="item-category"><a href="#">Word Press</a></span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <!-- / item-content -->
+                        </div>
+                        <!-- / dropdown-item -->
+                        <div class="dropdown-item">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item-data">
+                                    <span class="item-title"><a href="#">Grand Ballet</a></span>
+                                    <span class="item-category"><a href="#">Word Press</a></span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <!-- / item-content -->
+                        </div>
+                        <!-- / dropdown-item -->
+                        <div class="dropdown-item d-flex flex-column">
+                            <div class="item-checkout">
+                                <div class="checkout-info d-flex justify-content-between">
+                                    <span>Total</span>
+                                    <span class="item-total-summary">$118</span>
+                                </div>
+                                <div class="checkout-nav d-flex justify-content-between">
+                                    <a href="#" class="btn-custom btn-sm btn-green">Go to Cart</a>
+                                    <a href="#" class="btn-custom btn-sm btn-red">Go to Checkout</a>
+                                </div>
+                            </div>
+                            <!-- / item-checkout -->
+                        </div>
+                        <!-- / dropdown-item -->
+                    </div>
+                    <!-- / dropdown-menu-->
+                </li>
+                <!-- / CART EXAMPLE --> 
+                <!-- PROFILE EXAMPLE -->
+                <li class="dropdown d-flex flex-column justify-content-center dropdown-profile">
+                    <div class="dropdown-wrapper d-flex" role="button" id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" >
+                        <div class="dropdown-toggle profile-info d-flex">
+                            <div class="photo rounded-circle">
+                                <img src="" alt="">
+                            </div>
+                            <!-- / photo -->
+                            <div class="cart-info d-flex flex-column">
+                                <span class="profile-name">Mike Hussy</span>
+                                <span class="item-total-summary">$171.00</span>
+                            </div>
+                            <!-- /cart-info -->
+                            <i class="toggle-icon fa fa-chevron-down"></i>
+                        </div>
+                        <!-- / dropdown-toggle -->
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-profile">
+                            <li class="dropdown-item profile-link">
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Profile Page</a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->
+                            <li class="dropdown-item profile-link">
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Portfolio</a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->
+                            <li class="dropdown-item profile-link">
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Downloads</a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->
+                            <li class="dropdown-item profile-link">
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Wishlist</a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->
+                            <li class="dropdown-item profile-link">
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Upload Item</a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->
+                            <li class="dropdown-item profile-link">
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Statement</a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->    
+                            <li class="dropdown-item profile-link">
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="#">Withdrawals</a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->                                                                                                                                                                     
+                        </ul>
+                        <!-- / dropdown-menu-->
+                    </div>
+                    <!-- / dropdown-wrapper -->
+                </li>
+                <!-- / PROFILE EXAMPLE -->
+            </ul>
+            <!-- / DROPDOWN LIST -->
+        </div>
+        <!-- / Container HEADER EXAMPLE-->
+        <h6>Filters</h6>
+        <div class="container filters">      
+            <!-- DROPDOWN LIST -->
+            <ul class="dropdown-container d-flex h-100 justify-content-between">
+                <!-- CATEGORY EXAMPLE -->
+                <li class="dropdown d-flex flex-column justify-content-center dropdown-filter">
+                    <div class="dropdown-wrapper d-flex h-100" role="button" id="filter-category" data-toggle="dropdown" aria-haspopup="true" >
+                        <div class="dropdown-toggle d-flex align-items-center h-100">
+                            <span class="selected-filter">Category</span>
+                            <i class="toggle-icon fa fa-chevron-down"></i>
+                        </div>
+                        <!-- / dropdown-toggle -->
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="filter-category">
+                            <li class="dropdown-item">
+                                <a class="item-content d-flex justify-content-between w-100" href="#">
+                                    <span class="filter-type">
+                                        <i class="fa fa-chevron-right"></i> 
+                                        <span class="filter-name">WordPress</span>
+                                    </span>
+                                    <!-- / filter-type -->
+                                    <span class="filter-result">150</span>
+                                </a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->      
+                            <li class="dropdown-item">
+                                <a class="item-content d-flex justify-content-between w-100" href="#">
+                                    <span class="filter-type">
+                                        <i class="fa fa-chevron-right"></i> 
+                                        <span class="filter-name">Joomla</span>
+                                    </span>
+                                    <!-- / filter-type -->
+                                    <span class="filter-result">34</span>
+                                </a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item --> 
+                            <li class="dropdown-item">
+                                <a class="item-content d-flex justify-content-between w-100" href="#">
+                                    <span class="filter-type">
+                                        <i class="fa fa-chevron-right"></i> 
+                                        <span class="filter-name">WordPress</span>
+                                    </span>
+                                    <!-- / filter-type -->
+                                    <span class="filter-result">100</span>
+                                </a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item --> 
+                            <li class="dropdown-item">
+                                <a class="item-content d-flex justify-content-between w-100" href="#">
+                                    <span class="filter-type">
+                                        <i class="fa fa-chevron-right"></i> 
+                                        <span class="filter-name">PSD</span>
+                                    </span>
+                                    <!-- / filter-type -->
+                                    <span class="filter-result">50</span>
+                                </a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->                                                                                                                                                                                                                                                                                          
+                        </ul>
+                        <!-- / dropdown-menu-->
+                    </div>
+                    <!-- / dropdown-wrapper -->
+                </li>
+                <!-- / CATEGORY EXAMPLE -->
+                <!-- PRICE EXAMPLE -->
+                <li class="dropdown d-flex flex-column justify-content-center dropdown-filter">
+                    <div class="dropdown-wrapper d-flex h-100" role="button" id="filter-price" data-toggle="dropdown" aria-haspopup="true" >
+                        <div class="dropdown-toggle d-flex align-items-center h-100">
+                            <span class="selected-filter">Price</span>
+                            <i class="toggle-icon fa fa-chevron-down"></i>
+                        </div>
+                        <!-- / dropdown-toggle -->
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="filter-price">
+                            <li class="dropdown-item">
+                                <a class="item-content d-flex justify-content-between w-100" href="#">
+                                    <span class="filter-type">
+                                        <i class="fa fa-chevron-right"></i> 
+                                        <span class="filter-name">0 - 49</span>
+                                    </span>
+                                    <!-- / filter-type -->
+                                    <span class="filter-result">150</span>
+                                </a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->      
+                            <li class="dropdown-item">
+                                <a class="item-content d-flex justify-content-between w-100" href="#">
+                                    <span class="filter-type">
+                                        <i class="fa fa-chevron-right"></i> 
+                                        <span class="filter-name">50 - 99</span>
+                                    </span>
+                                    <!-- / filter-type -->
+                                    <span class="filter-result">1241</span>
+                                </a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item --> 
+                            <li class="dropdown-item">
+                                <a class="item-content d-flex justify-content-between w-100" href="#">
+                                    <span class="filter-type">
+                                        <i class="fa fa-chevron-right"></i> 
+                                        <span class="filter-name">100 - 199</span>
+                                    </span>
+                                    <!-- / filter-type -->
+                                    <span class="filter-result">54</span>
+                                </a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item --> 
+                            <li class="dropdown-item">
+                                <a class="item-content d-flex justify-content-between w-100" href="#">
+                                    <span class="filter-type">
+                                        <i class="fa fa-chevron-right"></i> 
+                                        <span class="filter-name">200 - MAX</span>
+                                    </span>
+                                    <!-- / filter-type -->
+                                    <span class="filter-result">16</span>
+                                </a>
+                                <!-- / item-content -->
+                            </li>
+                            <!-- / dropdown-item -->                                                                                                                                                                                                                                                                                          
+                        </ul>
+                        <!-- / dropdown-menu-->
+                    </div>
+                    <!-- / dropdown-wrapper -->
+                </li>
+                <!-- / PRICE EXAMPLE -->                
+            </ul>
+            <!-- / DROPDOWN LIST -->
+        </div>
+        <!-- / Container FILTERS EXAMPLE-->     
+        <h6>Sort by</h6>
+        <div class="container sortby">      
+            <div class="dropdown-container d-flex h-100">
+                <div class="dropdown d-flex flex-column justify-content-center dropdown-sort-by">
+                    <div class="dropdown-wrapper d-flex h-100" role="button" id="filter-price" data-toggle="dropdown" aria-haspopup="true" >
+                        <div class="dropdown-toggle d-flex align-items-center h-100">                            
+                            <span class="selected-sort">New items</span>
+                            <i class="toggle-icon fa fa-sort"></i>
+                        </div>
+                        <!-- / dropdown-toggle -->
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="filter-price">
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">Category title</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">Item title</a>
+                            </li>
+                            <!-- / dropdown-item -->
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">Price</a>
+                            </li>
+                            <!-- / dropdown-item -->
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">Rating</a>
+                            </li>
+                            <!-- / dropdown-item --> 
+                            <li class="dropdown-item">
+                                <a class="item-content w-100" href="#">New items</a>
+                            </li>
+                            <!-- / dropdown-item -->                                                                                                                                                                                                                                                                                                                                               
+                        </ul>
+                        <!-- / dropdown-menu-->
+                    </div>
+                    <!-- / dropdown-wrapper -->
+                </div>
+                <!-- / dropdown -->                
+            </div>
+            <!-- / dropdown-container -->
+        </div>
+        <!-- / Container FILTERS EXAMPLE-->
+    </div>
+    <!-- / Section-->
+<!-- Optional JavaScripts -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
