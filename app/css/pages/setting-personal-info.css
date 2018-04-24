@@ -1,0 +1,28 @@
+/* === SETTING-PERSONAL-INFO START === */
+
+#personal-info-menu li {
+    border: 1px solid #dedede;
+}
+aside #personal-info-menu {
+    margin: 0;
+} 
+#personal-info-menu li.active {
+    border-bottom: 2px solid #8bc34a;
+    font-weight: 500;
+}   
+#personal-info-menu li + li {
+    border-top: 0;
+}  
+#personal-info-menu a {
+    padding: 0 50px;
+    line-height: 3.57;
+}  
+.content-wrapper-body .form-group + .form-group {
+    margin-top: 22px;
+}
+.personal-info-btn {
+    margin-top: 27px;
+}
+
+/* === SETTING-PERSONAL-INFO END === */       
+   
