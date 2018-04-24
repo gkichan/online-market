@@ -130,12 +130,5 @@
                 flex-grow: 10;
     }
 }
-/*
-    Адаптивный асайд требует наличия в разметке :
-
-    1.  div.overlay - класса для темного фона
-    2.  button.mobile-aside-toggle>i.fa-fa-bars - кнопки для открытия
-    3.  класса "mobile-aside left\right" на асайде
-*/
 /* -- CONTENT END -- */
 /* ===== PAGE PROFILE DETAILS END ===== */
