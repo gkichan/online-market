@@ -22,7 +22,6 @@ aside .aside-nav li {
     display: flex;
     align-items: center;
 }
-/* В финале поменять hover на класс .active */
 aside .aside-nav li:hover a {
     color: #8bc34a;
 }
@@ -55,7 +54,7 @@ aside .aside-nav .category-count::after {
 /* -- ASIDE BLOCK NAV START -- */
 aside .aside-nav.block-nav {
     color: #707070;
-    margin-top: 30px;
+    margin-top: 0;
     border: 1px solid #dedede;
 }
 aside .aside-nav.block-nav li {
@@ -64,12 +63,13 @@ aside .aside-nav.block-nav li {
 aside .aside-nav.block-nav li:last-child {
     border-bottom: none;
 }
-/* В финале поменять hover на класс .active */
-aside .aside-nav.block-nav li:hover {
+aside .aside-nav.block-nav li.active {
     color: #263238;
 }
-/* В финале поменять hover на класс .active */
-aside .aside-nav.block-nav li:hover::after {
+aside .aside-nav.block-nav li.active:hover a {
+    color: #263238;
+}
+aside .aside-nav.block-nav li.active::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -78,8 +78,7 @@ aside .aside-nav.block-nav li:hover::after {
     bottom: 0;
     background-color: #8bc34a;
 }
-/* В финале поменять hover на класс .active */
-aside .aside-nav.block-nav li:hover .fa {
+aside .aside-nav.block-nav li.active .fa {
     color: #8bc34a;
 }
 aside .aside-nav.block-nav li a {
