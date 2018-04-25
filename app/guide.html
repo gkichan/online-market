@@ -188,7 +188,7 @@
         </div>
         <!-- /.top-header -->
         <div class="bottom-header collapse d-lg-block navbar-collapse" id="navbar-out">
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex">
                 <nav class="header-nav">
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -465,7 +465,7 @@
         </div>
         <!-- /.top-header -->
         <div class="bottom-header collapse d-lg-block navbar-collapse" id="navbar-in">
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex">
                 <nav class="header-nav">
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -485,21 +485,23 @@
     <!-- HEADER END -->
     <!-- BREADCRUMB START-->
     <section>
-        <div class="title-lg text-center bg-green">Breadcrumbs</div>
-        <div class="conteiner">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Product Page</li>
-                </ol>
-            </nav>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Word Press</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">GT Builder Construction</li>
-                </ol>
-            </nav>
+        <div class="container">
+            <div class="title-lg text-center bg-green">Breadcrumbs</div>
+            <div class="conteiner">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Product Page</li>
+                    </ol>
+                </nav>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Word Press</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">GT Builder Construction</li>
+                    </ol>
+                </nav>
+            </div>
         </div>
     </section>
     <!-- BREADCRUMB END -->
@@ -2450,58 +2452,57 @@
         </section>
         <!-- Product Details Tabs -->
         <section>
-            <div class="tabs" data-role="tabs">
-                <div data-role="navbar">
-                    <ul class="d-flex flex-wrap text-center font-medium">
-                        <li class="flex-grow-1 active"><a href="#item-features">Item Features</a></li>
-                        <li class="flex-grow-1"><a href="#comments">Comments</a></li>
-                        <li class="flex-grow-1"><a href="#reviews">Reviews</a></li>
-                        <li class="flex-grow-1"><a href="#support">Support</a></li>
-                    </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="tabs" id="tabs-product-details">
+                            <div class="navbar">
+                                <ul class="d-flex flex-wrap text-center font-medium">
+                                    <li><a href="#item-features">Item Features</a></li>
+                                    <li><a href="#comments">Comments</a></li>
+                                    <li><a href="#reviews">Reviews</a></li>
+                                    <li><a href="#support">Support</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-item" id="item-features">
+                                <ul class="font-medium default-text">
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Bhen an unknown printe</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Bhen an unknown printe</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                    <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                </ul>
+                            </div>
+                            <!-- /#item-features -->
+                            <div class="tab-item" id="comments">
+                                <p class="tab-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet assumenda beatae dicta dignissimos doloribus enim facere harum ipsa molestiae odio, odit perferendis possimus temporibus ullam veritatis voluptate voluptates? Cumque.</p>
+                            </div>
+                            <!-- /#comments -->
+                            <div class="tab-item" id="reviews">
+                                <p class="tab-item-text">Porem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                            </div>
+                            <!-- /#reviews -->
+                            <div class="tab-item" id="support">
+                                <p class="tab-item-text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                            </div>
+                            <!-- /#support -->
+                        </div>
+                        <!-- /.tabs -->
+                    </div>
+                    <!-- /.col-9 -->
                 </div>
-                <div id="item-features">
-                    <ul class="tab-item font-medium">
-                        <li class="active">
-                            <a href="#"><i class="fa fa-chevron-right"></i>Printing and typesetting industry</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right"></i>Bhen an unknown printe</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right"></i>Handard dummy text</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right"></i>Desktop publishing software</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right"></i>Bhen an unknown printe</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right"></i>Handard dummy text</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right"></i>Desktop publishing software</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right"></i>Bhen an unknown printe</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /#item-features -->
-                <div id="comments">
-                    <p class="tab-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet assumenda beatae dicta dignissimos doloribus enim facere harum ipsa molestiae odio, odit perferendis possimus temporibus ullam veritatis voluptate voluptates? Cumque.</p>
-                </div>
-                <!-- /#comments -->
-                <div id="reviews">
-                    <p class="tab-item-text">Porem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-                </div>
-                <!-- /#reviews -->
-                <div id="support">
-                    <p class="tab-item-text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-                </div>
-                <!-- /#support -->
+                <!-- /.row -->
             </div>
-            <!-- /#tabs-product-details -->
+            <!-- /.container -->
         </section>
         <!-- Cards Switcher -->
         <section class="default-section">
@@ -2778,7 +2779,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Slick Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
     <script src="js/all-items-view-switcher.js"></script>
