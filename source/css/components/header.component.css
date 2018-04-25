@@ -77,6 +77,17 @@ header .header-in .dropdown.dropdown-profile {
     header .header-in .header-help-text {
         font-size: 13px;
     }
-
+}
+@media(max-width: 767px) {
+    header .top-header .header-help-text {
+        font-size: 13px;
+    }
+    header .header-controls {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    header .header-in .header-help-text {
+        margin-top:10px;
+    }
 }
 /* ===== HEADER END ===== */

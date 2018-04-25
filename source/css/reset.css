@@ -11,6 +11,9 @@ body {
     color: #263238;
     background-color: #f4f6f5;
 }
+body.overflow {
+    overflow: hidden;
+}
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: normal;
@@ -62,6 +65,7 @@ textarea {
 button {
     cursor: pointer;
     background-color: transparent;
+    border:none;
 }
 /* ===== RESET END ===== */
 /* ===== RESET BOOTSTRAP START ===== */

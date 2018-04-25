@@ -1,7 +1,6 @@
 /* ===== FOOTER START ===== */
 footer {
     padding-top: 115px;
-    margin-top: 125px;
     background-color: #263238;
 }
 footer .footer-title {
@@ -80,5 +79,13 @@ footer .footer-form .btn-custom .fa {
     font-size: 20px;
     margin-left: 12px;
     margin-right: 12px;
+}
+@media(max-width: 1199px) {
+    footer .footer-title {
+        margin-top: 20px;
+    }
+    footer .footer-form {
+        width: 70%;
+    }
 }
 /* ===== FOOTER END ===== */
