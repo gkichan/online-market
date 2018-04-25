@@ -1,5 +1,8 @@
 /* ===== PAGE PROFILE DETAILS START ===== */
 /* -- INNER START -- */
+#main {
+    padding-bottom: 100px;
+}
 .inner {
     padding: 65px 0;
     background-image: url("../img/inner-bg.png");
@@ -127,6 +130,12 @@
     }
     .about-author .mobile-aside .product-author-info {
         flex-grow: 10;
+    }
+}
+@media(max-width: 767px) {
+    .about-author .container {
+        max-width: max-content;
+        padding: 0 30px;
     }
 }
 /* -- CONTENT END -- */

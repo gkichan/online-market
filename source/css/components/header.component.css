@@ -65,6 +65,9 @@ header .header-in .dropdown.dropdown-profile {
     header .top-header {
         padding-top: 15px;
     }
+    header .bottom-header .container {
+        justify-content: center;
+    }
     header .bottom-header a {
         display: block;
         text-align: center;
@@ -88,6 +91,10 @@ header .header-in .dropdown.dropdown-profile {
     }
     header .header-in .header-help-text {
         margin-top:10px;
+    }
+    header .container {
+        max-width: max-content;
+        padding: 0 30px;
     }
 }
 /* ===== HEADER END ===== */
