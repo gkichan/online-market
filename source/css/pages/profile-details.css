@@ -1,8 +1,5 @@
 /* ===== PAGE PROFILE DETAILS START ===== */
 /* -- INNER START -- */
-#main {
-    padding-bottom: 100px;
-}
 .inner {
     padding: 65px 0;
     background-image: url("../img/inner-bg.png");
@@ -14,6 +11,9 @@
 }
 /* -- INNER END -- */
 /* -- ASIDE START -- */
+.about-author {
+    padding-bottom: 100px;
+}
 .about-author .aside-block .status {
     border: 1px solid #d5d5d5;
     padding: 8px 14px 8px 9px;
