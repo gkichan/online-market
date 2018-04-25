@@ -1,0 +1,31 @@
+.product-details .product-details-item + .product-details-item {
+    margin-top: 54px;
+}
+.product-details-bordered {
+    border: 1px solid #dfdfdf;
+    padding: 21px;
+}
+.product-details-info {
+    margin-top: 43px;
+}
+.product-details-info-card {
+    width: 100%;
+}
+.product-details-info p {
+    margin-top: 32px;
+}
+.product-details-info .product-details-action {
+    margin-top: 50px;
+}
+.product-details .buttons {
+   float: left;
+}
+.product-details .social {
+    float: right;
+ }
+.buttons button + button {
+    margin-left: 17px;
+}
+.product-details i + i {
+    margin-left: 4px;
+}
