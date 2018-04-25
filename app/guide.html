@@ -188,7 +188,7 @@
         </div>
         <!-- /.top-header -->
         <div class="bottom-header collapse d-lg-block navbar-collapse" id="navbar-out">
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex">
                 <nav class="header-nav">
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -465,7 +465,7 @@
         </div>
         <!-- /.top-header -->
         <div class="bottom-header collapse d-lg-block navbar-collapse" id="navbar-in">
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex">
                 <nav class="header-nav">
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -485,21 +485,23 @@
     <!-- HEADER END -->
     <!-- BREADCRUMB START-->
     <section>
-        <div class="title-lg text-center bg-green">Breadcrumbs</div>
-        <div class="conteiner">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Product Page</li>
-                </ol>
-            </nav>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Word Press</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">GT Builder Construction</li>
-                </ol>
-            </nav>
+        <div class="container">
+            <div class="title-lg text-center bg-green">Breadcrumbs</div>
+            <div class="conteiner">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Product Page</li>
+                    </ol>
+                </nav>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Word Press</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">GT Builder Construction</li>
+                    </ol>
+                </nav>
+            </div>
         </div>
     </section>
     <!-- BREADCRUMB END -->
@@ -2453,8 +2455,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-9">
-                        <div class="tabs" data-role="tabs">
-                            <div class="navbar" data-role="navbar">
+                        <div class="tabs" id="tabs-product-details">
+                            <div class="navbar">
                                 <ul class="d-flex flex-wrap text-center font-medium">
                                     <li><a href="#item-features">Item Features</a></li>
                                     <li><a href="#comments">Comments</a></li>
@@ -2777,7 +2779,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Slick Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
     <script src="js/all-items-view-switcher.js"></script>

@@ -1,3 +1,8 @@
+$(function() {
+    // Init tabs
+    $("#tabs-product-details").tabs();
+});
+
 // Select Styler Init
 $('input, select').styler();
 $('#upload-file-styler').styler('destroy');
