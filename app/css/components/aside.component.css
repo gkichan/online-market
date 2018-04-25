@@ -19,24 +19,42 @@ aside .aside-nav {
 }
 aside .aside-nav li {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 /* В финале поменять hover на класс .active */
-aside .aside-nav li:hover {
+aside .aside-nav li:hover a {
     color: #8bc34a;
 }
 aside .aside-nav li a {
     position: relative;
     display: block;
-    padding: 12px 50px;
+    padding: 12px 0 12px 20px;
+    width: 100%;
 }
 aside .aside-nav li .fa {
     position: absolute;
     top: 50%;
-    left: 22px;
+    left: 0;
     font-size: 9px;
     color: #8bc34a;
     -webkit-transform: translateY(-51%);
             transform: translateY(-51%);
+}
+aside .aside-nav .category-count {
+    color: #90a4ae;
+    margin-left: 10px;
+    cursor: default;
+}
+aside .aside-nav .category-count::before {
+    content: '(';
+}
+aside .aside-nav .category-count::after {
+    content: ')';
 }
 /* -- ASIDE INBLOCK NAV END -- */
 /* -- ASIDE BLOCK NAV START -- */
@@ -74,6 +92,7 @@ aside .aside-nav.block-nav li a {
 }
 aside .aside-nav.block-nav li .fa {
     color: #d0d0d0;
+    left: 22px;
 }
 /* -- ASIDE BLOCK NAV END -- */
 /* -- ASIDE PRODUCT PRICE START -- */
