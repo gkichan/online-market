@@ -1,7 +1,4 @@
 /* ===== PAGE UPLOAD PRODUCTS START ===== */
-.products-upload{
-    padding-bottom: 106px;
-}
 .products-upload .container{
     max-width: 1200px;
 }
@@ -70,8 +67,8 @@
     }
 }
 @media (max-width: 768px){  
-    .products-upload {
-        padding-bottom: 80px;
+    .upload-products-page #main{
+        padding-bottom: 50px;
     }
     .products-upload .content-title-text {
         padding-top: 5px;

@@ -1,5 +1,16 @@
 /* === SETTING-PERSONAL-INFO START === */
-
+.settings-page aside .aside-nav li .fa {
+    position: unset; 
+    top: unset;
+    left: unset;
+    transform: unset;
+    margin: 0 22px;
+}
+.settings-page aside .aside-nav li a{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
 #personal-info-menu li {
     border: 1px solid #dedede;
 }
@@ -14,7 +25,6 @@ aside #personal-info-menu {
     border-top: 0;
 }  
 #personal-info-menu a {
-    padding: 0 50px;
     line-height: 3.57;
 }  
 .content-wrapper-body .form-group + .form-group {
@@ -23,6 +33,29 @@ aside #personal-info-menu {
 .personal-info-btn {
     margin-top: 27px;
 }
-
+/* -- @MEDIA START -- */
+@media (max-width: 767px){
+    .personal-info-btn .btn-custom{
+        width: 100%;
+    }
+}
+@media (max-width: 575px) {
+    .settings-page .content-wrapper-title {
+        border-top: none;
+        text-align: center;
+    }
+    .settings-page .content-wrapper-body {
+        padding-left: 10px;
+        padding-right: 10px; 
+        padding-top: 5px;
+    }
+    .settings-page .form-group{
+        margin-bottom: 0;
+    }
+    .settings-page .content-wrapper-body .form-group + .form-group{
+        margin-top: 5px;
+    }
+}
+/* -- @MEDIA END -- */
 /* === SETTING-PERSONAL-INFO END === */       
    
