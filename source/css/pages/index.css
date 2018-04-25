@@ -1,16 +1,16 @@
 /* ===== HOME PAGE START ===== */
 /* -- SEARCH SECTION START -- */
-.search-section {
+.main-search {
     padding: 150px 0;
     background: url('../img/main-search-bg.jpg') no-repeat center / cover;
 }
-.search-section span {
+.main-search span {
     display: block;
 }
-.search-section .welcome-title {
+.main-search .welcome-title {
     margin-bottom: 30px;
 }
-.search-section .title-sm {
+.main-search .title-sm {
     margin-bottom: 50px;
 }
 /* -- SEARCH SECTION END -- */
