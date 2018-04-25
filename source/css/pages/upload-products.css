@@ -1,5 +1,7 @@
 /* ===== PAGE UPLOAD PRODUCTS START ===== */
-
+.products-upload{
+    padding-bottom: 106px;
+}
 .products-upload .container{
     max-width: 1200px;
 }
@@ -41,6 +43,18 @@
 }
 /* -- MEDIA START -- */
 @media (max-width: 991px){    
+    .upload-products-page .inner {
+        padding: 10px 0;
+    }
+    .upload-products-page .inner .inner-title {
+        margin-bottom: 10px;
+    }
+    .upload-products-page .search-section {
+        padding: 20px 0;
+    }
+    .upload-products-page .breadcrumb {
+        padding: 10px 0;
+    }
     .products-upload .col-form-label{
         padding-bottom: 0;
         padding-top: 0;
@@ -56,16 +70,74 @@
     }
 }
 @media (max-width: 768px){  
+    .products-upload {
+        padding-bottom: 80px;
+    }
     .products-upload .content-title-text {
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+    .upload-products-page .inner .title-white{
+        font-size: 12px;
+    }
+    .upload-products-page .search-item {
+        padding: 0 10px;
+    }
+    .upload-products-page .search-item form{
+        display: flex;
     }  
+    .upload-products-page .search-item i{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .upload-products-page .search-section .search-control {
+        font-size: 12px;
+        height: 35px;
+    }
     .products-upload .upload-item{
         padding: 15px 10px; 
         overflow: hidden;
     }
     .products-upload .submit-upload-item{
         padding-top: 0;
+    }
+    .upload-products-page footer{
+        padding-top: 45px;
+    }
+    .upload-products-page footer .footer-copyright span{
+        margin-top: 45px;
+    }
+}
+@media (max-width: 576px){  
+    .upload-products-page .header-help-text{
+        display: none !important;
+    }
+    .upload-products-page .header-controls{
+        justify-content: space-between;
+    }
+    .upload-products-page .search-section {
+        padding: 10px 20px;
+    }
+    .upload-products-page .inner .inner-title{
+        display: none;
+    }
+    .upload-products-page .inner{
+        padding: 0;
+    }
+    .upload-products-page .breadcrumb {
+        padding: 0;
+    }
+    .upload-products-page .breadcrumb-item{
+        font-size: 12px;
+    }
+    .products-upload .content-title-text{
+        text-align: center;
+    }
+    .products-upload .content-title-text h4{
+        font-size: 18px;
+    }
+    .products-upload .content-title-text h3{
+        font-size: 18px;
     }
 }
 /* -- MEDIA START END-- */
