@@ -1,15 +1,24 @@
+.product-details {
+    margin-bottom: 153px;
+}
 .product-details .product-details-item + .product-details-item {
     margin-top: 54px;
 }
+.product-details .product-details-item-1 {
+    margin-top: 28px;
+    /* margin-left: -15px; */
+}
 .product-details-bordered {
     border: 1px solid #dfdfdf;
-    padding: 21px;
+    padding: 18px 21px;
 }
 .product-details-info {
     margin-top: 43px;
 }
 .product-details-info-card {
     width: 100%;
+    /* margin-left: -15px; */
+    /* margin-right: -15px; */
 }
 .product-details-info p {
     margin-top: 32px;
@@ -19,9 +28,11 @@
 }
 .product-details .buttons {
    float: left;
+   /* margin-left: 15px; */
 }
 .product-details .social {
     float: right;
+    /* margin-right: 15px; */
  }
 .buttons button + button {
     margin-left: 17px;
@@ -29,3 +40,7 @@
 .product-details i + i {
     margin-left: 4px;
 }
+/* .product-details-item {
+    margin-right: 15px;
+    margin-left: 15px;
+} */
