@@ -1,4 +1,7 @@
 /* ===== PAGE UPLOAD PRODUCTS START ===== */
+.products-upload {
+    padding-bottom: 108px;
+}
 .products-upload .container{
     max-width: 1200px;
 }
