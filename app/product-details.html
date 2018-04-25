@@ -372,10 +372,51 @@
                         </div>
                         <!-- / row -->
                         <div class="product-details-item row">
-                            <div class="product-details-bordered ">
-                                
+                            <div class="col-12">
+                                <div class="tabs" data-role="tabs">
+                                    <div class="navbar" data-role="navbar">
+                                        <ul class="d-flex flex-wrap text-center font-medium">
+                                            <li><a href="#item-features">Item Features</a></li>
+                                            <li><a href="#comments">Comments</a></li>
+                                            <li><a href="#reviews">Reviews</a></li>
+                                            <li><a href="#support">Support</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-item" id="item-features">
+                                        <ul class="font-medium default-text">
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Bhen an unknown printe</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Bhen an unknown printe</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Printing and typesetting industry</li>
+                                            <li class="active"><i class="fa fa-chevron-right text-green"></i>Desktop publishing software</li>
+                                        </ul>
+                                    </div>
+                                    <!-- /#item-features -->
+                                    <div class="tab-item" id="comments">
+                                        <p class="tab-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet assumenda beatae dicta dignissimos doloribus enim facere harum ipsa molestiae odio, odit perferendis possimus temporibus ullam veritatis voluptate voluptates? Cumque.</p>
+                                    </div>
+                                    <!-- /#comments -->
+                                    <div class="tab-item" id="reviews">
+                                        <p class="tab-item-text">Porem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                                    </div>
+                                    <!-- /#reviews -->
+                                    <div class="tab-item" id="support">
+                                        <p class="tab-item-text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                                    </div>
+                                    <!-- /#support -->
+                                </div>
+                                <!-- /.tabs -->
                             </div>
-                            <!-- / product-details-bordered -->
+                            <!-- /.col-12 -->
                         </div>
                         <!-- / row -->
                         <div class="product-details-item row">
@@ -400,7 +441,17 @@
                                 <!-- /.aside-block-title -->
                                 <div class="aside-product-price d-flex align-items-center">
                                     <span class="product-price-value font-medium">$59.00</span>
-                                    <div class="product-price-variant ml-auto">Dropdown</div>
+                                    <div class="product-price-variant ml-auto">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="regular-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Regular <i class="fa fa-caret-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-regular" aria-labelledby="regular-btn">
+                                                <a class="dropdown-item" href="#">Regular</a>
+                                                <a class="dropdown-item" href="#">Extended</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- /.aside-product-price -->
                                 <div class="aside-product-price-buttons">
@@ -493,7 +544,7 @@
             </div>
             <!-- / container -->
         </div>
-        <!-- / personal-info -->
+        <!-- / product-details -->
     </main>
     <!-- FOOTER START -->
     <footer id="footer">
@@ -604,6 +655,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
 </body>
