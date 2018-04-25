@@ -94,6 +94,9 @@
         .card-guide .col-12 + .col-12 {
             margin-top: 30px;
         }
+        .row + .all-items-cards-container{
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
@@ -2294,6 +2297,163 @@
     </div>
     <!-- / container -->
 </section>
+<section>
+    <div class="container">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="regular-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Regular <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-menu dropdown-regular" aria-labelledby="regular-btn">
+                <a class="dropdown-item" href="#">Regular</a>
+                <a class="dropdown-item" href="#">Extended</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+
+<section class="default-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="items-view-switcher d-flex justify-content-between">
+                            <div class="left-part d-flex align-items-center">
+                                <a href="#" class="sort-amount-switcher">
+                                    <i class="fa fa-sort-amount-desc"></i>
+                                </a>
+                                <div class="dropdown-container d-flex h-100">
+                                    <div class="dropdown d-flex flex-column justify-content-center dropdown-sort-by">
+                                        <div class="dropdown-wrapper d-flex h-100" role="button" id="filter-price" data-toggle="dropdown" aria-haspopup="true" >
+                                            <div class="dropdown-toggle d-flex align-items-center h-100">
+                                                <span class="selected-sort">New items</span>
+                                                <i class="toggle-icon fa fa-sort"></i>
+                                            </div>
+                                            <!-- / dropdown-toggle -->
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="filter-price">
+                                                <li class="dropdown-item">
+                                                    <a class="item-content w-100" href="#">Category title</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a class="item-content w-100" href="#">Item title</a>
+                                                </li>
+                                                <!-- / dropdown-item -->
+                                                <li class="dropdown-item">
+                                                    <a class="item-content w-100" href="#">Price</a>
+                                                </li>
+                                                <!-- / dropdown-item -->
+                                                <li class="dropdown-item">
+                                                    <a class="item-content w-100" href="#">Rating</a>
+                                                </li>
+                                                <!-- / dropdown-item -->
+                                                <li class="dropdown-item">
+                                                    <a class="item-content w-100" href="#">New items</a>
+                                                </li>
+                                                <!-- / dropdown-item -->
+                                            </ul>
+                                            <!-- / dropdown-menu-->
+                                        </div>
+                                        <!-- / dropdown-wrapper -->
+                                    </div>
+                                    <!-- / dropdown -->
+                                </div>
+                                <!-- / dropdown-container -->
+                            </div>
+                            <!-- / left-block -->
+                            <div class="right-part d-flex align-items-center">
+                                <a href="#" data-view="grid" class="switch-view active"><i class="fa fa-th-large"></i></a>
+                                <a href="#" data-view="card-row" class="switch-view"><i class="fa fa-th-list"></i></a>
+                            </div>
+                            <!-- / right-block -->
+                        </div>
+                        <!-- / view-items-switcher -->
+                    </div>
+                    <!-- / col -->
+                </div>
+                <!-- / row -->
+                <div class="all-items-cards-container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card hot medium-card">
+                                <div class="product-hot-badge">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <!-- /.product-hot-badge -->
+                                <div class="product-img">
+                                    <a href="#"><img src="img/medium-card-img.jpg" alt=""></a>
+                                </div>
+                                <!-- /.product-img -->
+                                <div class="product-info-wrapper">
+                                    <div class="product-top-info d-flex">
+                                        <div class="product-description-wrapper d-flex flex-column">
+                                            <a href="#" class="product-title">Responsive Mobile APP</a>
+                                            <a href="" class="product-category">Site Template</a>
+                                            <span class="product-description d-none">Pimply dummy text of the printing and typesetting industry.</span>
+                                        </div>
+                                        <!-- /.product-description-wrapper -->
+                                        <div class="product-price-wrapper d-flex flex-column ml-auto">
+                                            <span class="product-price">$19</span>
+                                            <div class="product-sales d-none">
+                                                <span>Sales</span>
+                                                <span class="product-sales-count">14</span>
+                                            </div>
+                                            <!-- /.product-sales -->
+                                        </div>
+                                        <!-- /.product-price-wrapper -->
+                                    </div>
+                                    <!-- /.product-top-info -->
+                                    <div class="product-bottom-info d-flex align-items-center">
+                                        <a href="#" class="product-author">
+                                            <div class="product-author-img">
+                                                <img src="img/card-author-avatar-1.jpg" alt="">
+                                            </div>
+                                            <span class="product-author-name">SupeRprOgeR</span>
+                                        </a>
+                                        <!-- /.product-author -->
+                                        <div class="product-rating d-flex ml-auto">
+                                            <ul class="rating-stars d-flex">
+                                                <li><i class="fa fa-star active"></i></li>
+                                                <li><i class="fa fa-star active"></i></li>
+                                                <li><i class="fa fa-star active"></i></li>
+                                                <li><i class="fa fa-star active"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                            <span class="rating-count">07</span>
+                                        </div>
+                                        <!-- /.product-rating -->
+                                        <div class="product-social-data d-none">
+                                            <div class="product-comments">
+                                                <a href="#"><i class="fa fa-comment-o"></i></a>
+                                                <span class="product-comments-count">10</span>
+                                            </div>
+                                            <!-- /.product-comments -->
+                                            <div class="product-likes">
+                                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                                                <span class="product-likes-count">30</span>
+                                            </div>
+                                            <!-- /.product-likes -->
+                                        </div>
+                                        <!-- /.product-social-data -->
+                                    </div>
+                                    <!-- /.product-bottom-info -->
+                                </div>
+                                <!-- /.product-info-wrapper -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- / all-items-cards-container -->
+            </div>
+            <!-- / col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
 <!-- COMMON COMPONENTS END -->
 <!-- SPRITES START -->
 <div class="title-lg text-center bg-green">Sprites</div>
@@ -2425,5 +2585,6 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
 <!-- Init plugins -->
 <script src="js/init.js"></script>
+<script src="js/all-items-view-switcher.js"></script>
 </body>
 </html>
