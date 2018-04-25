@@ -1,5 +1,7 @@
 /* === SETTING-PERSONAL-INFO START === */
-
+#main {
+    padding-bottom: 155px;
+}
 #personal-info-menu li {
     border: 1px solid #dedede;
 }
