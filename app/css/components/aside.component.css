@@ -94,6 +94,18 @@ aside .aside-nav.block-nav li .fa {
     color: #d0d0d0;
     left: 22px;
 }
+aside .aside-nav.block-nav .data-count {
+    margin-left: 5px;
+}
+aside .aside-nav.block-nav .data-count.disabled {
+    display: none;
+}
+aside .aside-nav.block-nav .data-count::before {
+    content: '(';
+}
+aside .aside-nav.block-nav .data-count::after {
+    content: ')';
+}
 /* -- ASIDE BLOCK NAV END -- */
 /* -- ASIDE PRODUCT PRICE START -- */
 aside .aside-product-price {
