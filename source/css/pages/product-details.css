@@ -28,24 +28,49 @@
 .product-details-info .product-details-action {
     margin-top: 50px;
 }
+.buttons {
+    display: flex;
+}
 .product-details-action {
     display: flex;
     justify-content: space-between;
 }
-.product-details-action button + button {
-    margin-left: 17px;
+
+.product-details-action .btn-custom {
+    margin-right: 17px;
 }
 .product-details i + i {
     margin-left: 4px;
 }
-/* @media(max-width: 1199px) {
-    .product-details-action {
-        justify-content: space-between;
-    } 
-}*/
-@media(max-width: 768px) {
+.mobile-aside-toggle {
+    display: none;
+}
+@media(max-width: 1200px) {
     .product-details-action {
         flex-flow:column wrap;
     }
+    .social {
+        margin-top: 20px;
+    }
+    .buttons {
+        width: 100%;
+    }
+}
+ @media(max-width: 991px) {
+    .mobile-aside-toggle {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    }
+
+@media(max-width:768px) {
+    .buttons {
+        flex-flow:column wrap;
+    }
+    
 }
 /* === PAGE PRODUCT-DETAILS END === */
