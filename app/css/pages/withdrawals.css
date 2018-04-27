@@ -7,6 +7,12 @@
 .content-wrapper-body .form-group + .form-group {
     margin-top: 22px;
 }
+.withdraw {
+    margin-bottom: 153px;
+}
+.withdraw-form {
+    padding: 0 15px;
+}
 /* потом убрать, чтоб код не дублировался с css форм */
 .form-group .sup {
     font-size: 24px; 
@@ -26,15 +32,16 @@
 .withdraw-btn {
     margin-top: 35px;
     }
-/* .withdraw-info  {
-    display: flex;
-} */
+ .withdraw-info  .content-wrapper-bordered {
+   margin-bottom: 15px;
+}
     @media(max-width: 991px) {
         .withdraw-info {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column;
+            margin-top: 20px;
         }    
     }
 /* === PAGE WITHDRAWALS END === */
