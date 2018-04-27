@@ -26,4 +26,12 @@
 .withdraw-btn {
     margin-top: 35px;
     }
+/* .withdraw-info  {
+    display: flex;
+} */
+    @media(max-width: 991px) {
+        .withdraw-info {
+            flex-direction: column;
+        }    
+    }
 /* === PAGE WITHDRAWALS END === */
