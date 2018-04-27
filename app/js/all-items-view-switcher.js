@@ -1,7 +1,7 @@
 
 
 $(document).ready(() => {
-    const cardContainer = '.all-items-cards-container'; /// container, в котором вид .card будет переключаться
+    const cardContainer = '.all-cards'; /// container, в котором вид .card будет переключаться
 
     function switchViewClick(e){
         e.preventDefault();

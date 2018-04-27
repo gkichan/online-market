@@ -166,6 +166,11 @@
 .card.medium-card .product-author-name {
     max-width: 70px;
 }
+.card.medium-card .product-description,
+.card.medium-card .product-sales,
+.card.medium-card .product-social-data {
+    display: none;
+}
 /* -- MEDIUM CARDS END -- */
 /* -- ROW CARDS START -- */
 .card.medium-card.row-card {
@@ -211,6 +216,13 @@
 }
 .card.medium-card.row-card .product-author-name {
     max-width: unset;
+}
+.card.medium-card.row-card .product-description,
+.card.medium-card.row-card .product-sales {
+    display: block;
+}
+.card.medium-card.row-card .product-social-data {
+    display: flex;
 }
 /* -- ROW CARDS END -- */
 /* -- ASIDE CARDS START -- */

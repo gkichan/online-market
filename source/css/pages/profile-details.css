@@ -42,6 +42,9 @@
 .about-author button + button {
     margin-top: 15px;
 }
+.about-author aside .aside-nav.block-nav {
+    margin-top: 30px;
+}
 /* -- ASIDE END -- */
 /* -- CONTENT START -- */
 .about-author .content-bg-border {

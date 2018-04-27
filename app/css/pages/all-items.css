@@ -1,0 +1,49 @@
+/* ===== PAGE ALL-ITEMS START ===== */
+/* -- ASIDE START -- */
+.all-items aside .btn-custom {
+    margin-top: 20px;
+}
+/* -- ASIDE END -- */
+/* -- ITEMS VIEW SWITCHER START -- */
+.all-items .items-view-switcher{
+    background-color: #fff;
+    height: 60px;
+    border: 1px solid #dcdcdc;
+    padding: 0 20px;
+}
+.all-items .items-view-switcher .left-part{
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+.all-items .items-view-switcher .sort-amount-switcher{
+    padding-right: 5px;
+}
+.all-items .items-view-switcher .sort-amount-switcher .fa{
+    font-size: 14px;
+    color: #455a64;
+}
+.all-items .items-view-switcher .switch-view .fa{
+    font-size: 16px;
+    color: #90a4ae;
+}
+.all-items .items-view-switcher .switch-view.active .fa{
+    color: #8bc34a;
+}
+.all-items .items-view-switcher .switch-view:hover .fa{
+    color: #8bc34a;
+}
+.all-items .items-view-switcher .switch-view + .switch-view{
+    margin-left: 12px;
+}
+/* -- ITEMS VIEW SWITCHER END -- */
+.all-items {
+    padding-bottom: 80px;
+}
+.all-items .all-cards .card {
+    margin-top: 30px;
+}
+.all-items .pagination {
+    margin-top: 60px;
+}
+
+/* ===== PAGE ALL-ITEMS END ===== */

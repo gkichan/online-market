@@ -11,6 +11,9 @@
 .breadcrumb .breadcrumb-item.active {
     color: #263238;
 }
+.breadcrumb .breadcrumb-item:hover a {
+    color: #8bc34a;
+}
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
     content: " - "; 
     color: #8bc34a;
