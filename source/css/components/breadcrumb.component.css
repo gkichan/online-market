@@ -18,4 +18,12 @@
     content: " - "; 
     color: #8bc34a;
 }
+@media(max-width: 575px) {
+    .breadcrumb {
+        padding: 15px 0;
+    }
+    .breadcrumb .breadcrumb-item {
+        font-size: 13px;
+    }
+}
 /* ===== BREADCRUMB END ===== */
