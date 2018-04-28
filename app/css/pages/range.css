@@ -1,6 +1,5 @@
 #slider-range {
-    margin-top: 35px;
-
+    margin-top: 38px;
 }
 .ui-widget.ui-widget-content {
     height: 5px;
@@ -29,11 +28,4 @@
     border-radius: 50%;
     border: 3px solid #8bc34a;
     background-color: #fff;
-}
-
-.sort-controls {
-    border: 1px solid #dcdcdc;
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 30px;
 }
