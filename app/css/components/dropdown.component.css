@@ -327,4 +327,12 @@
     font-weight: 400;
 }
 /* -- DROPDOWN CUSTOM SORTBY END -- */
+/* -- MEDIA QUERIES START -- */
+@media(max-width: 575px) {
+    .dropdown .dropdown-menu {
+        top: calc(100% + 1px) !important;
+        left: calc(100% + 100px) !important;
+    }
+}
+/* -- MEDIA QUERIES END -- */
 /* ===== DROPDOWN END ===== */

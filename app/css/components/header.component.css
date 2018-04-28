@@ -104,4 +104,13 @@ header .header-in .dropdown.dropdown-profile {
         padding: 0 30px;
     }
 }
+@media(max-width: 575px) {
+    header .header-help-text {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 10px 0;
+    }
+}
 /* ===== HEADER END ===== */

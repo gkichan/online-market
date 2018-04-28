@@ -97,4 +97,10 @@ header .header-in .dropdown.dropdown-profile {
         padding: 0 30px;
     }
 }
+@media(max-width: 575px) {
+    header .header-help-text {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+}
 /* ===== HEADER END ===== */
