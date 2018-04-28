@@ -1,0 +1,21 @@
+.ui-widget .ui-widget-content {
+    height: 5px;
+    border: none;
+    background-color: #f2f5f8;
+    border-radius: 5px;
+}
+.ui-slider .ui-slider-range {
+    background-color: #37474f;
+}
+.ui-slider .min-value,
+.ui-slider .max-value {
+    position: absolute;
+    top: 28px;
+}
+.ui-slider .ui-state-default .ui-slider-handler {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #8bc34a;
+    background-color: #fff;
+}
