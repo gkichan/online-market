@@ -29,7 +29,6 @@
     top: 0;
     background-color: #76ae36;
     height: 43px;
-    font-size: 14px;
     font-weight: 400;
     padding-left: 40px;
     width: 100%; 
@@ -53,6 +52,9 @@
     margin-top: 20px;
     margin-bottom: 28px;
     width: 100%;
+}
+#LoginModal .btn-custom.btn-md {
+    font-size: 14px;
 }
 #LoginModal .modal-body .close {
     /* position: absolute; */
