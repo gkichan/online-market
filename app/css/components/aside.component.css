@@ -164,6 +164,7 @@ aside .aside-product-info .product-info-value {
 }
 /* -- ASIDE PRODUCT INFO END -- */
 /* -- MEDIAQUERIES START -- */
+
 @media(max-width: 991px) {
     .mobile-aside {
         position: fixed;
@@ -213,6 +214,8 @@ aside .aside-product-info .product-info-value {
     1.  div.overlay - класса для темного фона
     2.  button.mobile-aside-toggle>i.fa-fa-bars - кнопки для открытия
     3.  класса "mobile-aside left\right" на асайде
+    // вставлю сво 5 копеек ))
+    4.  main должен иметь id="main"
 */
 
 /* -- MEDIAQUERIES END -- */

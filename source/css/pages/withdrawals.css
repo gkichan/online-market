@@ -14,14 +14,14 @@
     padding: 0 15px;
 }
 /* потом убрать, чтоб код не дублировался с css форм */
-.form-group .sup {
+.withdraw-form.form-group .sup {
     font-size: 24px; 
 }
 /* ********** */
 .withdraw-form input {
     color: #707070;
 }
-.table {            
+.withdraw .table {            
     font-size: 13px; 
     color: #444;
 }
@@ -35,10 +35,18 @@
  .withdraw-info  .content-wrapper-bordered {
    margin-bottom: 15px;
 }
-    @media(max-width: 991px) {
-        .withdraw-info {
-            flex-direction: column;
-            margin-top: 20px;
-        }    
+@media(max-width: 991px) {
+    .withdraw-info {
+        flex-direction: column;
+        margin-top: 20px;
+    }   
+}
+@media(max-width: 320px) {
+    .withdraw .content-wrapper-body {            
+        padding: 30px 5px;
     }
+    .withdraw .table {            
+        font-size: 10px; 
+    }     
+}
 /* === PAGE WITHDRAWALS END === */

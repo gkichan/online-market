@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Slick Slider Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <!-- jQuery UI Style -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -333,10 +335,11 @@
                     </ol>
                     <!-- /.breadcrumb -->
                 </nav>
+                <div class="overlay"></div>
                 <div class="all-items-content">
                     <div class="row">
                         <!-- aside start -->
-                        <div class="col-3">
+                        <div class="col-11 col-md-6 col-lg-3 mobile-aside left">
                             <aside>
                                 <!-- nav start -->
                                 <div class="aside-block">
@@ -385,8 +388,15 @@
                                 </div>
                                 <!-- nav end -->
                                 <!-- price range start -->
-                                <div class="aside-block font-medium">
+                                <!-- <div class="aside-block font-medium">
                                     <span>Price Range</span>
+                                </div> -->
+                                <div class="aside-block">
+                                    <div class="aside-block-title title-sm font-bold">
+                                        <span>Price Range</span>
+                                    </div>
+                                    <div id="slider-range" class="price-range"></div>
+                                    <button class="btn-custom btn-md btn-wide btn-green "><i class="fa fa-search"></i>Search</button>
                                 </div>
                                 <!-- price range end -->
                                 <!-- top sellers start -->
@@ -552,8 +562,11 @@
                         </div>
                         <!-- aside end -->
                         <!-- main content start -->
-                        <div class="col-9">
+                        <div class="col-12 col-lg-9">
                             <div class="items-view-switcher d-flex justify-content-between">
+                                <button class="mobile-aside-toggle">
+                                    <i class="fa fa-bars"></i>
+                                </button>
                                 <div class="left-part d-flex align-items-center">
                                     <a href="#" class="sort-amount-switcher">
                                         <i class="fa fa-sort-amount-desc"></i>
@@ -609,7 +622,7 @@
                             <!-- / view-items-switcher -->
                             <div class="all-cards">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-md-6 col-sm-6 col-lg-4">
                                         <div class="card hot medium-card animate">
                                             <div class="product-hot-badge">
                                                 <i class="fa fa-bolt"></i>
@@ -694,7 +707,7 @@
                                         <!-- /.card -->
                                     </div>
                                     <!-- /.col -->
-                                    <div class="col-4">
+                                    <div class="col-12 col-md-6 col-sm-6  col-lg-4">
                                         <div class="card medium-card animate">
                                             <div class="product-hot-badge">
                                                 <i class="fa fa-bolt"></i>
@@ -779,7 +792,7 @@
                                         <!-- /.card -->
                                     </div>
                                     <!-- /.col -->
-                                    <div class="col-4">
+                                    <div class="col-12 col-md-6 col-sm-6  col-lg-4">
                                         <div class="card hot medium-card animate">
                                             <div class="product-hot-badge">
                                                 <i class="fa fa-bolt"></i>
@@ -864,7 +877,7 @@
                                         <!-- /.card -->
                                     </div>
                                     <!-- /.col -->
-                                    <div class="col-4">
+                                    <div class="col-12 col-md-6 col-sm-6  col-lg-4">
                                         <div class="card hot medium-card animate">
                                             <div class="product-hot-badge">
                                                 <i class="fa fa-bolt"></i>
@@ -949,7 +962,7 @@
                                         <!-- /.card -->
                                     </div>
                                     <!-- /.col -->
-                                    <div class="col-4">
+                                    <div class="col-12 col-md-6 col-sm-6  col-lg-4">
                                         <div class="card medium-card animate">
                                             <div class="product-hot-badge">
                                                 <i class="fa fa-bolt"></i>
@@ -1034,7 +1047,7 @@
                                         <!-- /.card -->
                                     </div>
                                     <!-- /.col -->
-                                    <div class="col-4">
+                                    <div class="col-12 col-md-6 col-sm-6  col-lg-4">
                                         <div class="card hot medium-card animate">
                                             <div class="product-hot-badge">
                                                 <i class="fa fa-bolt"></i>
@@ -1119,7 +1132,7 @@
                                         <!-- /.card -->
                                     </div>
                                     <!-- /.col -->
-                                    <div class="col-4">
+                                    <div class="col-12 col-md-6 col-sm-6  col-lg-4">
                                         <div class="card medium-card animate">
                                             <div class="product-hot-badge">
                                                 <i class="fa fa-bolt"></i>
@@ -1241,123 +1254,124 @@
     </main>
     <!-- MAIN END -->
 
-    <!-- FOOTER START -->
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <h4 class="footer-title title-white">About company</h4>
-                    <span class="green-line text-green"></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi cumque expedita iusto maiores omnis
-                        similique. Blanditiis cum delectus dolores ea, exercitationem hic, ipsum odio officia quidem, sed similique
-                        tenetur.</p>
-                    <div class="footer-contacts d-flex">
-                        <i class="fa fa-map-marker text-green"></i>
-                        <span>PO Box 16122 Collins Street West Victoria 8007 Australia</span>
+     <!-- FOOTER START -->
+     <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h4 class="footer-title title-white">About company</h4>
+                        <span class="green-line text-green"></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi cumque expedita iusto maiores omnis similique. Blanditiis cum delectus dolores ea, exercitationem hic, ipsum odio officia quidem, sed similique tenetur.</p>
+                        <div class="footer-contacts d-flex">
+                            <i class="fa fa-map-marker text-green"></i><span>PO Box 16122 Collins Street West Victoria 8007 Australia</span>
+                        </div>
+                        <div class="footer-contacts d-flex">
+                            <i class="fa fa-phone text-green"></i><span>+61 3 8376 6284</span>
+                        </div>
                     </div>
-                    <div class="footer-contacts d-flex">
-                        <i class="fa fa-phone text-green"></i>
-                        <span>+61 3 8376 6284</span>
+                    <!-- /.col-3 -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h4 class="footer-title title-white">Join Our Company</h4>
+                        <span class="green-line text-green"></span>
+                        <nav class="footer-nav d-flex flex-column">
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Home
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Forums
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Become an Author
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Community Meetups
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Become an Affiliate
+                            </a>
+                        </nav>
+                        <!-- /.footer-nav -->
                     </div>
+                    <!-- /.col-3 -->
+                    <div class="col-12 col-lg-6 col-xl-3">
+                        <h4 class="footer-title title-white">Need Help?</h4>
+                        <span class="green-line text-green"></span>
+                        <nav class="footer-nav d-flex flex-column">
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Help center
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Foxtar market terms
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Author Terms
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Foxtar Licenses
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-angle-right text-green"></i> Contact us
+                            </a>
+                        </nav>
+                        <!-- /.footer-nav -->
+                    </div>
+                    <!-- /.col-3 -->
+                    <div class="col-12 col-lg-6 col-xl-3">
+                        <h4 class="footer-title title-white">Follow Us On</h4>
+                        <span class="green-line text-green"></span>
+                        <nav class="footer-social-nav">
+                            <a href="#">
+                                <i class="icon icon-fb"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon icon-tw"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon icon-youtube"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon icon-pinterest"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon icon-linkedin"></i>
+                            </a>
+                        </nav>
+                        <!-- /.footer-social-nav -->
+                        <span class="subscribe-text">Newsletter Sign Up!</span>
+                        <form class="footer-form d-flex">
+                            <input type="email" class="footer-form-control" placeholder="E-mail Address">
+                            <button class="btn-custom bg-green text-white text-center" type="button">
+                                <i class="fa fa-location-arrow"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- /.col-3 -->
                 </div>
-                <!-- /.col-3 -->
-                <div class="col-3">
-                    <h4 class="footer-title title-white">Join Our Company</h4>
-                    <span class="green-line text-green"></span>
-                    <nav class="footer-nav d-flex flex-column">
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Home
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Forums
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Become an Author
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Community Meetups
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Become an Affiliate
-                        </a>
-                    </nav>
-                    <!-- /.footer-nav -->
-                </div>
-                <!-- /.col-3 -->
-                <div class="col-3">
-                    <h4 class="footer-title title-white">Need Help?</h4>
-                    <span class="green-line text-green"></span>
-                    <nav class="footer-nav d-flex flex-column">
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Help center
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Foxtar market terms
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Author Terms
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Foxtar Licenses
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-angle-right text-green"></i> Contact us
-                        </a>
-                    </nav>
-                    <!-- /.footer-nav -->
-                </div>
-                <!-- /.col-3 -->
-                <div class="col-3">
-                    <h4 class="footer-title title-white">Follow Us On</h4>
-                    <span class="green-line text-green"></span>
-                    <nav class="footer-social-nav">
-                        <a href="#">
-                            <i class="icon icon-fb"></i>
-                        </a>
-                        <a href="#">
-                            <i class="icon icon-tw"></i>
-                        </a>
-                        <a href="#">
-                            <i class="icon icon-youtube"></i>
-                        </a>
-                        <a href="#">
-                            <i class="icon icon-pinterest"></i>
-                        </a>
-                        <a href="#">
-                            <i class="icon icon-linkedin"></i>
-                        </a>
-                    </nav>
-                    <!-- /.footer-social-nav -->
-                    <span class="subscribe-text">Newsletter Sign Up!</span>
-                    <form class="footer-form d-flex">
-                        <input type="email" class="footer-form-control" placeholder="E-mail Address">
-                        <button class="btn-custom bg-green text-white text-center" type="button">
-                            <i class="fa fa-location-arrow"></i>
-                        </button>
-                    </form>
-                </div>
-                <!-- /.col-3 -->
+                <!-- /.row -->
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-        <div class="footer-copyright text-center">
-            <span class="copyright-text">
-                <i class="fa fa-copyright"></i> 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
-        </div>
-        <!-- /.footer-copyright -->
-    </footer>
-    <!-- FOOTER END -->
+            <!-- /.container -->
+            <div class="footer-copyright text-center">
+                <span class="copyright-text"><i class="fa fa-copyright"></i> 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+            </div>
+            <!-- /.footer-copyright -->
+        </footer>
+        <!-- FOOTER END -->
 
     <!-- Optional JavaScripts -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Form Styler -->
     <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
     <script src="js/all-items-view-switcher.js"></script>
+    <script src="js/range.js"></script>
+    <script src="js/aside.js"></script>
 </body>
 </html>
