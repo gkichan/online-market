@@ -113,9 +113,20 @@
 .card .product-author{
     overflow: hidden;
 }
+.card .product-price,
 .card .product-price-wrapper {
         margin-left: 25px;
     }
+.card .product-description-wrapper{
+        overflow: hidden;
+    }
+.card .product-title, 
+.card .product-category, 
+.card .product-author-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
 /* -- LARGE CARDS START -- */
 .card.large-card .product-img {
     height: 250px;
@@ -124,7 +135,7 @@
 .card.large-card .product-bottom-info {
     padding-right: 30px;
     padding-left: 30px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 .card.large-card .product-top-info {
     padding-top: 30px;
@@ -139,6 +150,7 @@
 }
 .card.large-card .product-rating .rating-stars {
     margin-right: 12px;
+    margin-left: 10;
 }
 /* -- LARGE CARDS END -- */
 /* -- MEDIUM CARDS START -- */
@@ -160,13 +172,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.card.medium-card .product-title,
+/* .card.medium-card .product-title,
 .card.medium-card .product-category,
-.card.medium-card .product-author-name {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+.card.medium-card .product-author-name { */
+
 /* .card.medium-card .product-title,
 .card.medium-card .product-category {
     max-width: 170px;
@@ -186,9 +195,7 @@
 .card.medium-card .product-social-data {
     display: none;
 }
-.card.medium-card .product-description-wrapper{
-    overflow: hidden;
-}
+
 .card.medium-card .product-bottom-info .product-rating {
     padding-left: 15px;
 }
@@ -348,8 +355,17 @@
             padding-left: 20px;
             padding-right: 20px;
     }
+    .card.large-card .product-rating .rating-count,
     .aside-card .product-bottom-info .product-author-name {
         display: none;
+    }
+    .card.large-card .product-rating .rating-stars {    
+        margin-right: 0;
+    }
+    .card.large-card .product-top-info, 
+    .card.large-card .product-bottom-info {    
+        padding-right: 15px;    
+        padding-left: 15px;
     }
 }
 @media(max-width: 991px) {
