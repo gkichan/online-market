@@ -1,4 +1,7 @@
 /* ===== PAGE ALL-ITEMS START ===== */
+.all-items {
+    padding-top: 25px;
+}
 /* -- ASIDE START -- */
 .all-items aside .btn-custom {
     margin-top: 20px;

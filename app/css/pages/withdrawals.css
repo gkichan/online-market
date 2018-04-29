@@ -1,4 +1,7 @@
 /* === PAGE WITHDRAWALS START === */
+.withdraw {
+    padding-bottom: 153px;
+}
 .withdraw-form label {
     font-weight: 500;
     font-size: 16px;
@@ -6,9 +9,6 @@
 }
 .content-wrapper-body .form-group + .form-group {
     margin-top: 22px;
-}
-.withdraw {
-    margin-bottom: 153px;
 }
 .withdraw-form {
     padding: 0 15px;
