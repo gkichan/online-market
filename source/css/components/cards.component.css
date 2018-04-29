@@ -64,6 +64,10 @@
     content: ')';
     color: #b0bec5;
 }
+.card .product-comments,
+.card .product-likes {
+    flex-shrink: 0;
+}
 .card .product-comments::before,
 .card .product-likes::before {
     content: '|';
@@ -114,6 +118,7 @@
 .card.large-card .product-bottom-info {
     padding-right: 30px;
     padding-left: 30px;
+    /* justify-content: space-between; */
 }
 .card.large-card .product-top-info {
     padding-top: 30px;
@@ -143,6 +148,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
     align-items: center;
+    /* justify-content: space-between; */
 }
 .card.medium-card .product-bottom-info {
     padding-top: 15px;
@@ -166,13 +172,16 @@
     display: flex;
     align-items: center;
 }
-/* .card.medium-card .product-author-name {
-    max-width: 70px;
-} */
+.card.medium-card .product-author-name {
+    overflow: hidden;
+}
 .card.medium-card .product-description,
 .card.medium-card .product-sales,
 .card.medium-card .product-social-data {
     display: none;
+}
+.card.medium-card .product-bottom-info .product-rating {
+    padding-left: 15px;
 }
 /* -- MEDIUM CARDS END -- */
 /* -- ROW CARDS START -- */
@@ -191,13 +200,15 @@
 .card.medium-card.row-card .product-top-info {
     align-items: stretch;
     padding-bottom: 20px;
+    /* justify-content: space-between; */
 }
 .card.medium-card.row-card .product-bottom-info {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 .card.medium-card.row-card .product-description-wrapper {
-    max-width: 450px;
+    overflow: hidden;
+    flex-shrink: 1;
 }
 .card.medium-card.row-card .product-info-wrapper {
     width: 75%;
@@ -218,6 +229,7 @@
 .card.medium-card.row-card .product-sales {
     font-size: 13px;
     color: #aeb4bb;
+    white-space: nowrap;
 }
 .card.medium-card.row-card .product-author-name {
     max-width: unset;
@@ -255,6 +267,7 @@
 .aside-card .product-top-info .product-description-wrapper {
     max-width: 135px;
     overflow: hidden;
+    flex-shrink: 1;
 }
 .aside-card .product-top-info .product-title,
 .aside-card .product-bottom-info .product-author-name {
@@ -319,6 +332,14 @@
     .card.medium-card .product-top-info {
         padding-left: 25px;
     }
+}
+@media(max-width: 767px) {
+.card .product-social-data .fa{
+    margin: 0 5px;
+}
+.card .product-social-data, .card .product-likes{
+    margin-left: 10px;
+}
 }
 /* -- SMALL CARDS END -- */
 /* ===== CARDS END ===== */
