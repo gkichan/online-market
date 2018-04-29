@@ -17,9 +17,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css">
     <!-- Custom style -->
+    <link rel="stylesheet" href="css/pages/setting-personal-info.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- SETTINGS PAGE START -->
+<div class="settings-page">
     <!-- HEADER START -->
     <header id="header">
         <div class="top-header header-in navbar-light">
@@ -40,7 +43,7 @@
                         <span class="header-number">Talk to an expert: +61 3 8376 6284</span>
                     </div>
                     <!-- /.header-help-text -->
-                    <div class="dropdown-container">
+                    <div class="dropdown-container flex-wrap">
                         <div class="dropdown d-flex flex-column justify-content-center dropdown-notification">
                             <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdownMenuLink-bell" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell-o align-self-center"></i>
@@ -213,7 +216,7 @@
                                         <img src="" alt="">
                                     </div>
                                     <!-- / photo -->
-                                    <div class="cart-info d-flex flex-column">
+                                    <div class="cart-info">
                                         <span class="profile-name">Mike Hussy</span>
                                         <span class="item-total-summary">$171.00</span>
                                     </div>
@@ -281,7 +284,7 @@
         </div>
         <!-- /.top-header -->
         <div class="bottom-header collapse d-lg-block navbar-collapse" id="navbar-in">
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex">
                 <nav class="header-nav">
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -329,43 +332,38 @@
                     </ol>
                 </nav>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-4 col-12">
                         <!-- PERSONAL INFORMATION NAV -->
                         <aside>
-                            <ul class="aside-nav block-nav font-medium">
+                            <ul class="aside-nav" id="personal-info-menu">
                                 <li class="active">
                                     <a href="#">
                                         <i class="fa fa-chevron-right"></i>
-                                        Personal Information
-                                        <span class="data-count disabled">0</span>
+                                        <span>Personal Information</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-chevron-right"></i>
-                                        Profile
-                                        <span class="data-count disabled">0</span>
+                                        <span>Profile</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-chevron-right"></i>
-                                        Badges
-                                        <span class="data-count disabled">0</span>
+                                        <span>Badges</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-chevron-right"></i>
-                                        E-mail Settings
-                                        <span class="data-count disabled">0</span>
+                                        <span>E-mail Settings</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-chevron-right"></i>
-                                        Social Network
-                                        <span class="data-count disabled">0</span>
+                                        <span>Social Network</span>
                                     </a>
                                 </li>
                             </ul>
@@ -374,7 +372,7 @@
                         <!-- / PERSONAL INFORMATION NAV -->
                     </div>
                     <!-- / col-3 -->
-                    <div class="col-9">
+                    <div class="col-lg-9 col-md-8 col-12">
                         <div class="content-wrapper-bordered">
                             <div class="content-wrapper-title">
                                 <h6>Personal info</h6>
@@ -412,7 +410,7 @@
                                                 <option value="2">Canada</option>
                                                 <option value="3">Germany</option>
                                             </select>
-                                        </div>    
+                                        </div>
                                     </div>
                                     <!-- / form-group  -->
                                     <div class="form-group row">
@@ -449,9 +447,9 @@
                                             <input type="text" class="form-control" id="zip" placeholder="">
                                         </div>
                                     </div>
-                                    <!-- / form-group -->    
+                                    <!-- / form-group -->
                                     <div class="row">
-                                        <div class="personal-info-btn col-sm-8 offset-sm-4">
+                                        <div class="personal-info-btn col-md-8 offset-md-4 col-12">
                                             <button class="btn-custom btn-md btn-green">Update</button>
                                         </div>
                                     </div>
@@ -465,7 +463,7 @@
                 </div>
             </div>
             <!-- / container -->
-        </div>
+        </section>
         <!-- / personal-info -->
     </main>
     <!-- FOOTER START -->
@@ -570,18 +568,19 @@
         <!-- /.footer-copyright -->
     </footer>
     <!-- FOOTER END -->
-
-    <!-- Optional JavaScripts -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
-    <!-- jQuery UI -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- Init plugins -->
-    <script src="js/init.js"></script>
-    <script src="js/all-items-view-switcher.js"></script>
+</div>
+<!-- / SETTINGS PAGE START -->
+<!-- Optional JavaScripts -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+<!-- jQuery UI -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- Init plugins -->
+<script src="js/init.js"></script>
+<script src="js/all-items-view-switcher.js"></script>
 </body>
 </html>

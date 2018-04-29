@@ -60,17 +60,20 @@ header .header-in .dropdown {
 header .header-in .dropdown.dropdown-profile {
     margin: 0 30px 0 5px;
 }
+header .header-in .dropdown.dropdown-profile .cart-info span {
+    display: block;
+}
 
 @media(max-width: 991px) {
     header .top-header {
         padding-top: 15px;
     }
-    header .bottom-header .container {
-        justify-content: center;
+    header .bottom-header .header-nav {
+        margin-left: auto;
     }
     header .bottom-header a {
         display: block;
-        text-align: center;
+        text-align: right;
         width: 100%;
         padding:10px 0;
     }
@@ -89,12 +92,23 @@ header .header-in .dropdown.dropdown-profile {
         flex-wrap: wrap;
         justify-content: flex-end;
     }
-    header .header-in .header-help-text {
+    header .header-help-text {
         margin-top:10px;
+        width: 100%;
     }
     header .container {
-        max-width: max-content;
         padding: 0 30px;
+    }
+}
+@media(max-width: 575px) {
+    header .header-help-text {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+}
+@media(max-width: 320px) {
+    header .buttons-in-drop .btn-custom {
+        width: 100%;
     }
 }
 /* ===== HEADER END ===== */
