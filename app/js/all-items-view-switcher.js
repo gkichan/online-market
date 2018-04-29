@@ -11,11 +11,11 @@ $(document).ready(() => {
         sender.addClass('active');
         if (rowView) {
            $(cardContainer + ' .card').addClass('row-card');
-           $(cardContainer + ' .col-4').addClass('col-12');
+           $(cardContainer + ' .col-lg-4').addClass('col-lg-12 col-md-12 col-sm-12');
         }
         else {
            $(cardContainer + ' .card').removeClass('row-card');
-           $(cardContainer + ' .col-4').removeClass('col-12');
+           $(cardContainer + ' .col-lg-4').removeClass('col-lg-12 col-md-12 col-sm-12');
         }
     }
 

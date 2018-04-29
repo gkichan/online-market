@@ -77,9 +77,9 @@
         margin: auto;
         margin-top: 10px;
     }
-    .product-author-name {
+    /* .product-author-name {
         margin: 10px 0 10px;
-    }
+    } */
     .product-author-flags {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
