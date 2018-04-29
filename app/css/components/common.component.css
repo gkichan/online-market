@@ -87,7 +87,8 @@
 }
 /* -- SELECT END -- */
 /* -- TABS START -- */
-.tabs {
+.tabs.ui-widget.ui-widget-content {
+    height: auto;
     background-color: #fff;
     border: 1px solid #d7d7d7;
 }

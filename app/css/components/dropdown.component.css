@@ -326,6 +326,12 @@
     font-size: 15px;
     font-weight: 400;
 }
+@media (max-width: 575px) {
+    .dropdown .dropdown-menu {
+        top: calc(100% + 2px) !important;
+        left: calc(100% + 50px) !important;
+    }
+}
 /* -- DROPDOWN CUSTOM SORTBY END -- */
 /* -- MEDIA QUERIES START -- */
 @media(max-width: 575px) {

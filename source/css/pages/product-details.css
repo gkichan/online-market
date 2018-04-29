@@ -1,4 +1,5 @@
 /* === PAGE PRODUCT-DETAILS START === */
+
 .product-details {
     margin-bottom: 153px;
 }
@@ -7,7 +8,9 @@
 }
 .product-details .product-details-item-1 {
     margin-top: 28px;
-    /* margin-left: -15px; */
+}
+.small-card {
+    margin-top: 28px;
 }
 .product-details-bordered {
     border: 1px solid #dfdfdf;
@@ -18,8 +21,6 @@
 }
 .product-details-info-card {
     width: 100%;
-    /* margin-left: -15px; */
-    /* margin-right: -15px; */
 }
 .product-details-info p {
     margin-top: 32px;
@@ -27,22 +28,72 @@
 .product-details-info .product-details-action {
     margin-top: 50px;
 }
-.product-details .buttons {
-   float: left;
-   /* margin-left: 15px; */
+.buttons {
+    display: flex;
 }
-.product-details .social {
-    float: right;
-    /* margin-right: 15px; */
- }
-.buttons button + button {
-    margin-left: 17px;
+.product-details-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-details-action .btn-custom {
+    margin-right: 17px;
 }
 .product-details i + i {
     margin-left: 4px;
 }
-/* .product-details-item {
-    margin-right: 15px;
-    margin-left: 15px;
-} */
+.mobile-aside-toggle {
+    display: none;
+}
+@media(max-width: 1200px) {
+    .product-details-action {
+        flex-flow:column wrap;
+    }
+    .social {
+        margin-top: 20px;
+    }
+    .buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .aside-product-price {
+        flex-direction: column;
+    }
+    .product-price-variant {
+        margin: auto;
+        margin-top: 10px;
+    }
+    .product-author-name {
+        margin: 10px 0 10px;
+    }
+    .product-author-flags {
+        flex-wrap: wrap;
+    }
+}
+ @media(max-width: 991px) {
+    .mobile-aside-toggle {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .aside-product-price {
+        flex-direction: row;
+    }
+    .product-price-variant {
+        margin: 0 0 0 auto;
+       
+    }
+}
+
+@media(max-width:768px) {
+    .buttons {
+        flex-flow:column wrap;
+    }  
+    .btn-custom {
+        margin-bottom: 15px;
+    } 
+}
 /* === PAGE PRODUCT-DETAILS END === */
