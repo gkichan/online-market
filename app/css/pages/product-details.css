@@ -51,7 +51,7 @@
 .mobile-aside-toggle {
     display: none;
 }
-@media(max-width: 1200px) {
+@media(max-width: 1199px) {
     .product-details-action {
         -webkit-box-orient:vertical;
         -webkit-box-direction:normal;
@@ -77,9 +77,9 @@
         margin: auto;
         margin-top: 10px;
     }
-    .product-author-name {
+    /* .product-author-name {
         margin: 10px 0 10px;
-    }
+    } */
     .product-author-flags {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
