@@ -21,6 +21,7 @@
 }
 .product-details-info-card {
     width: 100%;
+    background-color: #fff;
 }
 .product-details-info p {
     margin-top: 32px;
@@ -77,9 +78,9 @@
         margin: auto;
         margin-top: 10px;
     }
-    /* .product-author-name {
+    .product-author-name {
         margin: 10px 0 10px;
-    } */
+    }
     .product-author-flags {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -102,7 +103,6 @@
        
     }
 }
-
 @media(max-width:768px) {
     .buttons {
         -webkit-box-orient:vertical;

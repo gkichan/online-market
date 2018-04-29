@@ -175,7 +175,7 @@
         padding: 50px 0;
     }
     .become-a-author .banner-content {
-        padding: 15px;
+        padding: 75px 100px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -189,6 +189,11 @@
     }
     .section-title {
         font-size: 28px;
+    }
+}
+@media(max-width: 320px) {
+    .become-a-author .banner-content {
+        padding: 15px;
     }
 }
 /* -- TUTORIALS SECTION END -- */
