@@ -88,4 +88,9 @@ footer .footer-form .btn-custom .fa {
         width: 70%;
     }
 }
+@media(max-width: 320px) {
+    footer .footer-form {
+        width: 100%;
+    }
+}
 /* ===== FOOTER END ===== */

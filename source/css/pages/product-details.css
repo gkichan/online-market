@@ -89,7 +89,7 @@
     .buttons {
         flex-flow:column wrap;
     }  
-    .btn-custom {
+    .product-details .btn-custom {
         margin-bottom: 15px;
     } 
 }
