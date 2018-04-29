@@ -113,6 +113,9 @@
 .card .product-author{
     overflow: hidden;
 }
+.card .product-price-wrapper {
+        margin-left: 25px;
+    }
 /* -- LARGE CARDS START -- */
 .card.large-card .product-img {
     height: 250px;
@@ -230,7 +233,6 @@
 .card.medium-card.row-card .product-price-wrapper {
     justify-content: space-between;
     align-items: flex-end;
-    margin-left: 25px;
 }
 .card.medium-card.row-card .product-sales {
     font-size: 13px;
