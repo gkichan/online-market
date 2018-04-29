@@ -23,6 +23,109 @@
 <body>
     <!-- HEADER START -->
     <header id="header">
+        <div class="top-header header-out">
+            <div class="container d-flex align-items-center navbar-light flex-wrap">
+                <div class="header-logo mr-auto">
+                    <a href="#">
+                        <img src="img/header-logo.png" alt="">
+                    </a>
+                </div>
+                <!-- /.header-logo -->
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbar-out" aria-controls="navbar-out" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /.navbar-toggler -->
+                <div class="header-controls d-flex align-items-center">
+                    <div class="header-help-text d-flex mr-auto">
+                        <span class="header-red-text">Need help?&nbsp</span> <!-- &nbsp - это пробел -->
+                        <span class="header-number">Talk to an expert: +61 3 8376 6284</span>
+                    </div>
+                    <!-- /.header-help-text -->
+                    <div class="dropdown-container flex-wrap">
+                        <div class="dropdown d-flex flex-column justify-content-center dropdown-cart">
+                            <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdown-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-shopping-cart align-self-center"></i>
+                                <span class="badge-value bg-green">8</span>
+                            </a>
+                            <!-- / dropdown toggle -->
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-cart">
+                                <div class="dropdown-item">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="item-data">
+                                            <span class="item-title"><a href="#">Grand Ballet</a></span>
+                                            <span class="item-category"><a href="#">Word Press</a></span>
+                                            <span class="item-price">$59</span>
+                                        </div>
+                                    </div>
+                                    <!-- / item-content -->
+                                </div>
+                                <!-- / dropdown-item -->
+                                <div class="dropdown-item">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="item-data">
+                                            <span class="item-title"><a href="#">Grand Ballet</a></span>
+                                            <span class="item-category"><a href="#">Word Press</a></span>
+                                            <span class="item-price">$59</span>
+                                        </div>
+                                    </div>
+                                    <!-- / item-content -->
+                                </div>
+                                <!-- / dropdown-item -->
+                                <div class="dropdown-item d-flex flex-column">
+                                    <div class="item-checkout">
+                                        <div class="checkout-info d-flex justify-content-between">
+                                            <span>Total</span>
+                                            <span class="item-total-summary">$118</span>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-in-drop">
+                                        <button class="btn-custom btn-sm btn-green">Go to Card</button>
+                                        <button class="btn-custom btn-sm btn-red">Go to Checkout</button>
+                                    </div>
+                                    <!-- / item-checkout -->
+                                </div>
+                                <!-- / dropdown-item -->
+                            </div>
+                            <!-- / dropdown-menu-->
+                        </div>
+                        <!-- /.dropdown-->
+                    </div>
+                    <!-- / .dropdown-container -->
+                    <button class="btn-custom btn-sm btn-green btn-radius">Login</button>
+                    <!-- /.btn login-->
+                    <button class="btn-custom btn-sm btn-red btn-radius">Register</button>
+                    <!-- /. btn register -->
+                </div>
+                <!-- /.header-controls d-flex justify-content-center -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.top-header -->
+        <div class="bottom-header collapse d-lg-block navbar-collapse" id="navbar-out">
+            <div class="container d-flex">
+                <nav class="header-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">Joomla</a>
+                    <a href="#">PSD</a>
+                    <a href="#">Plugins</a>
+                    <a href="#">Components</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Help</a>
+                </nav>
+            </div>
+        </div>
+        <!-- /.bottom-header -->
+        <!-- HEADER END -->
+        <!-- HEADER START -->
         <div class="top-header header-in navbar-light">
             <div class="container d-flex align-items-center flex-wrap">
                 <div class="header-logo mr-auto">
@@ -41,7 +144,7 @@
                         <span class="header-number">Talk to an expert: +61 3 8376 6284</span>
                     </div>
                     <!-- /.header-help-text -->
-                    <div class="dropdown-container">
+                    <div class="dropdown-container flex-wrap">
                         <div class="dropdown d-flex flex-column justify-content-center dropdown-notification">
                             <a class="btn btn-secondary dropdown-toggle rounded-circle d-flex justify-content-center" href="#" role="button" id="dropdownMenuLink-bell" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell-o align-self-center"></i>
@@ -214,7 +317,7 @@
                                         <img src="" alt="">
                                     </div>
                                     <!-- / photo -->
-                                    <div class="cart-info d-flex flex-column">
+                                    <div class="cart-info">
                                         <span class="profile-name">Mike Hussy</span>
                                         <span class="item-total-summary">$171.00</span>
                                     </div>
@@ -282,7 +385,7 @@
         </div>
         <!-- /.top-header -->
         <div class="bottom-header collapse d-lg-block navbar-collapse" id="navbar-in">
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex">
                 <nav class="header-nav">
                     <a href="#">Home</a>
                     <a href="#">About</a>
