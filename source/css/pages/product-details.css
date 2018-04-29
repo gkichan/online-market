@@ -45,7 +45,7 @@
 .mobile-aside-toggle {
     display: none;
 }
-@media(max-width: 1200px) {
+@media(max-width: 1199px) {
     .product-details-action {
         flex-flow:column wrap;
     }
@@ -75,9 +75,6 @@
         display: block;
         margin-top: 15px;
         margin-bottom: 15px;
-    }
-    .breadcrumb {
-        display: none;
     }
     .aside-product-price {
         flex-direction: row;

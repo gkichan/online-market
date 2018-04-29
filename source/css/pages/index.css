@@ -21,8 +21,8 @@
 .new-products .large-cards-wrapper {
     margin-bottom: 78px;
 }
-.new-products .large-cards-wrapper .row + .row {
-    margin-top: 32px;
+.new-products .large-cards-wrapper .card {
+    margin-bottom: 15px;
 }
 .new-products .buttons-wrapper .btn-custom + .btn-custom {
     margin-left: 12px;
@@ -77,6 +77,7 @@
 }
 .why-schoose-us .content-wrapper {
     padding-top: 30px;
+    margin: 0 250px;
 }
 .why-schoose-us .why-choose-item-img {
     height: 112px;
@@ -98,7 +99,7 @@
 /* -- BECOME-A-AUTHOR SECTION START -- */
 .become-a-author .banner {
     height: 440px;
-    margin: 0 40px;
+    margin: 0 300px;
     background-color: #b5b5b5;
     box-shadow: 0 0 70px 0 rgba(0,0,0,.2);
 }
@@ -113,6 +114,10 @@
 }
 /* -- BECOME-A-AUTHOR SECTION END -- */
 /* -- TUTORIALS SECTION START -- */
+.tutorials {
+    padding-left: 300px;
+    padding-right: 300px;
+}
 .tutorials .tutorial-item-img {
     height: 270px;
     overflow: hidden;
@@ -126,6 +131,57 @@
     padding: 40px 0;
     font-size: 24px;
     background-color: #f8f8f8;
+}
+@media(max-width: 1199px) {
+    .why-schoose-us .content-wrapper {
+        margin: 0;
+    }
+    .become-a-author .banner {
+        margin: 0 100px;
+    }
+    .tutorials {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+@media(max-width: 991px) {
+    .become-a-author .banner {
+        margin: 0 -15px;
+    }
+}
+@media(max-width: 767px) {
+    .why-choose-item,
+    .tutorial-item {
+        margin-bottom: 15px;
+    }
+    .tags-nav {
+        display: none;
+    }
+}
+@media(max-width: 575px) {
+    .welcome-title {
+        font-size: 30px;
+    }
+    .new-products .buttons-wrapper .btn-custom + .btn-custom {
+        margin-left: 0;
+    }
+    .become-a-author .banner {
+        height: auto;
+        padding: 50px 0;
+    }
+    .become-a-author .banner-content {
+        padding: 15px;
+        flex-direction: column;
+    }
+    .become-a-author .banner-content .banner-title {
+        margin-right: 0;
+        margin-bottom: 15px;
+        font-size: 24px;
+        text-align: center;
+    }
+    .section-title {
+        font-size: 28px;
+    }
 }
 /* -- TUTORIALS SECTION END -- */
 /* ===== PAGE HOME END ===== */

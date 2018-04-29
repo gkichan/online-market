@@ -60,6 +60,7 @@
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    /*border-bottom: 1px solid #dedede;*/
 }
 .about-author .author-info .author-info-item + .author-info-item {
     border-left: 1px solid #dedede;
