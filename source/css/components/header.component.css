@@ -65,9 +65,6 @@ header .header-in .dropdown.dropdown-profile .cart-info span {
 }
 
 @media(max-width: 991px) {
-    .inner {
-        margin-bottom: 15px;
-    }
     header .top-header {
         padding-top: 15px;
     }
