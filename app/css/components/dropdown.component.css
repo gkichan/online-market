@@ -334,7 +334,7 @@
         left: calc(100% + 100px) !important;
     }
 }
-@media(max-width: 320px) {
+@media(max-width: 575px) {
     .profile-info .cart-info {
         display: none;
     }
