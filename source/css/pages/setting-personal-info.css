@@ -43,6 +43,9 @@ aside #personal-info-menu {
     .personal-info-btn .btn-custom{
         width: 100%;
     }
+    .personal-info aside {
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 575px) {
     .settings-page .content-wrapper-title {
