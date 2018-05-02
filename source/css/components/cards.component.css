@@ -344,7 +344,7 @@
 }
 /* -- SMALL CARDS END -- */
 /* -- MEDIA START -- */
-@media(max-width: 1200px) {
+@media(max-width: 1199px) {
     .card.medium-card .product-top-info,
     .card.medium-card .product-bottom-info {
         padding-left: 10px;
