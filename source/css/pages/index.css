@@ -22,7 +22,7 @@
     margin-bottom: 78px;
 }
 .new-products .large-cards-wrapper .card {
-    margin-bottom: 15px;
+    margin-bottom: 32px;
 }
 .new-products .buttons-wrapper .btn-custom + .btn-custom {
     margin-left: 12px;
@@ -170,7 +170,7 @@
         padding: 50px 0;
     }
     .become-a-author .banner-content {
-        padding: 15px;
+        padding: 75px 100px;
         flex-direction: column;
     }
     .become-a-author .banner-content .banner-title {
@@ -181,6 +181,11 @@
     }
     .section-title {
         font-size: 28px;
+    }
+}
+@media(max-width: 320px) {
+    .become-a-author .banner-content {
+        padding: 15px;
     }
 }
 /* -- TUTORIALS SECTION END -- */

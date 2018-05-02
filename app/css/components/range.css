@@ -11,7 +11,7 @@
 }
 .ui-slider .ui-slider-range {
     background-color: #37474f;
-   
+
 }
 .ui-slider .min-value,
 .ui-slider .max-value {
@@ -29,6 +29,10 @@
     border-radius: 50%;
     border: 3px solid #8bc34a;
     background-color: #fff;
-   
+    cursor: pointer;
+}
+.ui-slider .ui-state-default.ui-slider-handle:hover,
+.ui-slider .ui-state-default.ui-slider-handle:active {
+    background-color: #8bc34a;
 }
 

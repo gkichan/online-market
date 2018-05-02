@@ -110,5 +110,8 @@ header .header-in .dropdown.dropdown-profile .cart-info span {
     header .buttons-in-drop .btn-custom {
         width: 100%;
     }
+    header .header-controls .btn-custom {
+        margin-bottom: 10px;
+    }
 }
 /* ===== HEADER END ===== */
