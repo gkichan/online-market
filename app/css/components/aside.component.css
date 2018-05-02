@@ -168,10 +168,12 @@ aside .aside-product-info .product-info-value {
 @media(max-width: 991px) {
     .mobile-aside {
         position: fixed;
-        top:15px;
-        left:0;
+        top: 0;
+        left: 0;
         overflow-y: auto;
         height: 100vh;
+        background-color: #f4f6f5;
+        padding-top: 25px;
         z-index: 999;
         -webkit-transition: all .2s ease-in;
         transition: all .2s ease-in;

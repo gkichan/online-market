@@ -47,7 +47,6 @@
     bottom: 0;
 }  
 #LoginModal .login-btn-group {
-    /* display: inline-block; */
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 28px;
@@ -57,12 +56,9 @@
     font-size: 14px;
 }
 #LoginModal .modal-body .close {
-    /* position: absolute; */
     position: fixed;    
     top: 15px;
     right: 15px;
-    /* top: -65px;
-    right: 0; */
     color: white;
     opacity: 1;
 }
@@ -78,13 +74,6 @@
     top: 22px;
     right: 27px;      
 }
-/* #LoginModal .submit { 
-    float: left;
-    font-weight: 700;
-}
-#LoginModal .create-acount { 
-    float: right;
-} */
 @media(max-width:768px) {
     #LoginModal .modal-content {
         padding: 0;
@@ -95,11 +84,5 @@
     #LoginModal .btn-custom {
         margin-top: 10px;
     }
-    /* #LoginModal .modal-dialog {
-        width: 90%;
-    } */
-    /* #LoginModal .modal-body .close {
-       
-    } */
 }
 /* ===== LOGIN MODAL END ===== */

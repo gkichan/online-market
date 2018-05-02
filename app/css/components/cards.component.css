@@ -189,14 +189,6 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
-/* .card.medium-card .product-title,
-.card.medium-card .product-category,
-.card.medium-card .product-author-name { */
-
-/* .card.medium-card .product-title,
-.card.medium-card .product-category {
-    max-width: 170px;
-} */
 .card.medium-card .product-title {
     font-size: 16px;
 }
@@ -416,6 +408,9 @@
     }
     .all-items {
         padding-top: 80px;
+    }
+    .aside-card .product-bottom-info .product-author-name {
+        display: block;
     }
 }
 @media(max-width: 767px) {
