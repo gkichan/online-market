@@ -66,14 +66,10 @@
     transform: translateY(50%);
 	font-size: 18px;
     color: #78909c;
-    position: relative;
     float: right;
-    margin-right: 20px;
-    margin-bottom: -90px;
+    position: relative;
+    padding: 75px 20px 25px 0;
 }
-/* .search-control + i {
-    padding-right: 20px;
-} */
 /* -- SEARCH END -- */
 /* -- SELECT START -- */
 #regular-btn,
